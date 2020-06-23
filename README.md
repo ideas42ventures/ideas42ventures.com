@@ -11,7 +11,7 @@ The ideas42 Venture Studio public website.
 ### Requirements
 
 - node.js: LTS version recommended
-- yarn: Latest versino recommended
+- yarn: Latest version recommended
 
 ### Local setup
 
