@@ -1,10 +1,11 @@
-# ideas42ventures.com
+# ideas42ventures.com [![Netlify Status](https://api.netlify.com/api/v1/badges/f9bb165d-6817-45fa-88ac-69fc6560e395/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
 
 The ideas42 Venture Studio public website.
 
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
+- Hosted on Netlify
 - The living design files live in [Figma](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
 
 ### Requirements
@@ -45,4 +46,10 @@ yarn build
 
 ## Deploying
 
-Nothing yet. In development.
+### To Production
+
+We host this site on [Netlify](https://www.netlify.com/). Anything merged into the `main` branch is deployed to production.
+
+### To Staging
+
+We use Netlify preview builds. To see any branch in a live environment, push the branch to the remote and open a pull request.
