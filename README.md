@@ -1,6 +1,6 @@
 # ideas42ventures.com [![Netlify Status](https://api.netlify.com/api/v1/badges/f9bb165d-6817-45fa-88ac-69fc6560e395/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
 
-The ideas42 Venture Studio public website.
+The ideas42 Venture Studio website.
 
 ## Contributing
 
