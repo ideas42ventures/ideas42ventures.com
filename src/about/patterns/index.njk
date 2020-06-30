@@ -1,0 +1,26 @@
+---
+layout: patterns.njk
+date: Last Modified
+---
+
+<header>
+  <h1>Design Patterns</h1>
+  <p>Last modified: {{ page.date }}</p>
+  
+  <ul>
+    {% for key, content in sections %}
+    <li>
+      <a href="#{{key}}">{{ key | title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</header>
+
+
+{% for key, content in sections %}
+<div class="topic" id="{{ key }}">
+  <h2 class="topic__title">{{ key | title }}</h2>
+  {{ content() | safe }}
+</div>
+{% endfor %}

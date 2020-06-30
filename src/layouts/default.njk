@@ -6,19 +6,18 @@ title: ideas42 Venture Studio
 <html lang="en">
 
 <head>
-  {{> layout-meta }}
+  {% include "layout-meta.njk" %}
 
   <title>
     {{ title }}
   </title>
 
-  {{> layout-styles }}
-
+  {% include "layout-styles.njk" %}
 </head>
 
 <body>
   <a href="/">ideas42 Venture Studio</a> <a href="/apply">Apply</a>
-  {{{ content }}}
+  {{ content | safe }}
 </body>
 
 </html>
