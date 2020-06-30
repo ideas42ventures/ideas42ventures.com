@@ -1,0 +1,22 @@
+html {
+  --font-display: aglet-slab, sans-serif;
+
+  --color-electric-panther: #e81756;
+  --color-nuclear-pumpkin: #ff7a00;
+  --color-moon-over-maroon: #43212c;
+  --color-text-primary: var(--color-moon-over-maroon);
+}
+
+body {
+  background-color: white;
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+}
+
+.font--display,
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 900;
+}

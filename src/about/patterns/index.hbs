@@ -1,0 +1,24 @@
+---
+layout: patterns.hbs
+date: Last Modified
+---
+
+<header>
+  <h1>Design Patterns</h1>
+  <p>Last modified: {{page.date}}</p>
+
+  <ul>
+    {{#each sections}}
+    <li>
+      <a href="#{{@key}}">{{makeTitleCase @key}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</header>
+
+{{#each sections}}
+<div class="topic" id="{{@key}}">
+  <h2 class="topic__title">{{makeTitleCase @key}}</h2>
+  {{{this}}}
+</div>
+{{/each}}
