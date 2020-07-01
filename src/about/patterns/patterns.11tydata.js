@@ -10,7 +10,7 @@ const tokens = {
 module.exports = {
   sections: {
     color() {
-      const swatches = tokens.color.reduce(
+      const swatches = `<ul class="colors">${tokens.color.reduce(
         (str, [prop, val]) => `${str}<li class="color">
           <b class="color__swatch" style="--color: ${val}"></b>
           <div class="color__details">
@@ -19,7 +19,7 @@ module.exports = {
           </div>
          </li>`,
         ""
-      );
+      )}</ul>`;
 
       return swatches;
     },

@@ -3,6 +3,10 @@ layout: patterns.njk
 date: Last Modified
 ---
 
+<style>
+{% include "./patterns.css" %}
+</style>
+
 <header>
   <h1>Design Patterns</h1>
   <p>Last modified: {{ page.date }}</p>
@@ -20,7 +24,7 @@ date: Last Modified
 
 {% for key, content in sections %}
 <div class="topic" id="{{ key }}">
-  <h2 class="topic__title">{{ key | title }}</h2>
+  <h2 class="topic__title"><a href="#{{key}}">{{ key | title }}</a></h2>
   {{ content() | safe }}
 </div>
 {% endfor %}
