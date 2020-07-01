@@ -1,4 +1,6 @@
 module.exports = function (conf) {
+  conf.addWatchTarget("./src/**/*.css");
+
   return {
     dir: {
       input: "src",
