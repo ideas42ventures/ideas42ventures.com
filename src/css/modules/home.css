@@ -1,0 +1,40 @@
+.home-benefits {
+  list-style: none;
+  margin-top: 3.125rem;
+  padding-left: 0;
+}
+
+.home-benefits h3 {
+  color: var(--color-electric-panther);
+}
+
+.home-benefits p {
+  font-size: var(--font-size-3);
+  line-height: 1.55;
+  margin-top: 0.625rem;
+  max-width: var(--g-cols-2--fixed);
+}
+
+.home-portfolio {
+  list-style: none;
+  padding-left: 0;
+}
+
+.home-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-portfolio li {
+  min-width: 18.75rem;
+  padding: calc(var(--g-gutter-width) / 2);
+  text-align: center;
+  width: 33.33%;
+}
+
+.home-portfolio p {
+  font-size: var(--font-size-3);
+  line-height: 1.55;
+  padding: 0 calc(var(--g-gutter-width) / 2);
+}

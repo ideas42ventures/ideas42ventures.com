@@ -29,8 +29,14 @@ html {
   --g-max-width: 1440px;
   --g-max-width-rel: 90rem;
   --g-col-width: 256px;
+  --g-col-width-rel: 16rem;
   --g-col-num: 9;
   --g-gutter-width: 1.25rem;
+
+  --g-cols-2--fixed: calc(var(--g-col-width-rel) * 2 + var(--g-gutter-width));
+  --g-cols-3--fixed: calc(
+    var(--g-col-width-rel) * 3 + calc(var(--g-gutter-width) * 2)
+  );
 }
 
 body {
@@ -42,6 +48,15 @@ body {
 
 .font--body {
   font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
 }
 
 .font--display,
@@ -69,4 +84,13 @@ h3 {
   max-width: var(--g-max-width-rel);
   padding-left: var(--g-gutter-width);
   padding-right: var(--g-gutter-width);
+}
+
+.content-block__intro {
+  font-size: var(--font-size-4);
+  line-height: 1.75;
+}
+
+.content-block__intro p:first-of-type {
+  margin-top: 1.25rem;
 }

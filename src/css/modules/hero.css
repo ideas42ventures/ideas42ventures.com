@@ -1,6 +1,5 @@
 .hero__title {
   font-size: min(8vw, var(--font-size-8));
-  line-height: 1.1;
   margin-bottom: 0;
 }
 
