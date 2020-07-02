@@ -52,6 +52,9 @@ html {
   --g-cols-4--fixed: calc(
     var(--g-col-width-rel) * 4 + calc(var(--g-gutter-width) * 3)
   );
+  --g-cols-4-dot-5--fixed: calc(
+    var(--g-col-width-rel) * 4.5 + calc(var(--g-gutter-width) * 4)
+  );
 }
 
 body {

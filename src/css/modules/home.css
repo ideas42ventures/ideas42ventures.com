@@ -10,6 +10,19 @@
   font-size: var(--font-size-6);
 }
 
+.home-model {
+  margin-top: calc(var(--g-row) * 18);
+}
+
+.home-model .content-block__intro {
+  margin-left: auto;
+  max-width: var(--g-cols-4-dot-5--fixed);
+}
+
+.home-model .content-block__intro p {
+  max-width: var(--g-cols-3-dot-5--fixed);
+}
+
 .home-benefits {
   list-style: none;
   margin-top: 3.125rem;
