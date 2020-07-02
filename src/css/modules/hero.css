@@ -1,4 +1,5 @@
 .hero__title {
+  color: var(--color-accent-primary);
   font-size: min(8vw, var(--font-size-8));
   margin-bottom: 0;
 }
@@ -15,14 +16,9 @@
 }
 
 .hero--home .hero__title {
-  color: var(--color-electric-panther);
   font-size: min(10vw, 6.25rem);
 }
 
 .hero--home .hero__body {
   font-size: var(--font-size-6);
-}
-
-.hero--apply .hero__title {
-  color: var(--color-nuclear-pumpkin);
 }

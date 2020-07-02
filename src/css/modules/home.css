@@ -1,3 +1,7 @@
+[data-page="home"] {
+  --color-accent-primary: var(--color-electric-panther);
+}
+
 .home-benefits {
   list-style: none;
   margin-top: 3.125rem;
@@ -5,7 +9,7 @@
 }
 
 .home-benefits h3 {
-  color: var(--color-electric-panther);
+  color: var(--color-accent-primary);
 }
 
 .home-benefits p {
@@ -43,12 +47,12 @@
   background-color: var(--color-text-primary);
   border-radius: 6px;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 4rem; /*temp*/
+  margin-bottom: 4rem; /*FIXME: temp*/
 }
 
 .home-apply-cta__contents {
   margin: 0 auto;
-  max-width: var(--g-cols-8--fixed);
+  max-width: var(--g-cols-4--fixed);
   padding: 5.5rem var(--g-gutter-width) 6rem var(--g-gutter-width);
 }
 
