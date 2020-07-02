@@ -15,10 +15,10 @@
   text-transform: uppercase;
 }
 
-.hero--home .hero__title {
-  font-size: min(10vw, 6.25rem);
+.hero--with-graphic .hero__title {
+  max-width: var(--g-cols-4--fixed);
 }
 
-.hero--home .hero__body {
-  font-size: var(--font-size-6);
+.hero--with-graphic .hero__body {
+  max-width: var(--g-cols-3-dot-5--fixed);
 }

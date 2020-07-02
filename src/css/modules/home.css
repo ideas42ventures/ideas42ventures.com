@@ -2,6 +2,14 @@
   --color-accent-primary: var(--color-electric-panther);
 }
 
+.hero--home .hero__title {
+  font-size: min(10vw, 6.25rem);
+}
+
+.hero--home .hero__body {
+  font-size: var(--font-size-6);
+}
+
 .home-benefits {
   list-style: none;
   margin-top: 3.125rem;
@@ -84,9 +92,7 @@
   }
 
   .home-apply-cta .content-block__intro p {
-    max-width: calc(
-      (var(--g-col-width-rel) * 2.5) + (var(--g-gutter-width) * 2)
-    );
+    max-width: var(--g-cols-2-dot-5--fixed);
   }
 
   .home-apply-cta__action {
