@@ -13,7 +13,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "lint": "eslint --fix src/"
+    "lint": "eslint --fix --ext .js",
+    "prettier": "prettier --write src/"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
@@ -29,9 +30,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "src/**/*.js": "eslint --fix",
+    "src/": "prettier --write"
   }
 }
