@@ -54,11 +54,13 @@ h2 {
 
 h2 {
   font-size: var(--font-size-7);
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: var(--font-size-6);
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .standard-restricted-width {

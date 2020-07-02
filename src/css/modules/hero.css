@@ -1,11 +1,27 @@
 .hero__title {
   font-size: min(8vw, var(--font-size-8));
   line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.hero__body {
+  font-size: var(--font-size-5);
+  line-height: 1.55;
+}
+
+.hero__body--first-lined::first-line {
+  font-size: 90%;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hero--home .hero__title {
   color: var(--color-electric-panther);
   font-size: min(10vw, 6.25rem);
+}
+
+.hero--home .hero__body {
+  font-size: var(--font-size-6);
 }
 
 .hero--apply .hero__title {
