@@ -6,17 +6,18 @@ title: ideas42 Venture Studio Design Patterns
 <html lang="en">
 
 <head>
-  {{> layout-meta }}
+  {% include "layout-meta.njk" %}
 
   <title>
     {{ title }}
   </title>
 
+  {% include "layout-styles.njk" %}
 </head>
 
 <body>
   <a href="/">ideas42 Venture Studio</a>
-  {{{ content }}}
+  {{ content | safe }}
 </body>
 
 </html>

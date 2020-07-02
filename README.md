@@ -2,11 +2,14 @@
 
 The ideas42 Venture Studio website.
 
+- Production (temp): [https://ideas42ventures.netlify.app/](https://ideas42ventures.netlify.app/)
+- Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify for it.
+
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
 - Hosted on Netlify
-- The living design files live in [Figma](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
+- The living design files live in Figma at [figma.com/file/5ThSdBlZBcQnuyk15DWJNQ](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
 
 ### Requirements
 
@@ -53,3 +56,7 @@ We host this site on [Netlify](https://www.netlify.com/). Anything merged into t
 ### To Staging
 
 We use Netlify preview builds. To see any branch in a live environment, push the branch to the remote and open a pull request.
+
+## Code formatting
+
+We format all JavaScript, CSS, and HTML with [Prettier](https://prettier.io). We use the [lint-staged with husky approach](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged) to make sure formatting happens for all contributors.

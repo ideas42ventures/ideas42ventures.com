@@ -1,0 +1,114 @@
+[data-page="home"] {
+  --color-accent-primary: var(--color-electric-panther);
+}
+
+.hero--home .hero__title {
+  font-size: min(10vw, 6.25rem);
+}
+
+.hero--home .hero__body {
+  font-size: var(--font-size-6);
+}
+
+.home-model {
+  margin-top: calc(var(--g-row) * 18);
+}
+
+.home-model .content-block__intro {
+  margin-left: auto;
+  max-width: var(--g-cols-4-dot-5--fixed);
+}
+
+.home-model .content-block__intro p {
+  max-width: var(--g-cols-3-dot-5--fixed);
+}
+
+.home-benefits {
+  list-style: none;
+  margin-top: 3.125rem;
+  padding-left: 0;
+}
+
+.home-benefits h3 {
+  color: var(--color-accent-primary);
+}
+
+.home-benefits p {
+  font-size: var(--font-size-3);
+  line-height: 1.55;
+  margin-top: 0.625rem;
+  max-width: var(--g-cols-2--fixed);
+}
+
+.home-portfolio {
+  list-style: none;
+  padding-left: 0;
+}
+
+.home-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-portfolio li {
+  min-width: 18.75rem;
+  padding: calc(var(--g-gutter-width) / 2);
+  text-align: center;
+  width: 33.33%;
+}
+
+.home-portfolio p {
+  font-size: var(--font-size-3);
+  line-height: 1.55;
+  padding: 0 calc(var(--g-gutter-width) / 2);
+}
+
+.home-apply-cta {
+  background-color: var(--color-text-primary);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4rem; /*FIXME: temp*/
+}
+
+.home-apply-cta__contents {
+  margin: 0 auto;
+  max-width: var(--g-cols-4--fixed);
+  padding: 5.5rem var(--g-gutter-width) 6rem var(--g-gutter-width);
+}
+
+.home-apply-cta h2 {
+  margin-top: 0;
+}
+
+.home-apply-cta__action {
+  margin-top: calc(var(--font-size-7) + var(--g-gutter-width));
+  text-align: center;
+  width: 100%;
+}
+
+.home-apply-cta__btn {
+  font-size: var(--font-size-5);
+  width: 100%;
+}
+
+@media (min-width: 50em) {
+  .home-apply-cta__contents {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home-apply-cta .content-block__intro {
+    flex: 1 1;
+    max-width: var(--g-cols-3--fixed);
+    padding-right: calc(var(--g-gutter-width) * 4);
+  }
+
+  .home-apply-cta .content-block__intro p {
+    max-width: var(--g-cols-2-dot-5--fixed);
+  }
+
+  .home-apply-cta__action {
+    max-width: calc(var(--g-col-width-rel) + var(--g-gutter-width));
+  }
+}

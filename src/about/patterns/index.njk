@@ -1,0 +1,28 @@
+---
+layout: patterns.njk
+---
+
+<style>
+{% include "./patterns.css" %}
+</style>
+
+<header>
+  <h1>Design Patterns</h1>
+  
+  <ul>
+    {% for key, content in sections %}
+    <li>
+      <a href="#{{key}}">{{ key | title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</header>
+
+
+{% for key, content in sections %}
+<div class="topic" id="{{ key }}">
+  <h2 class="topic__title"><a href="#{{key}}">{{ key | title }}</a></h2>
+  {{ content() | safe }}
+</div>
+{% endfor %}
