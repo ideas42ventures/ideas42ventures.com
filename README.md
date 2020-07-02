@@ -2,11 +2,14 @@
 
 The ideas42 Venture Studio website.
 
+- Production (temp): [https://ideas42ventures.netlify.app/](https://ideas42ventures.netlify.app/)
+- Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify for it.
+
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
 - Hosted on Netlify
-- The living design files live in [Figma](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
+- The living design files live in Figma at [figma.com/file/5ThSdBlZBcQnuyk15DWJNQ](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
 
 ### Requirements
 
