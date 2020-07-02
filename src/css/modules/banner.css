@@ -41,7 +41,7 @@
   .banner__apply-btn {
     display: inline-block;
     font-size: var(--font-size-4);
-    margin: 0;
+    margin: 0 var(--g-gutter-width) 0 0;
   }
 
   .banner::after {

@@ -1,3 +1,26 @@
 [data-page="apply"] {
   --color-accent-primary: var(--color-nuclear-pumpkin);
 }
+
+.apply__details {
+  color: var(--color-accent-primary);
+}
+
+.content-block__intro .apply__details {
+  margin-top: var(--g-row);
+  font-size: var(--font-size-2);
+}
+
+.apply__steps .apply__details {
+  margin-top: 0.4rem;
+}
+
+.apply__steps p:not(.apply__details) {
+  font-size: var(--font-size-3);
+  line-height: 1.5;
+  max-width: calc((var(--g-col-width-rel) * 2.5) + (var(--g-gutter-width) * 2));
+}
+
+.apply__steps li + li {
+  margin-top: calc(var(--g-row) * 8);
+}

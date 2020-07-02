@@ -87,6 +87,10 @@ h3 {
   margin-bottom: 0;
 }
 
+a {
+  color: var(--color-accent-active);
+}
+
 .standard-restricted-width {
   margin-left: auto;
   margin-right: auto;
@@ -100,6 +104,6 @@ h3 {
   line-height: 1.75;
 }
 
-.content-block__intro p:first-of-type {
+.content-block__intro p:first-of-type:not([class]) {
   margin-top: 1.25rem;
 }
