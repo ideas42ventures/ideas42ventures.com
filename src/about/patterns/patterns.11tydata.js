@@ -38,15 +38,13 @@ module.exports = {
           </div>
         </li>
         <li class="font">
-          <h3 class="token__sample font--body">Inter</h3>
+          <h3 class="token__sample font--body">Inter Variable</h3>
           <div class="token__info">
             <p>
-              Used for all standard text.
+              Used for all standard text. Variable font. Weights 100-900.
             </p>
-            <!--
             <code>--font-body</code>
             <code>.font--body</code>
-            -->
           </div>
         </li>
       </ul>
