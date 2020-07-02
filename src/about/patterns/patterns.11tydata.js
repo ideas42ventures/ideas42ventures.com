@@ -2,6 +2,8 @@ const tokens = {
   color: [
     ["--color-electric-panther", "#e81756"],
     ["--color-nuclear-pumpkin", "#ff7a00"],
+    ["--color-big-bad-blue", "#0094FF"],
+    ["--color-accent-active", "var(--color-big-bad-blue)"],
     ["--color-moon-over-maroon", "#43212c"],
     ["--color-text-primary", "var(--color-moon-over-maroon)"],
   ],
@@ -82,5 +84,19 @@ module.exports = {
       We offer classes and custom properties for setting widths on elements.
     </p>`;
     },
+    button() {
+      return `
+      <ul class="token__list">
+        <li>
+          <div class="token__sample">
+            <a href="#button" class="btn">Default</a>
+          </div>
+          <div class="token__info">
+            <code>.btn</code>
+          </div>
+        </li>
+      </ul>
+      `;
+    }
   },
 };
