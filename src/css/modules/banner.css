@@ -2,3 +2,7 @@
   display: block;
   max-width: 10rem;
 }
+
+.banner__apply-btn {
+  font-size: var(--font-size-4);
+}

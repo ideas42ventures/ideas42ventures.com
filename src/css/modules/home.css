@@ -38,3 +38,41 @@
   line-height: 1.55;
   padding: 0 calc(var(--g-gutter-width) / 2);
 }
+
+.home-apply-cta {
+  background-color: var(--color-text-primary);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4rem; /*temp*/
+}
+
+.home-apply-cta__contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: var(--g-cols-8--fixed);
+  padding: 5.5rem var(--g-gutter-width) 6rem var(--g-gutter-width);
+}
+
+.home-apply-cta .content-block__intro {
+  flex: 1 1;
+  min-width: var(--g-cols-2--fixed);
+  max-width: var(--g-cols-3--fixed);
+  padding-right: calc(var(--g-col-width-rel) / 2);
+}
+
+.home-apply-cta h2 {
+  margin-top: 0;
+}
+
+.home-apply-cta__action {
+  flex: 1;
+  margin-top: calc(var(--font-size-7) + var(--g-gutter-width));
+  max-width: calc(var(--g-col-width-rel) + var(--g-gutter-width));
+  text-align: center;
+}
+
+.home-apply-cta__btn {
+  font-size: var(--font-size-5);
+  width: 100%;
+}
