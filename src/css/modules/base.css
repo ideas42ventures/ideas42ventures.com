@@ -52,7 +52,12 @@ h2 {
   font-weight: 900;
 }
 
+h2 {
+  font-size: var(--font-size-7);
+}
+
 h3 {
+  font-size: var(--font-size-6);
   font-weight: 900;
 }
 

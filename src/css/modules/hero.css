@@ -1,0 +1,13 @@
+.hero__title {
+  font-size: min(8vw, var(--font-size-8));
+  line-height: 1.1;
+}
+
+.hero--home .hero__title {
+  color: var(--color-electric-panther);
+  font-size: min(10vw, 6.25rem);
+}
+
+.hero--apply .hero__title {
+  color: var(--color-nuclear-pumpkin);
+}
