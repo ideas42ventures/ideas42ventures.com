@@ -41,11 +41,6 @@
   color: var(--color-accent-active);
 }
 
-.banner__nav-item:hover::before,
-.banner__nav-item:focus::before {
-  opacity: 1;
-}
-
 .banner__nav-item::before {
   --size: 0.5625rem;
   background-color: var(--color-accent-active);
@@ -54,9 +49,10 @@
   display: block;
   height: var(--size);
   left: calc(var(--size) * -1);
-  opacity: 0;
   position: absolute;
   top: calc(var(--size) * -0.4);
+  transform: scale3d(0, 0, 0);
+  transition: transform 0.12s ease;
   width: var(--size);
 }
 
@@ -65,9 +61,11 @@
   color: var(--color-accent-active);
 }
 
+.banner__nav-item:hover::before,
+.banner__nav-item:focus::before,
 [data-page="model"] .banner__nav-item[href*="model"]::before,
 [data-page="about"] .banner__nav-item[href*="about"]::before {
-  opacity: 1;
+  transform: scale3d(1, 1, 1);
 }
 
 @media (min-width: 31.25em) {
