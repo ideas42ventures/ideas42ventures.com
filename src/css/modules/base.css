@@ -3,6 +3,7 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-body);
   font-weight: 400;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
