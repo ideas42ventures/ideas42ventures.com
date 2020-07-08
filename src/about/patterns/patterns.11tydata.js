@@ -1,6 +1,6 @@
 const tokens = {
   color: [
-    ["--color-electric-panther", "#FF0660"],
+    ["--color-electric-panther", "#eb0055"],
     ["--color-eggplant", "#1D0354"],
     ["--color-praise-be-purple", "#8f00ff"],
     ["--color-accent-active", "var(--color-electric-panther)"],
