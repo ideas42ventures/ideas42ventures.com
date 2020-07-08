@@ -4,6 +4,8 @@
 
 .hero--home .hero__body {
   font-size: var(--font-size-6);
+  margin-left: auto;
+  max-width: var(--g-cols-3--fixed);
 }
 
 .home-model {

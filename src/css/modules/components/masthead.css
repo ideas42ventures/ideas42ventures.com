@@ -4,5 +4,15 @@
     linear-gradient(rgb(82, 0, 255, 0), rgb(82, 0, 255, 0.04));
   background-repeat: repeat-x, no-repeat;
   background-position: left bottom, top left;
-  padding-bottom: calc(var(--g-row) * 10);
+  overflow-x: hidden;
+  padding-bottom: calc(var(--g-row) * 13);
+  position: relative;
+}
+
+.masthead__graphic {
+  pointer-events: none;
+  position: absolute;
+  left: 48%;
+  top: 20px;
+  z-index: 1;
 }
