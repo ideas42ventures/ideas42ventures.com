@@ -1,13 +1,12 @@
 html {
   /* color definitions */
   --color-ideas42-green: #8cba43;
-  --color-electric-panther: #e81756;
-  --color-nuclear-pumpkin: #ff7a00;
-  --color-big-bad-blue: #0094ff;
-  --color-moon-over-maroon: #43212c;
+  --color-electric-panther: #ff0660;
+  --color-eggplant: #1d0354;
+  --color-praise-be-purple: #8f00ff;
 
   /* color general aliases */
-  --color-accent-active: var(--color-big-bad-blue);
-  --color-accent-primary: var(--color-ideas42-green);
-  --color-text-primary: var(--color-moon-over-maroon);
+  --color-accent-active: var(--color-electric-panther);
+  --color-accent-primary: var(--color-praise-be-purple);
+  --color-text-primary: var(--color-eggplant);
 }

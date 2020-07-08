@@ -1,22 +1,20 @@
 .banner__contents {
-  margin-left: auto;
-  max-width: var(--g-cols-4--fixed);
   padding-top: 1.25rem;
 }
 
+.banner__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: calc(var(--g-row) * 2) 0;
+}
+
 .banner::after {
-  --mask: url("/images/banner-line.svg") no-repeat;
-  --mask-size: auto 16px;
-  background-color: var(--color-accent-primary);
+  background: transparent url("/images/banner-line.svg") no-repeat;
+  background-size: auto 16px;
   content: "";
   display: block;
-  height: 23px;
-  margin: calc(var(--g-row) * 4) 0 var(--g-row) auto;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-  -webkit-mask-size: var(--mask-size);
-  mask-size: var(--mask-size);
-  max-width: calc(var(--g-cols-4--fixed) + var(--g-gutter-width));
+  height: 26px;
   width: 100%;
 }
 
@@ -25,26 +23,65 @@
   width: 10rem;
 }
 
-.banner__apply-btn {
-  display: block;
-  margin-top: calc(var(--g-row) * 3);
-  font-size: var(--font-size-2);
+.banner__nav-item {
+  color: var(--text-primary);
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
 }
 
-@media (min-width: 24em) {
-  .banner__contents {
-    align-items: flex-end;
-    display: flex;
-    justify-content: space-between;
-  }
+.banner__nav-item:hover,
+.banner__nav-item:focus {
+  color: var(--color-accent-active);
+}
 
-  .banner__apply-btn {
-    display: inline-block;
-    font-size: var(--font-size-4);
-    margin: 0 var(--g-gutter-width) 0 0;
-  }
+.banner__nav-item:hover::before,
+.banner__nav-item:focus::before {
+  opacity: 1;
+}
 
+.banner__nav-item::before {
+  --size: 0.5625rem;
+  background-color: var(--color-accent-active);
+  border-radius: calc(var(--size) / 2);
+  content: "";
+  display: block;
+  height: var(--size);
+  left: calc(var(--size) * -1);
+  opacity: 0;
+  position: absolute;
+  top: calc(var(--size) * -0.4);
+  width: var(--size);
+}
+
+[data-page="model"] .banner__nav-item[href*="model"],
+[data-page="about"] .banner__nav-item[href*="about"] {
+  color: var(--color-accent-active);
+}
+
+[data-page="model"] .banner__nav-item[href*="model"]::before,
+[data-page="about"] .banner__nav-item[href*="about"]::before {
+  opacity: 1;
+}
+
+@media (min-width: 31.25em) {
   .banner::after {
-    --mask-size: 100%;
+    background-size: 100%;
+    margin-top: -1.5rem;
+    margin-left: auto;
+    width: calc(100% - 12rem);
+  }
+
+  .banner__contents {
+    display: flex;
+  }
+
+  .banner__nav {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .banner__nav a + a {
+    margin-left: min(4vw, 3.75rem);
   }
 }

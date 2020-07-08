@@ -1,5 +1,4 @@
 .hero__title {
-  color: var(--color-accent-primary);
   font-size: min(8vw, var(--font-size-8));
   margin-bottom: 0;
 }

@@ -1,9 +1,5 @@
-[data-page="home"] {
-  --color-accent-primary: var(--color-electric-panther);
-}
-
 .hero--home .hero__title {
-  font-size: min(10vw, 6.25rem);
+  font-size: min(10vw, 3.875rem);
 }
 
 .hero--home .hero__body {
