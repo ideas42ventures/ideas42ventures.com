@@ -24,6 +24,7 @@
 }
 
 .banner__nav-item {
+  background-color: var(--color-white);
   color: var(--text-primary);
   font-weight: 500;
   position: relative;
