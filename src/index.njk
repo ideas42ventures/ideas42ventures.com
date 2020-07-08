@@ -1,16 +1,22 @@
 ---
-layout: default.njk
+title: Test title
 ---
 
-<div class="hero hero--home standard-restricted-width">
-  <h1 class="hero__title">We Help Build Companies to Solve Massive Social Challenges</h1>
-  <p class="hero__body">
-    We do this by recruiting entrepreneurs, surrounding them with design,
-    technology, and behavioral science talent, and connecting them to enterprises
-    with meaningful problems.
-  </p>
-</div>
+{% extends "base.njk" %}
 
+{% block masthead %}
+  {{ super() }}
+  <div class="hero hero--home standard-restricted-width">
+    <h1 class="hero__title">We Help Build Companies to Solve Massive Social Challenges</h1>
+    <p class="hero__body">
+      We do this by recruiting entrepreneurs, surrounding them with design,
+      technology, and behavioral science talent, and connecting them to enterprises
+      with meaningful problems.
+    </p>
+  </div>
+{% endblock %}
+
+{% block main %}
 <div class="standard-restricted-width home-model">
   <header class="content-block__intro">
     <h2>Our Model</h2>
@@ -109,23 +115,4 @@ layout: default.njk
     </li>
   </ul>
 </div>
-
-<div class="standard-restricted-width home-apply-cta">
-  <div class="home-apply-cta__contents">
-    <header class="content-block__intro">
-      <h2>Interested?</h2>
-      <p>
-        We’ve partnered with Wells Fargo for our first cohort; The Venture 
-        Studio for Shared Prosperity. During this cohort we’ll build companies 
-        dedicated to improving financial health.
-      </p>
-    </header>
-    <div class="home-apply-cta__action">
-      <a href="/apply" class="btn home-apply-cta__btn">Apply</a>
-      <p>
-        Even if you’re not 100% sure yet, but you think this sounds like you, 
-        we want to hear from you.
-      </p>
-    </div>
-  </div>
-</div>
+{% endblock %}

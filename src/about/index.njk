@@ -1,17 +1,23 @@
 ---
 title: About the ideas42 Venture Studio
-layout: default.njk
 ---
 
-<div class="hero hero--with-graphic standard-restricted-width">
-  <p class="hero__tag">Who We Are</p>
-  <h1 class="hero__title">
-    About The ideas42 Venture Studio
-  </h1>
-  <p class="hero__body hero__body--first-lined">
-    The Studio is made up of entrepreneurs, core members, contributors from 
-    ideas42, board members, and advisors. Our goal with this team makeup is to 
-    give our entrepreneurs access to the widest range of experiences and 
-    expertise as possible.
-  </p>
-</div>
+{% extends "base.njk" %}
+
+{% block masthead %}
+  {{ super() }}
+  <div class="hero hero--with-graphic standard-restricted-width">
+    <p class="hero__tag">Who We Are</p>
+    <h1 class="hero__title">
+      About The ideas42 Venture Studio
+    </h1>
+    <p class="hero__body hero__body--first-lined">
+      The Studio is made up of entrepreneurs, core members, contributors from 
+      ideas42, board members, and advisors. Our goal with this team makeup is to 
+      give our entrepreneurs access to the widest range of experiences and 
+      expertise as possible.
+    </p>
+  </div>
+{% endblock %}
+
+{% block main %}{% endblock %}

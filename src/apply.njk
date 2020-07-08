@@ -1,76 +1,83 @@
 ---
 title: Apply to be an Entrepreneur in the ideas42 Venture Studio
-layout: default.njk
+noApplyCta: true
 ---
 
-<div class="hero hero--with-graphic standard-restricted-width">
-  <p class="hero__tag">You Belong Here</p>
-  <h1 class="hero__title">Apply to Join the Venture Studio for Shared Prosperity</h1>
-  <p class="hero__body hero__body--first-lined">
-    We’ve partnered with Wells Fargo to recruit entrepreneurs to push for social 
-    change in financial health. We’re looking for people that know if given the 
-    time, the money, and the audience, they can channel their lived experiences, 
-    ideas, and talents into positive impact.
-  </p>
-</div>
+{% extends "base.njk" %}
 
-<div class="standard-restricted-width">
-  <header class="content-block__intro apply-process-intro">
-    <h2>The Application Process</h2>
-    <p class="apply__details">
-      <b>Format:</b> Essay, video response, 1:1 video interviews • <b>Duration:</b> 3-4 weeks
+{% block masthead %}
+  {{ super() }}
+  <div class="hero hero--with-graphic standard-restricted-width">
+    <p class="hero__tag">You Belong Here</p>
+    <h1 class="hero__title">Apply to Join the Venture Studio for Shared Prosperity</h1>
+    <p class="hero__body hero__body--first-lined">
+      We’ve partnered with Wells Fargo to recruit entrepreneurs to push for social 
+      change in financial health. We’re looking for people that know if given the 
+      time, the money, and the audience, they can channel their lived experiences, 
+      ideas, and talents into positive impact.
     </p>
-    <p>
-      Our process is set up to give you the opportunity to show and tell us the 
-      impacts you want to make. It’s an opportunity for you to express yourself in 
-      the ways you’re most comfortable.
-    </p>
-  </header>
+  </div>
+{% endblock %}
 
-  <ol class="apply__steps">
-    <li>
-      <h3>Meet</h3>
+{% block main %}
+  <div class="standard-restricted-width">
+    <header class="content-block__intro apply-process-intro">
+      <h2>The Application Process</h2>
       <p class="apply__details">
-        <b>Format:</b> Zoom/Video • <b>Duration:</b> 25 min
+        <b>Format:</b> Essay, video response, 1:1 video interviews • <b>Duration:</b> 3-4 weeks
       </p>
       <p>
-        In this section we’ll describe the pre-session Zoom and/or video. If 
-        available, we’ll also provide a link to the video here and a way for 
-        candidates to ask questions.
+        Our process is set up to give you the opportunity to show and tell us the 
+        impacts you want to make. It’s an opportunity for you to express yourself in 
+        the ways you’re most comfortable.
       </p>
-    </li>
-    <li>
-      <h3>Tell</h3>
-      <p class="apply__details">
-        <b>Format:</b> Essay questionnaire • <b>Duration:</b> 1-2 hrs
-      </p>
-      <p>
-        In this section we’ll describe the standard application questions. We’ll 
-        let the candidate know that it’s an online questionairre, roughly how long 
-        it should take, and what we’ll glean from their responses.
-      </p>
-    </li>
-    <li>
-      <h3>Show</h3>
-      <p class="apply__details">
-        <b>Format:</b> Take-home pitch • <b>Duration:</b> ~2 hrs
-      </p>
-      <p>
-        In this section we’ll describe the take-home pitch project. We’ll let the 
-        candidate know the format and expected level of time and effort and what 
-        we’ll glean from their responses.
-      </p>
-    </li>
-    <li>
-      <h3>Know</h3>
-      <p class="apply__details">
-        <b>Format:</b> 1:1 interviews • <b>Duration:</b> 3-4 hrs
-      </p>
-      <p>
-        In this section we’ll describe the interview portion of the process. We’ll 
-        let the candidate know the format, the types of people they’ll talk with, 
-        and what types of questions we’ll ask.
-      </p>
-    </li>
-  </ol>
-</div>
+    </header>
+
+    <ol class="apply__steps">
+      <li>
+        <h3>Meet</h3>
+        <p class="apply__details">
+          <b>Format:</b> Zoom/Video • <b>Duration:</b> 25 min
+        </p>
+        <p>
+          In this section we’ll describe the pre-session Zoom and/or video. If 
+          available, we’ll also provide a link to the video here and a way for 
+          candidates to ask questions.
+        </p>
+      </li>
+      <li>
+        <h3>Tell</h3>
+        <p class="apply__details">
+          <b>Format:</b> Essay questionnaire • <b>Duration:</b> 1-2 hrs
+        </p>
+        <p>
+          In this section we’ll describe the standard application questions. We’ll 
+          let the candidate know that it’s an online questionairre, roughly how long 
+          it should take, and what we’ll glean from their responses.
+        </p>
+      </li>
+      <li>
+        <h3>Show</h3>
+        <p class="apply__details">
+          <b>Format:</b> Take-home pitch • <b>Duration:</b> ~2 hrs
+        </p>
+        <p>
+          In this section we’ll describe the take-home pitch project. We’ll let the 
+          candidate know the format and expected level of time and effort and what 
+          we’ll glean from their responses.
+        </p>
+      </li>
+      <li>
+        <h3>Know</h3>
+        <p class="apply__details">
+          <b>Format:</b> 1:1 interviews • <b>Duration:</b> 3-4 hrs
+        </p>
+        <p>
+          In this section we’ll describe the interview portion of the process. We’ll 
+          let the candidate know the format, the types of people they’ll talk with, 
+          and what types of questions we’ll ask.
+        </p>
+      </li>
+    </ol>
+  </div>
+{% endblock %}

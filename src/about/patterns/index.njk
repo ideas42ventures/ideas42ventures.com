@@ -1,7 +1,12 @@
 ---
-layout: patterns.njk
+noApplyCta: true
 ---
 
+{% extends "base.njk" %}
+
+{% block masthead %}{% endblock %}
+
+{% block main %}
 <style>
 {% include "./patterns.css" %}
 </style>
@@ -26,3 +31,5 @@ layout: patterns.njk
   {{ content() | safe }}
 </div>
 {% endfor %}
+
+{% endblock %}
