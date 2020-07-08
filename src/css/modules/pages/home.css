@@ -1,5 +1,5 @@
 .hero--home .hero__title {
-  font-size: min(10vw, 3.875rem);
+  font-size: min(11vw, 5.125rem);
 }
 
 .hero--home .hero__body {
@@ -105,6 +105,6 @@
   }
 
   .home-apply-cta__action {
-    max-width: calc(var(--g-col-width-rel) + var(--g-gutter-width));
+    max-width: calc(var(--g-col-width) + var(--g-gutter-width));
   }
 }

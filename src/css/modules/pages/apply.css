@@ -62,7 +62,7 @@
 
 @media (min-width: 68em) {
   .apply__steps li::before {
-    left: max(-11vw, calc(var(--g-col-width-rel) / -1.75));
+    left: max(-11vw, calc(var(--g-col-width) / -1.75));
     position: absolute;
   }
 }
