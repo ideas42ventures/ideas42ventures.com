@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("/css/fonts/inter-roman.var.woff2?v=3.13") format("woff2");
+}
+
+html {
+  --font-display: aglet-sans, sans-serif;
+  --font-body: "Inter var", helvetica, sans-serif;
+
+  --font-size-0: 0.875rem; /* 14 */
+  --font-size-1: 1rem; /* 16 */
+  --font-size-2: 1.125rem; /* 18 */
+  --font-size-3: 1.25rem; /* 20 */
+  --font-size-4: 1.375rem; /* 22 */
+  --font-size-5: 1.5rem; /* 24 */
+  --font-size-6: 1.875rem; /* 30 */
+  --font-size-7: 3.125rem; /* 50 */
+  --font-size-8: 4.625rem; /* 74 */
+}
+
+.font--body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.font--display,
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-style: normal;
+}
+
+h2 {
+  font-size: var(--font-size-7);
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: var(--font-size-6);
+  font-weight: 600;
+  margin-bottom: 0;
+}

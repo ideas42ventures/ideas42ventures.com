@@ -1,0 +1,24 @@
+html {
+  --g-max-width: 1440px;
+  --g-max-width-rel: 90rem;
+  --g-col-width-rel: 16rem;
+  --g-gutter-width: 1.25rem;
+  --g-row: 0.625rem;
+
+  --g-cols-2--fixed: calc(var(--g-col-width-rel) * 2 + var(--g-gutter-width));
+  --g-cols-2-dot-5--fixed: calc(
+    var(--g-col-width-rel) * 2.5 + calc(var(--g-gutter-width) * 2)
+  );
+  --g-cols-3--fixed: calc(
+    var(--g-col-width-rel) * 3 + calc(var(--g-gutter-width) * 2)
+  );
+  --g-cols-3-dot-5--fixed: calc(
+    var(--g-col-width-rel) * 3.5 + calc(var(--g-gutter-width) * 3)
+  );
+  --g-cols-4--fixed: calc(
+    var(--g-col-width-rel) * 4 + calc(var(--g-gutter-width) * 3)
+  );
+  --g-cols-4-dot-5--fixed: calc(
+    var(--g-col-width-rel) * 4.5 + calc(var(--g-gutter-width) * 4)
+  );
+}

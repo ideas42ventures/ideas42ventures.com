@@ -1,0 +1,13 @@
+html {
+  /* color definitions */
+  --color-ideas42-green: #8cba43;
+  --color-electric-panther: #e81756;
+  --color-nuclear-pumpkin: #ff7a00;
+  --color-big-bad-blue: #0094ff;
+  --color-moon-over-maroon: #43212c;
+
+  /* color general aliases */
+  --color-accent-active: var(--color-big-bad-blue);
+  --color-accent-primary: var(--color-ideas42-green);
+  --color-text-primary: var(--color-moon-over-maroon);
+}
