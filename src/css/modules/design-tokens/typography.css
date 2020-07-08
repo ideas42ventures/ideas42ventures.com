@@ -11,15 +11,16 @@ html {
   --font-display: aglet-sans, sans-serif;
   --font-body: "Inter var", helvetica, sans-serif;
 
-  --font-size-0: 0.875rem; /* 14 */
-  --font-size-1: 1rem; /* 16 */
-  --font-size-2: 1.125rem; /* 18 */
-  --font-size-3: 1.25rem; /* 20 */
-  --font-size-4: 1.375rem; /* 22 */
-  --font-size-5: 1.5rem; /* 24 */
-  --font-size-6: 1.75rem; /* 28 */
-  --font-size-7: 3.125rem; /* 50 */
-  --font-size-8: 4.125rem; /* 66 */
+  /* Using calc here to document the pixel value */
+  --font-size-0: calc(15 / 16 * 1rem);
+  --font-size-1: calc(16 / 16 * 1rem);
+  --font-size-2: calc(18 / 16 * 1rem);
+  --font-size-3: calc(20 / 16 * 1rem);
+  --font-size-4: calc(22 / 16 * 1rem);
+  --font-size-5: calc(24 / 16 * 1rem);
+  --font-size-6: calc(28 / 16 * 1rem);
+  --font-size-7: calc(50 / 16 * 1rem);
+  --font-size-8: calc(66 / 16 * 1rem);
 }
 
 .font--body {

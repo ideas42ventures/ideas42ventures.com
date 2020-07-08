@@ -33,11 +33,3 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.hero--with-graphic .hero__title {
-  max-width: var(--g-cols-4--fixed);
-}
-
-.hero--with-graphic .hero__body {
-  max-width: var(--g-cols-3-dot-5--fixed);
-}

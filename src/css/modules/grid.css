@@ -29,3 +29,19 @@ html {
     var(--g-col-width) * 4.5 + calc(var(--g-gutter-width) * 4)
   );
 }
+
+.g-right {
+  margin-left: auto;
+}
+
+.g-max-3 {
+  max-width: var(--g-cols-3--fixed);
+}
+
+.g-max-3-half {
+  max-width: var(--g-cols-3-dot-5--fixed);
+}
+
+.g-max-4-half {
+  max-width: var(--g-cols-4-dot-5--fixed);
+}
