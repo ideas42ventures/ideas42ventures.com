@@ -1,11 +1,11 @@
 const tokens = {
   color: [
-    ["--color-electric-panther", "#e81756"],
-    ["--color-nuclear-pumpkin", "#ff7a00"],
-    ["--color-big-bad-blue", "#0094FF"],
-    ["--color-accent-active", "var(--color-big-bad-blue)"],
-    ["--color-moon-over-maroon", "#43212c"],
-    ["--color-text-primary", "var(--color-moon-over-maroon)"],
+    ["--color-electric-panther", "#FF0660"],
+    ["--color-eggplant", "#1D0354"],
+    ["--color-praise-be-purple", "#8f00ff"],
+    ["--color-accent-active", "var(--color-electric-panther)"],
+    ["--color-accent-primary", "var(--color-praise-be-purple)"],
+    ["--color-text-primary", "var(--color-eggplant)"],
   ],
 };
 
