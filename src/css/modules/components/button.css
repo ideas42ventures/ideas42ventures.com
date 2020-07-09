@@ -1,11 +1,12 @@
 .btn {
   background: var(--color-accent-active);
-  border-radius: 8px;
+  border-radius: var(--border-radius, 8px);
   color: white;
   display: inline-block;
+  font-size: var(--font-size, inherit);
   font-weight: 600;
   line-height: 1;
-  padding: 0.7em 1.2em;
+  padding: var(--padding-v, 0.7em) var(--padding-h, 1.2em);
   text-align: center;
   text-decoration: none;
 }
