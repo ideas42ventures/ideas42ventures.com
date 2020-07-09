@@ -1,5 +1,5 @@
 .apply-process-intro {
-  margin: calc(var(--g-row) * 17) auto 0 auto;
+  margin: calc(var(--g-row) * 10) auto 0 auto;
   max-width: var(--g-cols-3--fixed);
 }
 
