@@ -5,7 +5,7 @@
 }
 
 .hero__title {
-  font-size: min(8vw, var(--font-size-8));
+  font-size: min(13vw, var(--max-size, var(--font-size-8)));
   margin-bottom: 0;
   margin-top: 0;
 }

@@ -1,5 +1,5 @@
 .hero--home .hero__title {
-  font-size: min(11vw, 5.125rem);
+  --max-size: 5.125rem;
 }
 
 .hero--home .hero__body {
