@@ -75,9 +75,11 @@
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  padding-bottom: calc(var(--g-row) * 10);
 }
 
 .home-portfolio__list li {
+  margin-top: calc(var(--g-row) * 4);
   min-width: 18.75rem;
   padding: calc(var(--g-gutter-width) / 2);
   text-align: center;
