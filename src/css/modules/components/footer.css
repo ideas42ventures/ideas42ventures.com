@@ -10,10 +10,29 @@
   background-repeat: no-repeat;
   background-size: 1400px 10px, auto;
   background-position: top center, top left;
-  padding: 2rem 0 4rem 0;
+  padding: calc(var(--g-row) * 8) 0 calc(var(--g-row) * 12) 0;
 }
 
 .contentinfo__contents {
   margin: 0 auto;
   padding: 0 var(--g-gutter-width);
+}
+
+.contentinfo__nav {
+  margin-top: calc(var(--g-row) * 10);
+}
+
+.contentinfo__nav a {
+  color: var(--color-text-primary);
+  display: inline-block;
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  margin-right: var(--g-gutter-width);
+  text-decoration: none;
+}
+
+.contentinfo__nav a:hover,
+.contentinfo__nav a:focus {
+  color: var(--color-accent-active);
+  text-decoration: underline;
 }

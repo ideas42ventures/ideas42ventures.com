@@ -1,8 +1,11 @@
 .btn {
   background: var(--color-accent-active);
   border-radius: var(--border-radius, 8px);
+  border: 0;
   color: white;
+  cursor: pointer;
   display: inline-block;
+  font-family: var(--font-body);
   font-size: var(--font-size, inherit);
   font-weight: 600;
   line-height: 1;

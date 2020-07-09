@@ -1,0 +1,41 @@
+.newsletter-form fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.newsletter-form label {
+  display: block;
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  padding: 0 0 var(--g-row) 4px;
+}
+
+.newsletter-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0;
+  border-radius: 6px 0 0 6px;
+  color: var(--color-text-primary);
+  flex: 1;
+  padding: 0.9em;
+  font-size: inherit;
+}
+
+.newsletter-form input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.newsletter-form .btn {
+  --border-radius: 0 6px 6px 0;
+}
+
+.newsletter-info {
+  margin-bottom: 0;
+  margin-top: 0.6rem;
+  padding: 0 6px;
+}
+
+.field--connected-btn {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size-2);
+}

@@ -1,23 +1,26 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents g-max-4-half">
-    <form>
+
+    <form class="newsletter-form g-max-2" action="#" method="post">
       <fieldset>
         <label for="newsletter-email">
           Subscribe to our newsletter
         </label>
-        <input id="newsletter-email" type="email" name="email" placeholder="Email address" required />
-        <button type="submit">Subscribe</button>
+        <div class="field--connected-btn">
+          <input id="newsletter-email" type="email" name="email" placeholder="Email address" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </div>
       </fieldset>
-      <p>
-        We share short updates about our process and progress.
+      <p class="newsletter-info">
+        We share brief updates about our process and progress. <br/><strong>Never spam</strong>.
       </p>
     </form>
 
-    <nav>
-      <a href="https://ideas42.com" target="_blank" rel="noopener">ideas42</a>
+    <nav class="contentinfo__nav">
       <a href="/model">Our Model</a>
       <a href="/about">About Us</a>
       <a href="/careers">Jobs</a>
+      <a href="https://ideas42.com" target="_blank" rel="noopener">ideas42</a>
     </nav>
   </div>
 </footer>

@@ -10,6 +10,10 @@ a {
   color: var(--color-accent-active);
 }
 
+input {
+  font-family: var(--font-body);
+}
+
 .standard-restricted-width {
   margin-left: auto;
   margin-right: auto;
