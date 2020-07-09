@@ -1,4 +1,19 @@
 .contentinfo {
-  background: linear-gradient(163.11deg, #ffeef6 22.94%, #e6d8ff 76.61%);
+  --color-pale-rider: #ffeef6;
+  --color-easter: #e6d8ff;
+  background-image: url("/images/footer-line.svg"),
+    linear-gradient(
+      163.11deg,
+      var(--color-pale-rider) 22.94%,
+      var(--color-easter) 76.61%
+    );
+  background-repeat: no-repeat;
+  background-size: 1400px 10px, auto;
+  background-position: top center, top left;
   padding: 2rem 0 4rem 0;
+}
+
+.contentinfo__contents {
+  margin: 0 auto;
+  padding: 0 var(--g-gutter-width);
 }

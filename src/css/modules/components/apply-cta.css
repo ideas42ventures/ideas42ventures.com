@@ -18,7 +18,7 @@
 
 .apply-cta__contents {
   margin: 0 auto;
-  padding: calc(var(--g-row) * 11) var(--g-gutter-width) calc(var(--g-row) * 8)
+  padding: calc(var(--g-row) * 11) var(--g-gutter-width) calc(var(--g-row) * 7)
     var(--g-gutter-width);
   position: relative;
   z-index: 10;
