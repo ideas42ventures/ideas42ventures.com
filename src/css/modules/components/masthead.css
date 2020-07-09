@@ -16,3 +16,8 @@
   top: 20px;
   z-index: 1;
 }
+
+.masthead__graphic--left {
+  left: initial;
+  right: 48%;
+}
