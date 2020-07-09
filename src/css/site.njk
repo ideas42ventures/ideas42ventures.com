@@ -3,13 +3,24 @@ permalink: css/site.css
 ---
 
 {% include "./modules/reset.css" %}
+
+{# tokens #}
+{% include "./modules/design-tokens/color.css" %}
+{% include "./modules/design-tokens/typography.css" %}
+
+{% include "./modules/grid.css" %}
+
 {% include "./modules/base.css" %}
 
 {# components #}
-{% include "./modules/button.css" %}
-{% include "./modules/banner.css" %}
-{% include "./modules/hero.css" %}
+{% include "./modules/components/apply-cta.css" %}
+{% include "./modules/components/banner.css" %}
+{% include "./modules/components/button.css" %}
+{% include "./modules/components/footer.css" %}
+{% include "./modules/components/hero.css" %}
+{% include "./modules/components/masthead.css" %}
+{% include "./modules/components/newsletter-form.css" %}
 
 {# pages #}
-{% include "./modules/home.css" %}
-{% include "./modules/apply.css" %}
+{% include "./modules/pages/home.css" %}
+{% include "./modules/pages/apply.css" %}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-page="{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
+
+<head>
+  {% include "layout-meta.njk" %}
+
+  <title>
+    {{ title or "ideas42 Venture Studio" }}
+  </title>
+
+  {% include "layout-styles.njk" %}
+</head>
+
+  <body>
+    <div class="masthead">
+      {% block masthead %}
+        {% include "banner.njk" %}
+      {% endblock %}
+    </div>
+
+    <main>
+    {% block main %}{% endblock %}
+    </main>
+
+    {% block footer %}
+      {% if noApplyCta != true %}
+        {% include "components/apply-cta.njk" %}
+      {% endif %}
+      
+      {% include "footer.njk" %}
+    {% endblock %}
+  </body>
+</html>

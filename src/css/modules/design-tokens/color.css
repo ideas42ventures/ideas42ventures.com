@@ -1,0 +1,14 @@
+html {
+  /* color definitions */
+  --color-ideas42-green: #8cba43;
+  --color-electric-panther: #e50053;
+  --color-eggplant: #1d0354;
+  --color-praise-be-purple: #8f00ff;
+
+  /* color general aliases */
+  --color-accent-active: var(--color-electric-panther);
+  --color-accent-primary: var(--color-praise-be-purple);
+  --color-text-primary: var(--color-eggplant);
+
+  --gradient-accent: linear-gradient(88deg, #f3568f 40%, #c81ef2);
+}

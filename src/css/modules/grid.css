@@ -1,0 +1,55 @@
+html {
+  /* 
+    Pixel values. We don't use these directly in styles. We use these to
+    calculate relative units. These are here so we don't have to math in our heads
+   */
+  --g-max-width-px: 1360;
+  --g-col-width-px: 256;
+  --g-gutter-width-px: 20;
+
+  --g-max-width: calc(var(--g-max-width-px) / 16 * 1rem);
+  --g-col-width: calc(var(--g-col-width-px) / 16 * 1rem);
+  --g-gutter-width: calc(var(--g-gutter-width-px) / 16 * 1rem);
+  --g-row: 0.625rem;
+
+  --g-cols-2--fixed: calc(var(--g-col-width) * 2 + var(--g-gutter-width));
+  --g-cols-2-dot-5--fixed: calc(
+    var(--g-col-width) * 2.5 + calc(var(--g-gutter-width) * 2)
+  );
+  --g-cols-3--fixed: calc(
+    var(--g-col-width) * 3 + calc(var(--g-gutter-width) * 2)
+  );
+  --g-cols-3-dot-5--fixed: calc(
+    var(--g-col-width) * 3.5 + calc(var(--g-gutter-width) * 3)
+  );
+  --g-cols-4--fixed: calc(
+    var(--g-col-width) * 4 + calc(var(--g-gutter-width) * 3)
+  );
+  --g-cols-4-dot-5--fixed: calc(
+    var(--g-col-width) * 4.5 + calc(var(--g-gutter-width) * 4)
+  );
+}
+
+.g-right {
+  margin-left: auto;
+}
+
+.g-max-2 {
+  max-width: var(--g-cols-2--fixed);
+}
+
+.g-max-2-half {
+  max-width: var(--g-cols-2-dot-5--fixed);
+}
+
+.g-max-3 {
+  max-width: var(--g-cols-3--fixed);
+}
+
+.g-max-3-half {
+  max-width: var(--g-cols-3-dot-5--fixed);
+}
+
+.g-max-4-half {
+  max-width: var(--g-cols-4-dot-5--fixed);
+}

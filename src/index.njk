@@ -1,34 +1,36 @@
----
-layout: default.njk
----
+{% extends "base.njk" %}
 
-<div class="hero hero--home standard-restricted-width">
-  <h1 class="hero__title">We Help Build Companies to Solve Massive Social Challenges</h1>
-  <p class="hero__body">
-    We do this by recruiting entrepreneurs, surrounding them with design,
-    technology, and behavioral science talent, and connecting them to enterprises
-    with meaningful problems.
-  </p>
-</div>
+{% block masthead %}
+  {{ super() }}
+  <div class="hero hero--home standard-restricted-width">
+    <h1 class="hero__title">We Help Build Companies to Solve Massive Social Challenges</h1>
+    <p class="hero__body g-max-3">
+      We do this by recruiting entrepreneurs, surrounding them with design,
+      technology, and behavioral science talent, and connecting them to enterprises
+      with meaningful problems.
+    </p>
+  </div>
+  <img class="masthead__graphic" src="/images/masthead-graphic-sphere.svg" alt="" />
+{% endblock %}
 
+{% block main %}
 <div class="standard-restricted-width home-model">
-  <header class="content-block__intro">
-    <h2>Our Model</h2>
+  <header class="content-block__intro g-max-4-half">
+    <h2>What We Do</h2>
     <p>
       We operate a 22-month cohort model, with 4-6 entrepreneurs per cohort. During
       the first 4 months we recruit entrepreneurs. For 18 months, we work alongside
       those entrepreneurs during an intense research, design, prototype, sell, pilot
-      deployment, and fundraising process.
+      deployment, and fundraising process. At the end of the process, we expect 
+      every one of our entrepreneurs to have a company they will continue to 
+      nurture and grow far beyond the Venture Studio.
     </p>
-    <p>
-      At the end of the process, we expect every one of our entrepreneurs to have a
-      company they will continue to nurture and grow far beyond the Venture Studio.
-    </p>
+    <p><a href="/model">More about our model</a></p>
   </header>
 </div>
 
-<div class="standard-restricted-width">
-  <header class="content-block__intro">
+<div class="standard-restricted-width home-benefits">
+  <header class="content-block__intro g-max-3">
     <h2>What We Provide</h2>
     <p>
       We won’t have all the answers and we won’t have it all figured out when you
@@ -37,7 +39,7 @@ layout: default.njk
     </p>
   </header>
 
-  <ul class="home-benefits">
+  <ul class="home-benefits__list g-max-3">
     <li>
       <h3>Compensation</h3>
       <p>
@@ -62,18 +64,18 @@ layout: default.njk
   </ul>
 </div>
 
-<div class="standard-restricted-width">
-  <header class="content-block__intro">
+<div class="standard-restricted-width home-portfolio">
+  <header class="content-block__intro g-max-4-half">
     <h2>Our Portfolio</h2>
     <p>
       Companies we’re working with today.
     </p>
   </header>
 
-  <ul class="home-portfolio">
+  <ul class="home-portfolio__list">
     <li>
       <a href="https://everydaylabs.com/" target="_blank" rel="noopener"
-        ><img src="" alt="EveryDay Labs logomark"
+        ><img src="/images/portfolio-logo-everyday-labs.png" alt="EveryDay Labs logomark"
       /></a>
       <p>
         Working with school districts to reduce K-12 chronic absenteeism.
@@ -81,7 +83,7 @@ layout: default.njk
     </li>
     <li>
       <a href="https://asknickels.com/" target="_blank" rel="noopener"
-        ><img src="" alt="Nickels logomark"
+        ><img src="/images/portfolio-logo-nickels.png" alt="Nickels logomark"
       /></a>
       <p>
         Helping borrowers manage their student debt and avoid default.
@@ -89,43 +91,24 @@ layout: default.njk
     </li>
     <li>
       <a href="https://www.vergil.app/" target="_blank" rel="noopener"
-        ><img src="" alt="Vergil logomark"
+        ><img src="/images/portfolio-logo-vergil.png" alt="Vergil logomark"
       /></a>
       <p>
         Working with state and local governments to reduce recidivism.
       </p>
     </li>
     <li>
-      <a href="/apply"><img src="" alt="Your Co. mock logomark" /></a>
+      <a href="/apply"><img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" /></a>
       <p>
         We’re looking for entrepreneurs to build their companies with us.
       </p>
     </li>
     <li>
-      <a href="/apply"><img src="" alt="Your Co. mock logomark" /></a>
+      <a href="/apply"><img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" /></a>
       <p>
         We’re looking for entrepreneurs to build their companies with us.
       </p>
     </li>
   </ul>
 </div>
-
-<div class="standard-restricted-width home-apply-cta">
-  <div class="home-apply-cta__contents">
-    <header class="content-block__intro">
-      <h2>Interested?</h2>
-      <p>
-        We’ve partnered with Wells Fargo for our first cohort; The Venture 
-        Studio for Shared Prosperity. During this cohort we’ll build companies 
-        dedicated to improving financial health.
-      </p>
-    </header>
-    <div class="home-apply-cta__action">
-      <a href="/apply" class="btn home-apply-cta__btn">Apply</a>
-      <p>
-        Even if you’re not 100% sure yet, but you think this sounds like you, 
-        we want to hear from you.
-      </p>
-    </div>
-  </div>
-</div>
+{% endblock %}

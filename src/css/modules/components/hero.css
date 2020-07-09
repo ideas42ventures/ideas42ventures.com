@@ -1,0 +1,35 @@
+.hero {
+  padding-top: calc(var(--g-row) * 8);
+  position: relative;
+  z-index: 10;
+}
+
+.hero__title {
+  font-size: min(13vw, var(--max-size, var(--font-size-8)));
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hero__tag {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: var(--font-size-2);
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  text-transform: uppercase;
+}
+
+.hero__body {
+  font-size: var(--font-size-5);
+  line-height: 1.55;
+}
+
+.hero__body--first-lined::first-line {
+  font-size: 90%;
+  font-weight: 700;
+  text-transform: uppercase;
+}

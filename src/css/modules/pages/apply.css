@@ -1,9 +1,5 @@
-[data-page="apply"] {
-  --color-accent-primary: var(--color-nuclear-pumpkin);
-}
-
 .apply-process-intro {
-  margin: calc(var(--g-row) * 17) auto 0 auto;
+  margin: calc(var(--g-row) * 10) auto 0 auto;
   max-width: var(--g-cols-3--fixed);
 }
 
@@ -66,7 +62,7 @@
 
 @media (min-width: 68em) {
   .apply__steps li::before {
-    left: max(-11vw, calc(var(--g-col-width-rel) / -1.75));
+    left: max(-11vw, calc(var(--g-col-width) / -1.75));
     position: absolute;
   }
 }
