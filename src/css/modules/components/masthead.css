@@ -21,3 +21,8 @@
   left: initial;
   right: 48%;
 }
+
+.masthead__graphic--collage {
+  right: 52%;
+  top: 75px;
+}
