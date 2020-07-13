@@ -1,0 +1,17 @@
+{
+  "short_name": "ideas42 Venture Studio",
+  "name": "ideas42 Venture Studio",
+  "description": "The ideas42 Venture Studio",
+  "icons": [
+    {
+      "src": "/images/pwa-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#e50053"
+}
