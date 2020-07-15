@@ -1,5 +1,5 @@
 .hero {
-  padding-top: calc(var(--g-row) * 8);
+  padding-top: min(5vw, calc(var(--g-row) * 8));
   position: relative;
   z-index: 10;
 }
