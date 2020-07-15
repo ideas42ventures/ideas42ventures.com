@@ -1,5 +1,5 @@
 .hero--home .hero__title {
-  --max-size: 5.125rem;
+  --max-size: 5.375rem;
 }
 
 .hero--home .hero__body {
@@ -15,7 +15,6 @@
 }
 
 .home-model {
-  /* margin-top: calc(var(--g-row) * 8); */
   margin-top: -8rem;
   position: relative;
 }
