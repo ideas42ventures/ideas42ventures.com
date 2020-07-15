@@ -15,7 +15,6 @@
 }
 
 .home-model {
-  /* margin-top: calc(var(--g-row) * 8); */
   margin-top: -8rem;
   position: relative;
 }
