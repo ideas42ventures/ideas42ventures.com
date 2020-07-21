@@ -3,10 +3,6 @@
   max-width: var(--g-cols-3--fixed);
 }
 
-.apply__details {
-  color: var(--color-accent-primary);
-}
-
 .content-block__intro .apply__details {
   margin-top: var(--g-row);
   font-size: var(--font-size-2);
