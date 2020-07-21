@@ -2,7 +2,6 @@ const tokens = {
   color: [
     ["--color-electric-panther", "#e50053"],
     ["--color-eggplant", "#1D0354"],
-    ["--color-praise-be-purple", "#8f00ff"],
     ["--color-accent-active", "var(--color-electric-panther)"],
     ["--color-text-primary", "var(--color-eggplant)"],
   ],

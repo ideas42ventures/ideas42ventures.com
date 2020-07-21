@@ -11,17 +11,17 @@
 }
 
 .newsletter-form input {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-text-primary);
   border: 0;
   border-radius: 8px 0 0 8px;
-  color: var(--color-text-primary);
+  color: var(--color-text-light);
   flex: 1;
   padding: 0.9em;
   font-size: inherit;
 }
 
-.newsletter-form input:focus {
-  background-color: rgba(255, 255, 255, 1);
+.newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .newsletter-form .btn {
@@ -31,17 +31,21 @@
 .newsletter-info {
   margin-bottom: calc(var(--g-row) * 3);
   margin-top: 0;
+  opacity: 0.8;
 }
 
 .field--connected-btn {
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   display: flex;
   flex-wrap: wrap;
   font-size: var(--font-size-2);
 }
 
-.field--connected-btn label {
+.newsletter-form label {
+  display: block;
   font-size: var(--font-size-0);
   font-weight: 500;
-  padding: 0 0 0.4rem 0;
+  opacity: 0.8;
+  padding: 0 0 0.8rem 0;
   width: 100%;
 }
