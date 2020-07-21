@@ -1,7 +1,5 @@
 .masthead {
   background-color: var(--color-white);
-  background-image: url("/images/masthead-detail.svg"),
-    linear-gradient(rgb(82, 0, 255, 0), rgb(82, 0, 255, 0.04));
   background-repeat: repeat-x, no-repeat;
   background-position: left bottom, top left;
   overflow: hidden;

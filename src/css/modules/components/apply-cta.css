@@ -1,5 +1,6 @@
 .apply-cta {
-  background-color: #ffeef6;
+  background: var(--color-text-primary);
+  color: var(--color-text-light);
   position: relative;
 }
 
@@ -8,39 +9,71 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
   content: "";
   display: block;
-  height: calc(var(--g-row) * 10);
+  height: calc(var(--g-row) * 12);
   pointer-events: none;
   position: absolute;
-  top: 0;
+  top: -2px;
   width: 100%;
   z-index: 1;
 }
 
 .apply-cta__contents {
+  --padding-h: var(--g-gutter-width);
   margin: 0 auto;
-  padding: calc(var(--g-row) * 11) var(--g-gutter-width) calc(var(--g-row) * 7)
-    var(--g-gutter-width);
+  padding: calc(var(--g-row) * 11) var(--padding-h) calc(var(--g-row) * 7)
+    var(--padding-h);
   position: relative;
   z-index: 10;
+}
+
+.apply-cta h3,
+.apply-cta__contents p {
+  opacity: 0.8;
 }
 
 .apply-cta h2 {
   margin-top: 0;
 }
 
+.apply-cta h3 {
+  font-size: var(--font-size-2);
+  font-weight: normal;
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
 .apply-cta__action {
   --margin-top: calc(var(--g-row) * 4);
   margin: var(--margin-top) auto 0 auto;
   max-width: var(--g-cols-2--fixed);
+  position: relative;
   text-align: center;
   width: 100%;
 }
 
-.apply-cta__btn {
+.apply-cta__action::before {
+  background: transparent url("/images/triangle-bright.svg") no-repeat center;
+  background-size: 15rem;
+  content: "";
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  top: -15.3125rem;
+  height: 15rem;
+  width: 100%;
+}
+
+.btn.apply-cta__btn {
   --padding-v: 1em;
   --border-radius: 12px;
   --font-size: var(--font-size-5);
   width: 100%;
+}
+
+@media (min-width: 37.5em) {
+  .apply-cta__contents {
+    --padding-h: calc(var(--g-gutter-width) * 2.5);
+  }
 }
 
 @media (min-width: 50em) {
@@ -63,5 +96,9 @@
     --margin-top: calc(var(--g-row) * 11);
     margin-right: 0;
     max-width: calc(var(--g-col-width) + var(--g-gutter-width));
+  }
+
+  .apply-cta__action::before {
+    background-size: 85%;
   }
 }
