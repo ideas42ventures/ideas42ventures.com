@@ -17,9 +17,10 @@
 }
 
 .apply-cta__contents {
+  --padding-h: var(--g-gutter-width);
   margin: 0 auto;
-  padding: calc(var(--g-row) * 11) var(--g-gutter-width) calc(var(--g-row) * 7)
-    var(--g-gutter-width);
+  padding: calc(var(--g-row) * 11) var(--padding-h) calc(var(--g-row) * 7)
+    var(--padding-h);
   position: relative;
   z-index: 10;
 }
@@ -41,6 +42,12 @@
   --border-radius: 12px;
   --font-size: var(--font-size-5);
   width: 100%;
+}
+
+@media (min-width: 37.5em) {
+  .apply-cta__contents {
+    --padding-h: calc(var(--g-gutter-width) * 2.5);
+  }
 }
 
 @media (min-width: 50em) {

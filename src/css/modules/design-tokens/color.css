@@ -7,7 +7,6 @@ html {
 
   /* color general aliases */
   --color-accent-active: var(--color-electric-panther);
-  --color-accent-primary: var(--color-praise-be-purple);
   --color-text-primary: var(--color-eggplant);
 
   --gradient-accent: linear-gradient(88deg, #f3568f 40%, #c81ef2);

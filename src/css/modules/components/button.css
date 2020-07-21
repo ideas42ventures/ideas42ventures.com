@@ -1,4 +1,6 @@
 .btn {
+  --padding-v: 0.7em;
+  --padding-h: 1.2em;
   background: var(--color-accent-active);
   border-radius: var(--border-radius, 8px);
   border: 0;
@@ -9,7 +11,7 @@
   font-size: var(--font-size, inherit);
   font-weight: 600;
   line-height: 1;
-  padding: var(--padding-v, 0.7em) var(--padding-h, 1.2em);
+  padding: var(--padding-v) var(--padding-h);
   text-align: center;
   text-decoration: none;
 }

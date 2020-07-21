@@ -14,8 +14,9 @@
 }
 
 .contentinfo__contents {
+  --padding-h: var(--g-gutter-width);
   margin: 0 auto;
-  padding: 0 var(--g-gutter-width);
+  padding: 0 var(--padding-h);
 }
 
 .contentinfo__nav {
@@ -35,4 +36,10 @@
 .contentinfo__nav a:focus {
   color: var(--color-accent-active);
   text-decoration: underline;
+}
+
+@media (min-width: 37.5em) {
+  .contentinfo__contents {
+    --padding-h: calc(var(--g-gutter-width) * 2.5);
+  }
 }

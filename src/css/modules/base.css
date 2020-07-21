@@ -15,11 +15,12 @@ input {
 }
 
 .standard-restricted-width {
+  --padding-h: var(--g-gutter-width);
   margin-left: auto;
   margin-right: auto;
   max-width: var(--g-max-width);
-  padding-left: var(--g-gutter-width);
-  padding-right: var(--g-gutter-width);
+  padding-left: var(--padding-h);
+  padding-right: var(--padding-h);
 }
 
 .content-block__intro {
@@ -29,4 +30,10 @@ input {
 
 .content-block__intro p:first-of-type:not([class]) {
   margin-top: 1.25rem;
+}
+
+@media (min-width: 37.5em) {
+  .standard-restricted-width {
+    --padding-h: calc(var(--g-gutter-width) * 2.5);
+  }
 }
