@@ -1,5 +1,5 @@
 .apply-cta {
-  background-color: #ffeef6;
+  background-color: #ffe0ef;
   position: relative;
 }
 
@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-.apply-cta__btn {
+.btn.apply-cta__btn {
   --padding-v: 1em;
   --border-radius: 12px;
   --font-size: var(--font-size-5);
