@@ -9,7 +9,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
   content: "";
   display: block;
-  height: calc(var(--g-row) * 12);
+  height: calc(var(--g-row) * 20);
   pointer-events: none;
   position: absolute;
   top: -2px;
@@ -20,7 +20,7 @@
 .apply-cta__contents {
   --padding-h: var(--g-gutter-width);
   margin: 0 auto;
-  padding: calc(var(--g-row) * 11) var(--padding-h) calc(var(--g-row) * 7)
+  padding: calc(var(--g-row) * 16) var(--padding-h) calc(var(--g-row) * 10)
     var(--padding-h);
   position: relative;
   z-index: 10;
@@ -37,7 +37,7 @@
 
 .apply-cta h3 {
   font-size: var(--font-size-2);
-  font-weight: normal;
+  font-weight: 400;
   margin-top: 0.4rem;
   margin-bottom: 1.4rem;
 }

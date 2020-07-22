@@ -1,17 +1,19 @@
 .btn {
   --padding-v: 0.7em;
-  --padding-h: 1.2em;
+  --padding-v-bump: calc(var(--padding-v) * 0.25em);
+  --padding-h: 1.5em;
   background: var(--color-accent-active) var(--gradient-accent);
   border-radius: var(--border-radius, 8px);
   border: 0;
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-size: var(--font-size, inherit);
   font-weight: 600;
   line-height: 1;
-  padding: var(--padding-v) var(--padding-h);
+  padding: calc(var(--padding-v) + 0.18em) var(--padding-h) var(--padding-v)
+    var(--padding-h);
   text-align: center;
   text-decoration: none;
 }

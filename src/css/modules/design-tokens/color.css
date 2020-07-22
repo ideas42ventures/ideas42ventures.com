@@ -10,5 +10,5 @@ html {
   --color-text-primary: var(--color-eggplant);
   --color-text-light: var(--color-not-quite-white);
 
-  --gradient-accent: linear-gradient(88deg, #f3568f 40%, #c81ef2);
+  --gradient-accent: linear-gradient(91deg, #f3568f 40%, #c81ef2);
 }

@@ -36,10 +36,10 @@ module.exports = {
       return `
       <ul class="token__list">
         <li class="font">
-          <h3 class="token__sample font--display">Aglet Slab</h3>
+          <h3 class="token__sample font--display">Epilogue</h3>
           <div class="token__info">
             <p>
-              Ultra weight only, 900. via Adobe Fonts (Typekit)
+              Used for headings and display. Variable font. Weights 100-900.
             </p>
 
             <code>--font-display</code>
