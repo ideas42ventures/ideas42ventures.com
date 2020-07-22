@@ -1,12 +1,19 @@
 .hero--home .hero__title {
-  --max-size: 5.75rem;
+  --max-size: var(--font-size-9);
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .hero--home .hero__body {
   font-size: var(--font-size-6);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.hero--home .hero__body,
 .home-model .content-block__intro,
 .home-portfolio .content-block__intro,
 .home-benefits .content-block__intro,

@@ -4,7 +4,7 @@
 }
 
 .banner__contents {
-  padding-top: 1.25rem;
+  padding-top: 1rem;
 }
 
 .banner__nav {
@@ -14,24 +14,15 @@
   margin: calc(var(--g-row) * 2) 0;
 }
 
-.banner::after {
-  background: transparent url("/images/banner-line.svg") no-repeat;
-  background-size: auto 16px;
-  content: "";
-  display: block;
-  height: 26px;
-  width: 100%;
-}
-
 .banner__logo {
   display: block;
   width: 10rem;
 }
 
 .banner__nav-item {
-  background-color: var(--color-white);
   color: var(--text-primary);
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-weight: 600;
   position: relative;
   text-decoration: none;
 }
@@ -48,9 +39,9 @@
   content: "";
   display: block;
   height: var(--size);
-  left: calc(var(--size) * -1);
+  left: calc(var(--size) * -1.1);
   position: absolute;
-  top: calc(var(--size) * -0.4);
+  top: calc(var(--size) * -0.6);
   transform: scale3d(0, 0, 0);
   transition: transform 0.12s ease;
   width: var(--size);

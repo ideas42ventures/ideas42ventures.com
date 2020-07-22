@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "Epilogue";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("/css/fonts/epilogue.var.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Inter var";
   font-weight: 100 900;
   font-display: swap;
@@ -8,19 +16,19 @@
 }
 
 html {
-  --font-display: aglet-sans, sans-serif;
+  --font-display: Epilogue, sans-serif;
   --font-body: "Inter var", helvetica, sans-serif;
 
   /* Using calc here to document the pixel value */
-  --font-size-0: calc(15 / 16 * 1rem);
-  --font-size-1: calc(16 / 16 * 1rem);
+  --font-size-1: 1rem;
   --font-size-2: calc(18 / 16 * 1rem);
   --font-size-3: calc(20 / 16 * 1rem);
   --font-size-4: calc(22 / 16 * 1rem);
   --font-size-5: calc(24 / 16 * 1rem);
-  --font-size-6: calc(28 / 16 * 1rem);
-  --font-size-7: calc(44 / 16 * 1rem);
-  --font-size-8: calc(66 / 16 * 1rem);
+  --font-size-6: calc(26 / 16 * 1rem);
+  --font-size-7: calc(42 / 16 * 1rem);
+  --font-size-8: calc(60 / 16 * 1rem);
+  --font-size-9: calc(88 / 16 * 1rem);
 }
 
 .font--body {
@@ -37,7 +45,7 @@ h6 {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .font--display,

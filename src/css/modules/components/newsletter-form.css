@@ -43,8 +43,8 @@
 
 .newsletter-form label {
   display: block;
-  font-size: var(--font-size-0);
-  font-weight: 500;
+  font-size: var(--font-size-1);
+  font-weight: 600;
   opacity: 0.8;
   padding: 0 0 0.8rem 0;
   width: 100%;

@@ -37,7 +37,7 @@
 
 .apply-cta h3 {
   font-size: var(--font-size-2);
-  font-weight: normal;
+  font-weight: 400;
   margin-top: 0.4rem;
   margin-bottom: 1.4rem;
 }

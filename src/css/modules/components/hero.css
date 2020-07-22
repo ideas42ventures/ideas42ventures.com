@@ -1,11 +1,12 @@
 .hero {
-  padding-top: min(5vw, calc(var(--g-row) * 8));
+  padding-top: min(10vw, calc(var(--g-row) * 10));
   position: relative;
   z-index: 10;
 }
 
 .hero__title {
-  font-size: min(13vw, var(--max-size, var(--font-size-8)));
+  font-size: min(11vw, var(--max-size, var(--font-size-8)));
+  line-height: 1.2;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -19,17 +20,17 @@
   font-size: var(--font-size-2);
   font-family: var(--font-display);
   font-weight: 600;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.4rem 0;
   text-transform: uppercase;
 }
 
 .hero__body {
   font-size: var(--font-size-5);
-  line-height: 1.55;
+  line-height: 1.75;
 }
 
 .hero__body--first-lined::first-line {
   font-size: 90%;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }

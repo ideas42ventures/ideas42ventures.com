@@ -1,8 +1,5 @@
 .masthead {
   background-color: var(--color-white);
-  background-repeat: repeat-x, no-repeat;
-  background-position: left bottom, top left;
-  overflow: hidden;
   padding-bottom: calc(var(--g-row) * 13);
   position: relative;
 }
