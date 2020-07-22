@@ -1,6 +1,7 @@
 .masthead {
   background-color: var(--color-white);
-  padding-bottom: calc(var(--g-row) * 13);
+  padding-bottom: calc(var(--g-row) * 14);
+  overflow: hidden;
   position: relative;
 }
 
@@ -8,16 +9,11 @@
   pointer-events: none;
   position: absolute;
   left: 48%;
-  top: 20px;
+  top: 1.875rem;
   z-index: 1;
 }
 
 .masthead__graphic--left {
   left: initial;
-  right: 48%;
-}
-
-.masthead__graphic--collage {
   right: 52%;
-  top: 75px;
 }

@@ -31,25 +31,21 @@
 }
 
 .home-model::before {
-  background: transparent url("/images/content-connector-line.svg") no-repeat
-    top left;
-  background-size: 95%;
-  background-position: 100% top;
+  background: transparent url("/images/content-connector-line-straight.svg")
+    no-repeat;
+  background-position: top center;
   content: "";
   display: block;
-  margin-bottom: -5.5rem;
-  transform: scaleX(-100%);
-  height: 40vw;
+  height: 21.5rem;
+  margin-left: auto;
+  max-width: var(--g-cols-4--fixed);
   width: 100%;
 }
 
 @media (min-width: 50em) {
   .home-model::before {
-    background-position: left top;
-    background-size: auto;
-    transform: scaleX(100%);
-    margin-bottom: -4.5rem;
-    height: 406px;
+    background-image: url("/images/content-connector-line.svg");
+    background-position: top left;
   }
 }
 
