@@ -9,7 +9,7 @@
   --padding-h: var(--g-gutter-width);
   background: transparent url("/images/footer-line.svg") no-repeat left top;
   margin: 0 auto;
-  padding: calc(var(--g-row) * 8) var(--padding-h) 0 var(--padding-h);
+  padding: calc(var(--g-row) * 10) var(--padding-h) 0 var(--padding-h);
 }
 
 .contentinfo__nav {
