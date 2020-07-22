@@ -1,17 +1,15 @@
 .contentinfo {
-  background-image: url("/images/footer-line.svg"),
-    linear-gradient(140deg, #1d0354 40%, #9111b9 115%);
-  background-repeat: no-repeat;
-  background-size: 1200px 10px, auto;
-  background-position: top center, top left;
+  background: linear-gradient(140deg, #1d0354 40%, #9111b9 115%) no-repeat top
+    left;
   color: var(--color-text-light);
-  padding: calc(var(--g-row) * 8) 0 calc(var(--g-row) * 12) 0;
+  padding-bottom: calc(var(--g-row) * 12);
 }
 
 .contentinfo__contents {
   --padding-h: var(--g-gutter-width);
+  background: transparent url("/images/footer-line.svg") no-repeat left top;
   margin: 0 auto;
-  padding: 0 var(--padding-h);
+  padding: calc(var(--g-row) * 8) var(--padding-h) 0 var(--padding-h);
 }
 
 .contentinfo__nav {

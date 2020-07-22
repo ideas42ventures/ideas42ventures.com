@@ -20,7 +20,7 @@
 .apply-cta__contents {
   --padding-h: var(--g-gutter-width);
   margin: 0 auto;
-  padding: calc(var(--g-row) * 16) var(--padding-h) calc(var(--g-row) * 7)
+  padding: calc(var(--g-row) * 16) var(--padding-h) calc(var(--g-row) * 10)
     var(--padding-h);
   position: relative;
   z-index: 10;
