@@ -1,0 +1,39 @@
+@media (hover: hover) {
+  h1 .header-anchor,
+  h2 .header-anchor,
+  h3 .header-anchor,
+  h4 .header-anchor,
+  h5 .header-anchor,
+  h6 .header-anchor {
+    opacity: 0;
+  }
+
+  h1:hover .header-anchor,
+  h2:hover .header-anchor,
+  h3:hover .header-anchor,
+  h4:hover .header-anchor,
+  h5:hover .header-anchor,
+  h6:hover .header-anchor {
+    opacity: 1;
+  }
+}
+
+.header-anchor {
+  display: block;
+  font-size: 87%;
+  text-decoration: none;
+  transition: opacity 0.1s ease;
+}
+
+.header-anchor:hover,
+.header-anchor:focus {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (min-width: 37.5em) {
+  .header-anchor {
+    display: inline-block;
+    margin-left: -1.12em;
+  }
+}
