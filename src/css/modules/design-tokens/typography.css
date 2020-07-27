@@ -20,6 +20,7 @@ html {
   --font-body: "Inter var", helvetica, sans-serif;
 
   /* Using calc here to document the pixel value */
+  --font-size-0: calc(14 / 16 * 1rem);
   --font-size-1: 1rem;
   --font-size-2: calc(18 / 16 * 1rem);
   --font-size-3: calc(20 / 16 * 1rem);
@@ -65,4 +66,13 @@ h3 {
   font-size: var(--font-size-5);
   font-weight: 600;
   margin-bottom: 0;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+strong,
+b {
+  font-weight: 600;
 }
