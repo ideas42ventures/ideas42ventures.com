@@ -84,7 +84,6 @@
 
   .apply-cta .content-block__intro {
     flex: 1 1;
-    max-width: var(--g-cols-3--fixed);
     padding-right: calc(var(--g-gutter-width) * 4);
   }
 
@@ -94,7 +93,6 @@
 
   .apply-cta__action {
     --margin-top: calc(var(--g-row) * 11);
-    margin-right: 0;
     max-width: calc(var(--g-col-width) + var(--g-gutter-width));
   }
 

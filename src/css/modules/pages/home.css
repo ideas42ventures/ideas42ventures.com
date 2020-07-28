@@ -15,9 +15,7 @@
 }
 
 .home-model .content-block__intro,
-.home-portfolio .content-block__intro,
-.home-benefits .content-block__intro,
-.home-benefits__list {
+.home-portfolio .content-block__intro {
   margin-left: auto;
 }
 
@@ -51,7 +49,7 @@
 
 .home-benefits,
 .home-portfolio {
-  margin-top: calc(var(--g-row) * 18);
+  margin-top: calc(var(--g-row) * 16);
 }
 
 .home-benefits__list {
