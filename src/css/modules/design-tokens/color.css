@@ -14,3 +14,10 @@ html {
 
   --gradient-accent: linear-gradient(91deg, #f3568f 40%, #c81ef2);
 }
+
+.gradient-text {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
