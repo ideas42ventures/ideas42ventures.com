@@ -50,6 +50,10 @@ html {
   max-width: var(--g-cols-3-dot-5--fixed);
 }
 
+.g-max-4 {
+  max-width: var(--g-cols-4--fixed);
+}
+
 .g-max-4-half {
   max-width: var(--g-cols-4-dot-5--fixed);
 }
