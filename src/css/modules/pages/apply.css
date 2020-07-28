@@ -1,5 +1,18 @@
+.apply__founders-body {
+  column-count: 2;
+  column-width: calc(var(--g-col-width) * 1.5 + var(--g-gutter-width));
+  column-gap: calc(var(--g-gutter-width) * 2.25);
+  font-size: var(--font-size-3);
+  line-height: 1.6;
+  margin-top: calc(var(--g-row) * 5);
+}
+
+.apply__founders-body p:first-child {
+  margin-top: 0;
+}
+
 .apply-process-intro {
-  margin: calc(var(--g-row) * 10) auto 0 auto;
+  margin-top: calc(var(--g-row) * 20);
 }
 
 .timeline {
