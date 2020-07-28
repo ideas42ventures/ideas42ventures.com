@@ -49,7 +49,7 @@
 
 .home-benefits,
 .home-portfolio {
-  margin-top: calc(var(--g-row) * 18);
+  margin-top: calc(var(--g-row) * 16);
 }
 
 .home-benefits__list {
