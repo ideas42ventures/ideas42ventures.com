@@ -34,6 +34,11 @@ html {
   margin-left: auto;
 }
 
+.g-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .g-max-2 {
   max-width: var(--g-cols-2--fixed);
 }

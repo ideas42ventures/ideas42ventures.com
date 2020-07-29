@@ -4,6 +4,10 @@
   z-index: 10;
 }
 
+.hero--centered {
+  text-align: center;
+}
+
 .hero__title {
   font-size: min(11vw, var(--max-size, var(--font-size-8)));
   line-height: 1.2;
@@ -33,4 +37,11 @@
   font-size: 90%;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.hero__btn {
+  --padding-v: 1em;
+  --padding-h: 2em;
+  --border-radius: 12px;
+  --font-size: var(--font-size-4);
 }
