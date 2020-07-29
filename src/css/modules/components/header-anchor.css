@@ -6,6 +6,7 @@
   h5 .header-anchor,
   h6 .header-anchor {
     opacity: 0;
+    transform: scale(0);
   }
 
   h1:hover .header-anchor,
@@ -13,8 +14,11 @@
   h3:hover .header-anchor,
   h4:hover .header-anchor,
   h5:hover .header-anchor,
-  h6:hover .header-anchor {
+  h6:hover .header-anchor,
+  .header-anchor:hover,
+  .header-anchor:focus {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -22,12 +26,11 @@
   display: block;
   font-size: 87%;
   text-decoration: none;
-  transition: opacity 0.1s ease;
+  transition: 0.12s ease;
 }
 
 .header-anchor:hover,
 .header-anchor:focus {
-  opacity: 1;
   text-decoration: underline;
 }
 

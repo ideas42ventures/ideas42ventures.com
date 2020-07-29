@@ -11,10 +11,6 @@
   margin-top: 0;
 }
 
-.apply-process-intro {
-  margin-top: calc(var(--g-row) * 20);
-}
-
 .timeline {
   margin-top: calc(var(--g-row) * 4);
 }
@@ -181,8 +177,4 @@
 .apply__timeline,
 .apply__phases {
   margin-top: calc(var(--g-row) * 10);
-}
-
-.apply__phases {
-  padding-bottom: 4rem;
 }

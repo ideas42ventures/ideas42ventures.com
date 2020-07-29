@@ -17,3 +17,9 @@
   left: initial;
   right: 52%;
 }
+
+.masthead__graphic--centered {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
