@@ -72,6 +72,17 @@ html {
   padding-right: var(--padding-h);
 }
 
+.g-section-vertical {
+  --padding-t: calc(var(--g-row) * 10);
+  --padding-b: calc(var(--g-row) * 10);
+  padding-top: var(--padding-t);
+  padding-bottom: var(--padding-b);
+}
+
+.g-section-vertical + .g-section-vertical {
+  --padding-t: 0;
+}
+
 @media (min-width: 37.5em) {
   .standard-restricted-width {
     --padding-h: calc(var(--g-gutter-width) * 2.5);
