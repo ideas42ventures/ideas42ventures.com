@@ -191,8 +191,9 @@
 .timeline__event:nth-child(6) {
   border-left: 1px solid var(--color-text-primary);
   grid-column: 121 / 150;
+  padding-right: 1.25rem;
   padding-left: 1.75rem;
-  padding-top: 1.75rem;
+  padding-top: 2rem;
   margin-top: calc(var(--g-row) * -5);
   text-align: left;
 }
