@@ -17,6 +17,24 @@
 
 .timeline__month {
   padding-bottom: var(--g-row);
+  position: relative;
+}
+
+.timeline__month strong {
+  position: relative;
+}
+
+.timeline__month:last-child::before {
+  background: white url("/images/triangle-bright.svg") no-repeat center;
+  background-size: 95%;
+  content: "";
+  display: block;
+  height: 6.6875rem;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -46px;
+  width: 7.3125rem;
 }
 
 .timeline__month + .timeline__month {
