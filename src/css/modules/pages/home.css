@@ -1,9 +1,5 @@
 .hero--home .hero__title {
   --max-size: var(--font-size-9);
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
