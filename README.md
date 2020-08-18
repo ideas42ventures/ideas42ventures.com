@@ -1,4 +1,4 @@
-# ideas42ventures.com [![Netlify Status](https://api.netlify.com/api/v1/badges/f9bb165d-6817-45fa-88ac-69fc6560e395/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
+# ideas42ventures.com [![Netlify Status](https://api.netlify.com/api/v1/badges/06655ace-67fc-4a5e-a30a-2d9066bc4cd2/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
 
 The ideas42 Venture Studio website.
 
@@ -8,7 +8,7 @@ The ideas42 Venture Studio website.
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
-- Hosted on Netlify
+- Hosted on Netlify in the ideas42 Ventures team account
 - The living design files live in Figma at [figma.com/file/5ThSdBlZBcQnuyk15DWJNQ](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
 
 ### Requirements
