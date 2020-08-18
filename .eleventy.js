@@ -10,6 +10,7 @@ module.exports = function (conf) {
     "webp",
     "svg",
     "woff2",
+    "ico",
   ]);
 
   conf.addPassthroughCopy("./src/manifest.webmanifest");
