@@ -21,9 +21,6 @@ module.exports = function (conf) {
     dir: {
       input: "src",
       output: "dist",
-      includes: "includes",
-      layouts: "layouts",
-      data: "data",
     },
   };
 };
