@@ -2,13 +2,13 @@
 <html lang="en" data-page="{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
 
 <head>
-  {% include "layout-meta.njk" %}
+  {% include "head-meta.njk" %}
 
   <title>
     {{ title or "ideas42 Venture Studio" }}
   </title>
 
-  {% include "layout-styles.njk" %}
+  <link rel="stylesheet" href="/css/site.css" />
 
   <script>
     /* FIXME: worker turned off during early dev
