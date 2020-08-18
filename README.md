@@ -8,7 +8,7 @@ The ideas42 Venture Studio website.
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
-- Hosted on Netlify
+- Hosted on Netlify in the ideas42 Ventures team account
 - The living design files live in Figma at [figma.com/file/5ThSdBlZBcQnuyk15DWJNQ](https://www.figma.com/file/5ThSdBlZBcQnuyk15DWJNQ/Site?node-id=0%3A1)
 
 ### Requirements
