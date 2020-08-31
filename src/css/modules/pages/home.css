@@ -1,18 +1,19 @@
 .hero--home .hero__title {
   --max-size: var(--font-size-9);
-  text-align: center;
 }
 
 .hero--home .hero__body {
   font-size: var(--font-size-6);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
-.home-model .content-block__intro,
-.home-portfolio .content-block__intro {
-  margin-left: auto;
+/* Should I be using em or px? */
+@media (max-width: 990px) {
+  .hero--home .hero__title {
+    font-size: var(--font-size-7);
+  }
+  .hero--home .hero__body {
+    font-size: var(--font-size-4);
+  }
 }
 
 .home-model {
@@ -25,10 +26,10 @@
 }
 
 .home-model::before {
-  background: transparent url("/images/content-connector-line-straight.svg")
+  background: transparent url('/images/content-connector-line-straight.svg')
     no-repeat;
   background-position: top center;
-  content: "";
+  content: '';
   display: block;
   height: 21.5rem;
   margin-left: auto;
@@ -38,7 +39,7 @@
 
 @media (min-width: 50em) {
   .home-model::before {
-    background-image: url("/images/content-connector-line.svg");
+    background-image: url('/images/content-connector-line.svg');
     background-position: top left;
   }
 }
