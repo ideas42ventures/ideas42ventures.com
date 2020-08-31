@@ -25,10 +25,10 @@
 }
 
 .home-model::before {
-  background: transparent url("/images/content-connector-line-straight.svg")
+  background: transparent url('/images/content-connector-line-straight.svg')
     no-repeat;
   background-position: top center;
-  content: "";
+  content: '';
   display: block;
   height: 21.5rem;
   margin-left: auto;
@@ -38,8 +38,14 @@
 
 @media (min-width: 50em) {
   .home-model::before {
-    background-image: url("/images/content-connector-line.svg");
+    background-image: url('/images/content-connector-line.svg');
     background-position: top left;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-model h2 {
+    text-align: center;
   }
 }
 
