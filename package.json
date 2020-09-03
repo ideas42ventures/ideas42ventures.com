@@ -33,8 +33,5 @@
   "lint-staged": {
     "src/**/*.js": "eslint --fix",
     "src/": "prettier --write"
-  },
-  "dependencies": {
-    "netlify-cli": "^2.59.3"
   }
 }
