@@ -1,5 +1,6 @@
 ---
-title: Apply to Ideas42 Venture Studio
+title: Apply to be an Entrepreneur in the ideas42 Venture Studio
+noApplyCta: true
 ---
 
 {% extends "layouts/base.njk" %}
@@ -7,10 +8,91 @@ title: Apply to Ideas42 Venture Studio
 {% block masthead %}
   {{ super() }}
   <div class="hero standard-restricted-width">
-    <div class="g-max-3 g-right">
-      <h1 class="hero__title">
-      Apply
-      </h1>
+    <p class="hero__tag">You belong here</p>
+    <h1 class="hero__title g-max-4">Apply to be a founder at Ventures for Shared Prosperity</h1>
+    <p class="hero__body hero__body--first-lined g-max-3-half">
+      With support from Wells Fargo we’re recruiting entrepreneurs to build businesses to address the excess costs of poverty. We’re looking for people that know if given the time, the money, and the audience, they can channel their lived experiences, ideas, and talents into positive impact.
+    </p>
+  </div>
+  <img class="masthead__graphic" src="/images/masthead-graphic-triangle.svg" alt="" />
+{% endblock %}
+
+{% block main %}
+<div class="standard-restricted-width">
+{# Comeback figure out components #}
+ {% include "components/apply-note.njk" %}
+    <div class="g-section-vertical">
+      <header class="content-block__intro g-max-3" id="the-application-process">
+        <h2>
+          <a class="header-anchor" href="#the-application-process" aria-hidden="true">#</a>
+          The application process
+        </h2>
+        <p>
+          Our process is set up to give you the opportunity to show and tell us 
+          the impacts you want to make. It’s an opportunity for you to express 
+          yourself in the ways you’re most comfortable.
+        </p>
+      </header>
+
+
+      <div class="apply__timeline" id="application-timeline">
+        <h3>
+          <a class="header-anchor" href="#application-timeline" aria-hidden="true">#</a>
+          Timeline
+        </h3>
+        {% include "components/timeline.njk" %}
+      </div>
+
+    
+    </div>
+
+    <div class="g-section-vertical">
+      <header class="content-block__intro g-max-3" id="who-can-be-a-founder">
+        <h2>
+          <a class="header-anchor" href="#who-can-be-a-founder" aria-hidden="true">#</a>
+          Who can be a founder?
+        </h2>
+        <p>
+       There’s no one way to be a founder. Some founders will have a strong track record of work with a particular social problem. Others might have particular technical, design, or business skills. But all of our founders will be excited about using technology to solve social problems, and will bring this excitement and deep passion to their work. 
+        </p>
+      </header>
+      <div class="apply__founders-body">
+        <p>
+
+
+
+          Additionally, our founders will bring <strong class="gradient-text">direct, lived experience</strong> of the 
+          challenges Americans from underrepresented communities face to their work. 
+          What is lived experience? It might be the knowledge of our broken 
+          healthcare system that you have from spending hours on the phone with an 
+          insurance company. Or maybe it’s what you know about the challenges of 
+          unpredictable shift scheduling from juggling multiple part-time jobs. Put 
+          simply, we believe that having a direct connection to the myriad 
+          hallenges facing people with low incomes will help founders build 
+          stronger, more impactful businesses, and will sustain our founders’ 
+          passion through the inevitable ups and downs of starting a business.
+        </p>
+        <p>
+          Aside from this experience, our founders will have several key traits. 
+          They will be <strong class="gradient-text">resourceful</strong>: able to inspire others to work for, fund, and 
+          contribute to their eventual company. They will be <strong class="gradient-text">gritty</strong>: able to stick 
+          with the challenges of starting a business, especially when it is hard. 
+          They will be <strong class="gradient-text">emotionally mature</strong>: able to understand the perspectives of 
+          others and interrogate their own perspectives when making challenging 
+          decisions. They will have <strong class="gradient-text">high acceleration</strong>: able to start solving a 
+          problem with something small and grow it quickly. And importantly, they 
+          will be <strong class="gradient-text">creative</strong>: able to think of novel solutions to complex problems.
+        </p>
+        <p>
+          There are many ways to demonstrate these traits: through work and 
+          professional experience, through volunteering, or through other personal 
+          experiences. We care about what you’ve done in the past, but we care more 
+          about what you <strong class="gradient-text">can do</strong> in the future. If these traits sound like you, and 
+          you’re excited about the chance to make social impact through technology, 
+          we encourage you to apply.
+        </p>
+      </div>
+      {%include "components/apply-note.njk"%}
     </div>
   </div>
 {% endblock %}
