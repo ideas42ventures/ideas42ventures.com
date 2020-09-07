@@ -19,7 +19,6 @@ noApplyCta: true
 
 {% block main %}
 <div class="standard-restricted-width">
-        {# {% include "./components/apply-note.njk" %} #}
     <div class="g-section-vertical">
       <header class="content-block__intro g-max-3" id="the-application-process">
         <h2>
@@ -39,7 +38,7 @@ noApplyCta: true
           <a class="header-anchor" href="#application-timeline" aria-hidden="true">#</a>
           Timeline
         </h3>
-        {# {% include "../components/timeline.njk" %} #}
+        {% include "components/timeline.njk" %}
       </div>
 
     
