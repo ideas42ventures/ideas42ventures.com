@@ -19,6 +19,6 @@ force = true
 
 [[redirects]]
 from = "/*"
-to = "/"
+to = "/index.html"
 status = 404
 force = true 
