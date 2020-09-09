@@ -1,0 +1,34 @@
+---
+title: ideas42 Venture Studio 404 page 
+---
+{% extends "layouts/base.njk" %}
+
+{% block masthead %}
+  {{ super() }}
+  <div class="hero standard-restricted-width">
+    <div class="g-max-3 g-right">
+      <h1 class="hero__title">
+      Sorry, we can't find the page you're looking
+      </h1>
+      <p class="hero__body hero__body--first-lined">
+       We're happy you decided to look around! 
+      </p>
+       <h2>Check out some of the links below</h2>
+      <ul>
+        <li>
+        <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/ventures-for-shared-prosperity/focus-area">Focus area</a>
+        </li>
+        <li>
+        <a href="/ventures-for-shared-prosperity/what-we-provide">What we provide</a>
+      </li>
+      <li>
+        <a href="/about">About us</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+  <img class="masthead__graphic masthead__graphic--left" src="/images/masthead-graphic-cube.svg" alt=""/>
+{% endblock %}
