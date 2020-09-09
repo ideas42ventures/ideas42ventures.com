@@ -16,3 +16,8 @@ from = "/apply"
 to = "/ventures-for-shared-prosperity/apply"
 status = 301
 force = true
+
+[[redirects]]
+from = "/*"
+to = "/404-page.html"
+status = 404
