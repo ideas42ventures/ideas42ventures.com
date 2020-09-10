@@ -28,7 +28,7 @@ module.exports = {
             <input value="--gradient-accent" readonly />
           </div>
         </li>
-      </ul>`
+      </ul>`;
 
       return `${swatches}${gradient}`;
     },
@@ -36,24 +36,13 @@ module.exports = {
       return `
       <ul class="token__list">
         <li class="font">
-          <h3 class="token__sample font--display">Epilogue</h3>
+          <h3 class="token__sample">Epilogue</h3>
           <div class="token__info">
             <p>
               Used for headings and display. Variable font. Weights 100-900.
             </p>
 
-            <code>--font-display</code>
-            <code>.font--display</code>
-          </div>
-        </li>
-        <li class="font">
-          <h3 class="token__sample font--body">Inter Variable</h3>
-          <div class="token__info">
-            <p>
-              Used for all standard text. Variable font. Weights 100-900.
-            </p>
-            <code>--font-body</code>
-            <code>.font--body</code>
+            <code>--font-sans</code>
           </div>
         </li>
       </ul>
@@ -104,6 +93,6 @@ module.exports = {
         </li>
       </ul>
       `;
-    }
+    },
   },
 };
