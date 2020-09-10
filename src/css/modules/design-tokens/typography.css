@@ -31,7 +31,7 @@ h6 {
 }
 
 h1 {
-  font-size: var(--font-size-8);
+  font-size: clamp(var(--font-size-7), 8vw, var(--font-size-8));
   font-weight: 900;
 }
 
