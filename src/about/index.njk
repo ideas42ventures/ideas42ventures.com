@@ -1,7 +1,7 @@
 ---
 title: About the ideas42 Venture Studio
 ---
-{% from "../macros/image-card.njk" import image_card %}
+{% from "../macros/person-card.njk" import person_card %}
 
 {% extends "layouts/base.njk" %}
 
@@ -25,22 +25,16 @@ title: About the ideas42 Venture Studio
 <div class="standard-restricted-width">
   <h2>Core team</h2>
   <p>Venture Studio staff and ideas42 core team members.</p>
-  {{image_card("Mike Burshteyn")}}
-  {{image_card("Tamika Cummings")}}
-  {{image_card("Katy Davis")}}
-  {{image_card("Manasee Desai")}}
-  {{image_card("Tyler Gaw")}}
-  {{image_card("Marc Latin")}}
-  {{image_card("Harisson Neuert")}}
-  {{image_card("Blessing Ogunyemi")}}
-  {{image_card("Dinardo Rodrigues")}} 
+  {%for member in people.team %}
+    {{person_card(member)}}
+  {%endfor%}
 
 <h2>Advisors</h2>
-{{image_card("Emily Bailard")}}
-{{image_card("Phil Bronner")}}
-{{image_card("Joseph Garcia")}}
-{{image_card("Moly Hill Pattern")}}
-{{image_card("Josh Wright")}}
+ {%for advisor in people.advisors%}
+  {{person_card(advisor)}}
+{%endfor%}
+
+
 
 <h2>Our values</h2>
 <p>
