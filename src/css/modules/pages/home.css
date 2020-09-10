@@ -1,5 +1,4 @@
 .hero--home .hero__title {
-  --max-size: var(--font-size-9);
   text-align: center;
 }
 

@@ -16,10 +16,9 @@ html {
   --font-size-3: calc(20 / 16 * 1rem);
   --font-size-4: calc(22 / 16 * 1rem);
   --font-size-5: calc(24 / 16 * 1rem);
-  --font-size-6: calc(32 / 16 * 1rem);
+  --font-size-6: calc(26 / 16 * 1rem);
   --font-size-7: calc(42 / 16 * 1rem);
-  --font-size-8: calc(52 / 16 * 1rem);
-  --font-size-9: calc(72 / 16 * 1rem);
+  --font-size-8: calc(72 / 16 * 1rem);
 }
 
 h1,
@@ -32,7 +31,8 @@ h6 {
 }
 
 h1 {
-  font-weight: 700;
+  font-size: var(--font-size-8);
+  font-weight: 900;
 }
 
 h1,
@@ -42,18 +42,29 @@ h2 {
 
 h2 {
   font-size: var(--font-size-7);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
 h3 {
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
   font-weight: 600;
   margin-bottom: 0;
 }
 
 h4 {
+  font-size: var(--font-size-5);
   font-weight: 500;
+}
+
+h5 {
+  font-size: var(--font-size-4);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--font-size-3);
+  font-weight: 600;
 }
 
 strong,
