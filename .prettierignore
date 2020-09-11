@@ -1,1 +1,4 @@
 dist
+
+# We have this here because there is no viable njk prettier plugin yet.
+*.njk
