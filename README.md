@@ -60,3 +60,9 @@ We use Netlify preview builds. To see any branch in a live environment, push the
 ## Code formatting
 
 We format all JavaScript, CSS, and HTML with [Prettier](https://prettier.io). We use the [lint-staged with husky approach](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged) to make sure formatting happens for all contributors.
+
+## A note about inline styles
+
+For production builds, we put all CSS in the `head` of each page. This helps avoid layout shift during page load.
+
+During dev builds–with `yarn start`–all CSS is compiled to an external `site.css`. We include that file with a `link` element in the head.
