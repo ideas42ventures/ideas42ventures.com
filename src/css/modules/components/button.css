@@ -2,7 +2,7 @@
   --padding-v: 0.7em;
   --padding-v-bump: calc(var(--padding-v) * 0.25em);
   --padding-h: 1.5em;
-  background: var(--color-accent-active) var(--gradient-accent);
+  background: var(--color-accent-active);
   border-radius: var(--border-radius, 8px);
   border: 0;
   color: white;
