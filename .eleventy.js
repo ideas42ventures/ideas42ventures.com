@@ -1,6 +1,9 @@
 const pluginPWA = require("eleventy-plugin-pwa");
+const CleanCSS = require("clean-css");
 
 module.exports = function (conf) {
+  conf.addFilter("cssmin", (code) => new CleanCSS({}).minify(code).styles);
+
   conf.setTemplateFormats([
     "html",
     "njk",

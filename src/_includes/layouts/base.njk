@@ -8,7 +8,19 @@
     {{ title or "ideas42 Venture Studio" }}
   </title>
 
-  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="preload" href="/css/fonts/epilogue.var.woff2" as="font" type="font/woff2" crossorigin>
+
+  {% if site.environment === "production" -%}
+    {% set inlineCSS -%}
+      {% include "../../css/site.njk" %}
+    {%- endset %}
+
+    <style>
+      {{ inlineCSS | cssmin | safe }}
+    </style>
+  {% else %}
+    <link rel="stylesheet" href="/css/site.css">
+  {%- endif %}
 
   <script>
     /* FIXME: worker turned off during early dev

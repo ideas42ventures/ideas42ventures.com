@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Epilogue";
   font-weight: 100 900;
-  font-sans: swap;
+  font-display: swap;
   font-style: normal;
   src: url("/css/fonts/epilogue.var.woff2") format("woff2");
 }
