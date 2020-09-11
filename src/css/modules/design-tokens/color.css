@@ -1,23 +1,23 @@
 html {
   /* color definitions */
-  --color-ideas42-green: #8cba43;
+
+  /**
+   * Use sparingly for interactive elements. 
+   */
   --color-electric-panther: #e50053;
+  /**
+   * Use as the color for all standard dark text on light background.
+   */
   --color-eggplant: #1d0354;
   --color-eggplant-rgb: 29, 3, 84;
-  --color-not-quite-white: #f4f0fd;
+  /**
+   * Use when you need white but not so bright.
+   */
+  --color-not-quite-white: #dee7fc;
 
   /* color general aliases */
   --color-accent-active: var(--color-electric-panther);
   --color-text-primary: var(--color-eggplant);
   --color-text-primary-rgb: var(--color-eggplant-rgb);
   --color-text-light: var(--color-not-quite-white);
-
-  --gradient-accent: linear-gradient(91deg, #f3568f 40%, #c81ef2);
-}
-
-.gradient-text {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

@@ -10,7 +10,6 @@
 }
 
 .timeline__months::after {
-  background: var(--gradient-accent);
   content: "";
   display: block;
   height: 100%;
@@ -110,7 +109,6 @@
 
 .timeline__date::before {
   --offset: calc(var(--size-outer) / -2);
-  background: var(--gradient-accent);
   border-radius: calc(var(--size-outer) / 2);
   height: var(--size-outer);
   left: var(--offset);

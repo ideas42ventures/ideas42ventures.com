@@ -21,16 +21,7 @@ module.exports = {
         ""
       )}</ul>`;
 
-      const gradient = `<ul class="colors">
-        <li class="color">
-          <b class="color__swatch" style="background: var(--gradient-accent)"></b>
-          <div class="color__details">
-            <input value="--gradient-accent" readonly />
-          </div>
-        </li>
-      </ul>`;
-
-      return `${swatches}${gradient}`;
+      return `${swatches}`;
     },
     typography() {
       return `
