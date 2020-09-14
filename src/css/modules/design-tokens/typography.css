@@ -71,3 +71,7 @@ strong,
 b {
   font-weight: 600;
 }
+
+a:focus {
+  outline: thick solid currentColor;
+}
