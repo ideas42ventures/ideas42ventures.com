@@ -26,47 +26,63 @@ title: Ventures for Shared Prosperity
 {% endblock %}
 
 {% block main %}
-<div class="standard-restricted-width">
-  <p>
-    With support from Wells Fargo we are looking for talented individuals to join 
-    us as entrepreneurs in our 18-month business co-building program. The first 
-    cohort will start DATE, and we are going to focus on building businesses that 
-    reduce the excess costs of poverty in America. Do you have the heart and soul 
-    of an entrepreneur? A passion for solving huge social challenges? 
-    <a href="/apply">
-      Apply to be a member of our first cohort of entrepreneurs.
-    </a>
-  </p>
-  <p>
-    Not sure you are ready to apply? Learn more about what we provide our 
-    entrepreneurs, here, how we think about building scalable, impactful 
-    businesses here, and why we think tackling the problem of the excess costs 
-    of poverty is an important one. At Ventures for Shared Prosperity we believe 
-    we can help improve the lives of individuals living in poverty by partnering 
-    with talented entrepreneurs to build and scale software powered, behavioral 
-    science informed businesses that address some of the diverse, complex and 
-    structural causes of poverty in America.
-  </p>
-
-  <div>
-    <h2>Join a Q&A with the team </h2>
-    <p>
-      Learn more about the ideas42 Venture Studio and our business building 
-      program at one of the following open ended conference calls.
+<div class="standard-restricted-width grid">
+  <div class="cohort__landing-intro">
+    <p class="font-size-3">
+      With support from Wells Fargo we are looking for talented individuals to join 
+      us as entrepreneurs in our 18-month business co-building program. The first 
+      cohort will start DATE, and we are going to focus on building businesses that 
+      reduce the excess costs of poverty in America. Do you have the heart and soul 
+      of an entrepreneur? A passion for solving huge social challenges? 
+      <a href="/apply">
+        Apply to be a member of our first cohort of entrepreneurs.
+      </a>
     </p>
-    <ul>
-      <li>
-        <time datetime="2020-10-01">October 1, 2020 at 11:00 am EST </time>
-      </li>
-      <li>
-        <time datetime="2020-10-03">October 3, 2020 at 5:00 pm EST</time>
-      </li>
-      <li>
-        <time datetime="2020-10-08">October 8, 2020 at 11:00 am EST</time>
-      </li>
-      <li>
-        <time datetime="2020-10-08">October 10, 2020 at 5:00 pm EST</time>
-      </li>
+    <p class="font-size-2">
+      Not sure you are ready to apply? Attend a Q&A session to learn more about what we provide our 
+      entrepreneurs, how we think about building scalable, impactful 
+      businesses, and why we think tackling the problem of the excess costs 
+      of poverty is an important one. At Ventures for Shared Prosperity we believe 
+      we can help improve the lives of individuals living in poverty by partnering 
+      with talented entrepreneurs to build and scale software powered, behavioral 
+      science informed businesses that address some of the diverse, complex and 
+      structural causes of poverty in America.
+    </p>
+  </div>
+
+  <div class="cohort__landing-qa">
+    <header class="qa__intro">
+      <div class="qa__intro-graphic">
+        <img 
+          src="/images/team-member-small-manasee-desai.png" 
+          alt="Manasee Desai" 
+          width="110" 
+          height="110">
+        <img 
+          src="/images/team-member-small-blessing-ogunyemi.png" 
+          alt="Blessing Ogunyemi" 
+          width="110" 
+          height="110">
+        <img 
+          src="/images/team-member-small-harrison-neuert.png" 
+          alt="Harrison Neuert" 
+          width="110" 
+          height="110">
+      </div>
+      <h2 class="font-size-4">Join a Q&A with the team </h2>
+      <p>
+        Learn more about the ideas42 Venture Studio and our business building 
+        program at one of the following open ended conference calls.
+      </p>
+    </header>
+    <ul class="cohort__qa-sessions">
+      {% for session in qaSessions %}
+         <li>
+          <a href="{{ session.url }}" target="_blank" rel="noopener">
+            <time datetime="{{ session.datetime }}">{{ session.datetime}}</time>
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </div>

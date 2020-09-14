@@ -19,6 +19,7 @@ html {
   --font-size-6: calc(26 / 16 * 1rem);
   --font-size-7: calc(42 / 16 * 1rem);
   --font-size-8: calc(72 / 16 * 1rem);
+  line-height: 1.7;
 }
 
 h1,
@@ -74,4 +75,50 @@ b {
 
 a:focus {
   outline: thick solid currentColor;
+}
+
+main a:hover,
+main a:focus {
+  border-bottom-color: currentColor;
+  box-shadow: 0 1px 0 currentColor, inset 0 -1px 0 currentColor;
+}
+
+main a {
+  border-bottom: 1px solid var(--color-text-primary);
+  box-shadow: 0 0 0 currentColor;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+
+.font-size-0 {
+  font-size: var(--font-size-0);
+}
+
+.font-size-1 {
+  font-size: var(--font-size-1);
+}
+
+.font-size-2 {
+  font-size: var(--font-size-2);
+}
+
+.font-size-3 {
+  font-size: var(--font-size-3);
+}
+
+.font-size-4 {
+  font-size: var(--font-size-4);
+}
+
+.font-size-5 {
+  font-size: var(--font-size-5);
+}
+
+.font-size-6 {
+  font-size: var(--font-size-6);
+}
+
+.font-size-7 {
+  font-size: var(--font-size-7);
 }

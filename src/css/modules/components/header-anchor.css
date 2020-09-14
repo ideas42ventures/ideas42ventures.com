@@ -1,37 +1,19 @@
-@media (hover: hover) {
-  h1 .header-anchor,
-  h2 .header-anchor,
-  h3 .header-anchor,
-  h4 .header-anchor,
-  h5 .header-anchor,
-  h6 .header-anchor {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  h1:hover .header-anchor,
-  h2:hover .header-anchor,
-  h3:hover .header-anchor,
-  h4:hover .header-anchor,
-  h5:hover .header-anchor,
-  h6:hover .header-anchor,
-  .header-anchor:hover,
-  .header-anchor:focus {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .header-anchor {
+  border: none;
+  color: var(--color-text-primary);
   display: block;
   font-size: 87%;
+  opacity: 0.3;
+  padding-bottom: 0;
   text-decoration: none;
   transition: 0.12s ease;
 }
 
 .header-anchor:hover,
 .header-anchor:focus {
-  text-decoration: underline;
+  box-shadow: none;
+  color: var(--color-accent-active);
+  opacity: 1;
 }
 
 @media (min-width: 37.5em) {

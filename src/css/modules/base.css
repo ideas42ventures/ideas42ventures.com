@@ -6,6 +6,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+main {
+  padding-bottom: calc(var(--g-row) * 2);
+}
+
 a {
   color: var(--color-accent-active);
 }

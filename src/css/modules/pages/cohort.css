@@ -28,8 +28,91 @@
   width: var(--arrow-width);
 }
 
+.cohort__landing-intro {
+  padding-bottom: calc(var(--g-row) * 3);
+}
+
+.cohort__landing-qa {
+  align-self: flex-start;
+  background-color: white;
+  border: 1px solid var(--color-not-quite-white);
+  border-radius: 6px;
+  position: relative;
+}
+
+.cohort__landing-qa::before {
+  background: transparent url("/images/cohort-qa-icon.svg") no-repeat center;
+  content: "";
+  display: block;
+  height: 3.75rem;
+  left: 0.8rem;
+  position: absolute;
+  top: -1.75rem;
+  width: 4.875rem;
+}
+
+.qa__intro h2 {
+  color: var(--color-accent-secondary);
+  font-weight: 600;
+}
+
+.qa__intro p {
+  margin-top: var(--g-row);
+}
+
+.qa__intro {
+  background: transparent url("/images/cohort-qa-intro-tile.svg") repeat-x top
+    left;
+  padding: 0 calc(var(--g-gutter-width) * 2);
+  text-align: center;
+}
+
+.qa__intro-graphic {
+  padding: calc(var(--g-row) * 3) 0 calc(var(--g-row) * 0.5) 0;
+}
+
+.qa__intro-graphic img {
+  border: 1px solid var(--color-not-quite-white);
+  border-radius: 60px;
+  position: relative;
+}
+
+.qa__intro-graphic img + img {
+  margin-left: -0.75rem;
+}
+
+.qa__intro-graphic img:nth-child(2) {
+  transform: translateY(var(--g-row));
+  z-index: 1;
+}
+
+.cohort__qa-sessions {
+  padding: calc(var(--g-row) * 2) calc(var(--g-gutter-width) * 2.5);
+}
+
+.cohort__qa-sessions li + li {
+  margin-top: 1rem;
+}
+
 @media (min-width: 41.875em) {
   .cohort__nav-container::before {
     --arrow-offset: 1.9;
+  }
+}
+
+@media (min-width: 76.875em) {
+  .cohort__landing-intro {
+    grid-column: 1 / span var(--g-column-span, 2);
+  }
+}
+
+@media (min-width: 91.25em) {
+  .cohort__landing-intro {
+    --g-column-span: 3;
+  }
+
+  .cohort__landing-qa {
+    grid-column-end: span 2;
+    margin-left: 1.5rem;
   }
 }
