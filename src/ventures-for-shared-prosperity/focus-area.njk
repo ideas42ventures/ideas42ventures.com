@@ -2,115 +2,145 @@
 title: Focus area for ideas42 Venture Studio
 ---
 
+{% from "components/cohort-nav.njk" import cohort_nav %}
 {% extends "layouts/base.njk" %}
 
 {% block masthead %}
   {{ super() }}
   <div class="hero standard-restricted-width">
-    {%include "components/cohort-nav.njk" %}
-    <p class="hero__tag">the poverty tax </p>
+    {{ cohort_nav() }}
+    <p class="hero__tag">
+      The poverty tax
+    </p>
     <h1 class="hero__title">
       The Excess Costs of Poverty
     </h1>
-    <p>
-      There are tens of millions of people in the U.S. who face chronic hunger, housing insecurity, inadequate healthcare, and a daily struggle to make ends meet. The causes of poverty are diverse, complex, and often structural, and the consequences are catastrophic at an individual and societal level.
+    <p class="hero__body">
+      There are tens of millions of people in the U.S. who face chronic hunger, 
+      housing insecurity, inadequate healthcare, and a daily struggle to make 
+      ends meet. The causes of poverty are diverse, complex, and often 
+      structural, and the consequences are catastrophic at an individual and 
+      societal level.
     </p>
   </div>
 {% endblock %}
 
-
-      
 {%block main%}
-      
-      <p>
-        Our inaugural cohort of entrepreneurs at 
-        <a href="/ventures-for-shared-prosperity">
-          Ventures for Shared Prosperity
-        </a>
-        , supported by Wells Fargo, will focus on building businesses that improve the lives of millions by reducing the costs for those living in poverty. While most anti-poverty efforts focus (justifiably) on increasing incomes and economic opportunity, an often-ignored part of the equation is the reality that living in poverty in America is 
-        <a href="">
-          incredibly expensive.
-        </a>
-      </p>
-
-      <p>
-        In partnership with our first cohort of entrepreneurs we will work to alleviate the pernicious ways that the “poverty tax” manifests itself. If helping solve this problem is interesting, 
-        
-        <a href="/apply">
-          apply
-        </a>
-        to be an entrepreneur in our first cohort. Read on if you want to learn more about the problem, and where we see opportunities to build large, sustainable, impact businesses.
-      </p>
-
-
-          <h2>The Poverty Tax</h2>
-      <p>In order to identify potential business opportunities, it's important to first understand the many different forms that the poverty tax takes: </p>
+  <div class="standard-restricted-width">
+    <p>
+      Our inaugural cohort of entrepreneurs at 
+      <a href="/ventures-for-shared-prosperity">Ventures for Shared Prosperity</a>, 
+      supported by Wells Fargo, will focus on building businesses that 
+      improve the lives of millions by reducing the costs for those living 
+      in poverty. While most anti-poverty efforts focus (justifiably) on 
+      increasing incomes and economic opportunity, an often-ignored part of 
+      the equation is the reality that living in poverty in America is 
+      <a href="">incredibly expensive.</a>
+    </p>
+    <p>
+      In partnership with our first cohort of entrepreneurs we will work to 
+      alleviate the pernicious ways that the “poverty tax” manifests itself. 
+      If helping solve this problem is interesting, 
+      <a href="/ventures-for-shared-prosperity/apply">apply</a>
+      to be an entrepreneur in our first cohort. Read on if you want to learn 
+      more about the problem, and where we see opportunities to build large, 
+      sustainable, impact businesses.
+    </p>
 
 
-          <h3>Direct Financial Costs</h3>
+    <h2>The Poverty Tax</h2>
+    <p>
+      In order to identify potential business opportunities, it's important to 
+      first understand the many different forms that the poverty tax takes: 
+    </p>
 
-        <ul>
-          <li>
-            <p>
-              <strong>Higher Costs:</strong>
-            For those who live on low incomes, many goods and services are simply more expensive than they are for wealthier families. From more expensive financial statements to higher car insurance rates to paying more for everyday goods like toilet paper, people living in poverty spend billions more on many products and services than people with greater income and wealth. </p>
-          </li>
-
-          <li>
-            <p>
-            <strong>Disproportionate Costs: </strong>
-              Other costs are technically the same for everyone, but they disproportionately impact people living in poverty. Many of these, like court fines and fees, are predominantly borne by lower-income people of color, while others, like security deposits for rental housing, have an outsized downstream impact on people who can’t afford them, reducing housing security, mobility, and affordability.
-            </p>
-          </li>
-
-          <li>
-            <p>
-            <strong> Deferred Costs:</strong>
-              Without sufficient liquidity or access to affordable credit, lower-income families often have no choice but to purchase cheaper, lower-quality assets. When these assets - such as cars or household appliances - need repairs, families must incur additional expenses to fix or replace them, resulting in a higher total cost of ownership.
-            </p>
-          </li>
-
-        </ul>
-
-            <h3>Non-Financial Costs </h3>
-          <p>In addition to financial costs, lower-income individuals also face higher temporal costs (e.g. spending more time on caregiving), administrative costs, and cognitive costs (the near-constant trade-off decisions one must make when managing scarce resources) than higher-income individuals. </p>
-
-
-          <h2>Opportunities</h2>
+    <h3>Direct Financial Costs</h3>
+    <ul>
+      <li>
         <p>
-          We have identified six specific facets of life where the poverty tax is significant. This list is not meant to be comprehensive, nor is it necessarily the case that each of these problems has a credible software powered, behavioral science informed solution. Instead, they are illustrative of the kinds of problems in the excess costs space that we anticipate our first cohort of entrepreneurs will explore in partnership with our business design team.
+          <strong>Higher Costs:</strong>
+          For those who live on low incomes, many goods and services are simply 
+          more expensive than they are for wealthier families. From more 
+          expensive financial statements to higher car insurance rates to paying 
+          more for everyday goods like toilet paper, people living in poverty 
+          spend billions more on many products and services than people with 
+          greater income and wealth.
         </p>
+      </li>
+      <li>
+        <p>
+          <strong>Disproportionate Costs:</strong>
+          Other costs are technically the same for everyone, but they 
+          disproportionately impact people living in poverty. Many of these, 
+          like court fines and fees, are predominantly borne by lower-income 
+          people of color, while others, like security deposits for rental 
+          housing, have an outsized downstream impact on people who can’t 
+          afford them, reducing housing security, mobility, and affordability.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Deferred Costs:</strong>
+          Without sufficient liquidity or access to affordable credit, 
+          lower-income families often have no choice but to purchase cheaper, 
+          lower-quality assets. When these assets - such as cars or household 
+          appliances - need repairs, families must incur additional expenses 
+          to fix or replace them, resulting in a higher total cost of 
+          ownership.
+        </p>
+      </li>
+    </ul>
 
-      <ol>
-        <li>
-          <h3>Housing</h3>
-          <p>1 in 4 renters are spending at least 50% of their wages on housing and utilities. Tragically, these costs not only represent a larger proportion of a lower-income person’s budget, they’re also greater in real terms. Lower-income renters, especially those of color, are routinely overcharged relative to market values, and these discrepancies persist for homeowners with Black families paying higher property taxes and receiving more expensive mortgage loans. Categories: Higher Costs; Disproportionate Costs </p>
-        </li>
+    <h3>Non-Financial Costs</h3>
+    <p>
+      In addition to financial costs, lower-income individuals also face higher 
+      temporal costs (e.g. spending more time on caregiving), administrative costs, 
+      and cognitive costs (the near-constant trade-off decisions one must make 
+      when managing scarce resources) than higher-income individuals. 
+    </p>
 
-        <li>
-          <h3>Transportation</h3>
-          <p>For families living on low-incomes, finding a way to get around town - to work, to the store, to childcare - can be a major challenge. Buying and maintaining a car can be prohibitively expensive, but the alternative - relying on public transit systems that require multiple transfers to get from Point A to B - can also have prohibitively high time and opportunity costs. And while COVID has transformed the daily commute for many to a short walk down the hallway, the same can’t be said for the 43% of Black and Latinx workers who work in jobs that can’t be done remotely (compared to around 25% for white workers). Categories: Deferred Costs; Temporal Costs </p>
-        </li>
-        <li>
-          <h3>Employment</h3>
-          <p>Unpredictable work schedules characterize the professional lives of millions of workers -- especially women of color -- and impose devastating cognitive, physical, and economic costs. The result is an increased incidence of hunger, housing hardships, and psychological distress for families, and higher job turnover for employers. Furthermore, gig workers and employees in many part-time and hourly jobs lack key benefits, like employer-subsidized health, disability, and unemployment insurance. Without these critical supports, the future costs of dealing with health and economic shocks are much much higher. Categories: Non-Financial Costs; Deferred Costs </p>
-        </li>
-        <li>
-          <h3>Health </h3>
-          <p>More than 25% of U.S. adults age 18-64 struggle to pay their medical bills, and as with so many other costs, this debt disproportionately impacts lower-income individuals and people of color. In addition to pushing families into bankruptcy, this debt has a compounding impact on future costs: damaging credit scores and making borrowing more expensive, leading to late fees on missed bills, and increasing future healthcare costs, which arise due to delayed medical care. Categories: Disproportionate Costs, Deferred Costs, Non-Financial Costs </p>
-        </li>
-        <li>
-          <h3>Food and Retail </h3>
-          <p>With limited liquidity, individuals living on low incomes are often unable to take advantage of fee-based wholesale services or bulk discounts (e.g. buy two, get one free) at grocery stores, resulting in excess annual costs of over $5 billion. Similarly, due to the inability to purchase furniture and appliances outright, many lower-income individuals rely on rent-to-own companies which can often charge twice as much in total costs. Categories: Higher Costs; Deferred Costs </p>
-        </li>
-        <li>
-          <h3>Financial Services </h3>
-          <p>Whether it's exorbitant payday loan interest rates, overdraft fees, or prepaid card fees, low- to moderate-income consumers face a wide array of costs related to financial services that higher-income individuals do not. Estimates of those costs continue to grow each year and were estimated at $196 billion in 2019. Categories: Higher Costs; Disproportionate Costs </p>
-        </li>
-      </ol>
+    <h2>Opportunities</h2>
+    <p>
+      We have identified six specific facets of life where the poverty tax is 
+      significant. This list is not meant to be comprehensive, nor is it 
+      necessarily the case that each of these problems has a credible software 
+      powered, behavioral science informed solution. Instead, they are 
+      illustrative of the kinds of problems in the excess costs space that we 
+      anticipate our first cohort of entrepreneurs will explore in partnership 
+      with our business design team.
+    </p>
+    <ol>
+      <li>
+        <h3>Housing</h3>
+        <p>1 in 4 renters are spending at least 50% of their wages on housing and utilities. Tragically, these costs not only represent a larger proportion of a lower-income person’s budget, they’re also greater in real terms. Lower-income renters, especially those of color, are routinely overcharged relative to market values, and these discrepancies persist for homeowners with Black families paying higher property taxes and receiving more expensive mortgage loans. Categories: Higher Costs; Disproportionate Costs </p>
+      </li>
 
-      <p>
-        We are deeply aware that the causes of poverty are diverse, complex, and often structural. While market-based solutions can improve people’s financial health, they are not a panacea. We are incredibly proud to be doing this work as part of a broader team - the Collaborative for Shared Prosperity - that will simultaneously be working to change the narratives around poverty in America and shape the policies that can help - and too often hurt - people with lower incomes. If you are as inspired as we are by this ambitious vision and mission, and want to work with us to develop scalable, software powered products that improve the lives of millions of people with lower incomes, apply to be an entrepreneur at Ventures for Shared Prosperity.
-      </p>
-
-  {%endblock%}
+      <li>
+        <h3>Transportation</h3>
+        <p>For families living on low-incomes, finding a way to get around town - to work, to the store, to childcare - can be a major challenge. Buying and maintaining a car can be prohibitively expensive, but the alternative - relying on public transit systems that require multiple transfers to get from Point A to B - can also have prohibitively high time and opportunity costs. And while COVID has transformed the daily commute for many to a short walk down the hallway, the same can’t be said for the 43% of Black and Latinx workers who work in jobs that can’t be done remotely (compared to around 25% for white workers). Categories: Deferred Costs; Temporal Costs </p>
+      </li>
+      <li>
+        <h3>Employment</h3>
+        <p>Unpredictable work schedules characterize the professional lives of millions of workers -- especially women of color -- and impose devastating cognitive, physical, and economic costs. The result is an increased incidence of hunger, housing hardships, and psychological distress for families, and higher job turnover for employers. Furthermore, gig workers and employees in many part-time and hourly jobs lack key benefits, like employer-subsidized health, disability, and unemployment insurance. Without these critical supports, the future costs of dealing with health and economic shocks are much much higher. Categories: Non-Financial Costs; Deferred Costs </p>
+      </li>
+      <li>
+        <h3>Health </h3>
+        <p>More than 25% of U.S. adults age 18-64 struggle to pay their medical bills, and as with so many other costs, this debt disproportionately impacts lower-income individuals and people of color. In addition to pushing families into bankruptcy, this debt has a compounding impact on future costs: damaging credit scores and making borrowing more expensive, leading to late fees on missed bills, and increasing future healthcare costs, which arise due to delayed medical care. Categories: Disproportionate Costs, Deferred Costs, Non-Financial Costs </p>
+      </li>
+      <li>
+        <h3>Food and Retail </h3>
+        <p>With limited liquidity, individuals living on low incomes are often unable to take advantage of fee-based wholesale services or bulk discounts (e.g. buy two, get one free) at grocery stores, resulting in excess annual costs of over $5 billion. Similarly, due to the inability to purchase furniture and appliances outright, many lower-income individuals rely on rent-to-own companies which can often charge twice as much in total costs. Categories: Higher Costs; Deferred Costs </p>
+      </li>
+      <li>
+        <h3>Financial Services </h3>
+        <p>Whether it's exorbitant payday loan interest rates, overdraft fees, or prepaid card fees, low- to moderate-income consumers face a wide array of costs related to financial services that higher-income individuals do not. Estimates of those costs continue to grow each year and were estimated at $196 billion in 2019. Categories: Higher Costs; Disproportionate Costs </p>
+      </li>
+    </ol>
+    <p>
+      We are deeply aware that the causes of poverty are diverse, complex, and 
+      often structural. While market-based solutions can improve people’s 
+      financial health, they are not a panacea. We are incredibly proud to be 
+      doing this work as part of a broader team - the Collaborative for Shared Prosperity - that will simultaneously be working to change the narratives around poverty in America and shape the policies that can help - and too often hurt - people with lower incomes. If you are as inspired as we are by this ambitious vision and mission, and want to work with us to develop scalable, software powered products that improve the lives of millions of people with lower incomes, apply to be an entrepreneur at Ventures for Shared Prosperity.
+    </p>
+  </div>
+{%endblock%}

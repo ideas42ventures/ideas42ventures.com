@@ -2,61 +2,71 @@
 title: Ventures for Shared Prosperity
 ---
 
+{% from "components/cohort-nav.njk" import cohort_nav %}
 {% extends "layouts/base.njk" %}
 
 {% block masthead %}
   {{ super() }}
   <div class="hero hero--centered standard-restricted-width">
-  <img src="" alt="colorful octogon"/>
-  <p>cohort one: 2021-2022</p>
+    <p class="hero__tag">
+      Cohort one: 2021-2022
+    </p>
     <h1 class="hero__title">
       Ventures for Shared Prosperity
     </h1>
-    <p> Improving the financial health and well-being of low and moderate income people in America.</p>
-        {%include "components/cohort-nav.njk" %}
-
-        </div>
-
-              {%endblock%}
-
-              {%block main%}
-
-
-
-
-    <p class="hero__body g-max-3-half g-centered">
-      With support from Wells Fargo we are looking for talented individuals to join us as entrepreneurs in our 18-month business co-building program. The first cohort will start DATE, and we are going to focus on building businesses that reduce the excess costs of poverty in America. Do you have the heart and soul of an entrepreneur? A passion for solving huge social challenges? 
-      <a href="/apply">
-        Apply to be a member of our first cohort of entrepreneurs.
-      </a>
+    <p class="hero__body"> 
+      Improving the financial health and well-being of low and moderate income 
+      people in America.
     </p>
+    {{ cohort_nav(centered=true, isHome=true) }}
+  </div>
+{% endblock %}
 
-    <p class="hero__body g-max-3-half g-centered">
-      Not sure you are ready to apply? Learn more about what we provide our entrepreneurs, here, how we think about building scalable, impactful businesses here, and why we think tackling the problem of the excess costs of poverty is an important one. At Ventures for Shared Prosperity we believe we can help improve the lives of individuals living in poverty by partnering with talented entrepreneurs to build and scale software powered, behavioral science informed businesses that address some of the diverse, complex and structural causes of poverty in America.
+{% block main %}
+<div class="standard-restricted-width">
+  <p>
+    With support from Wells Fargo we are looking for talented individuals to join 
+    us as entrepreneurs in our 18-month business co-building program. The first 
+    cohort will start DATE, and we are going to focus on building businesses that 
+    reduce the excess costs of poverty in America. Do you have the heart and soul 
+    of an entrepreneur? A passion for solving huge social challenges? 
+    <a href="/apply">
+      Apply to be a member of our first cohort of entrepreneurs.
+    </a>
+  </p>
+  <p>
+    Not sure you are ready to apply? Learn more about what we provide our 
+    entrepreneurs, here, how we think about building scalable, impactful 
+    businesses here, and why we think tackling the problem of the excess costs 
+    of poverty is an important one. At Ventures for Shared Prosperity we believe 
+    we can help improve the lives of individuals living in poverty by partnering 
+    with talented entrepreneurs to build and scale software powered, behavioral 
+    science informed businesses that address some of the diverse, complex and 
+    structural causes of poverty in America.
+  </p>
+
+  <div>
+    <h2>Join a Q&A with the team </h2>
+    <p>
+      Learn more about the ideas42 Venture Studio and our business building 
+      program at one of the following open ended conference calls.
     </p>
-
-      <img src="" alt="team member one"/>
-      <img src="" alt="team member two"/>
-      <img src="" alt="team member three"/>
-      <h3>Join a Q&A with the team </h3>
-      <p>Learn more about the ideas42 Venture Studio and our business building program at one of the following open ended conference calls.</p>
-      <ul>
-        <li>
-          <time datetime="2020-01-10">October 1, 2020 at 11:00 am EST </time>
-        </li>
-        <li>
-          <time datetime="2020-03-10">October 3, 2020 at 5:00 pm EST</time>
-        </li>
-        <li>
-          <time datetime="2020-08-10">October 8, 2020 at 11:00 am EST</time>
-        </li>
-        <li>
-          <time datetime="2020-08-10">October 10, 2020 at 5:00 pm EST</time>
-        </li>
-      </ul>
-
-
-
+    <ul>
+      <li>
+        <time datetime="2020-10-01">October 1, 2020 at 11:00 am EST </time>
+      </li>
+      <li>
+        <time datetime="2020-10-03">October 3, 2020 at 5:00 pm EST</time>
+      </li>
+      <li>
+        <time datetime="2020-10-08">October 8, 2020 at 11:00 am EST</time>
+      </li>
+      <li>
+        <time datetime="2020-10-08">October 10, 2020 at 5:00 pm EST</time>
+      </li>
+    </ul>
+  </div>
+</div>
 {% endblock %}
 
 

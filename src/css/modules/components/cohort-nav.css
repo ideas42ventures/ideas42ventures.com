@@ -51,6 +51,14 @@
   transform: translateX(0);
 }
 
+.cohort-nav__home-btn--disabled svg {
+  transform: translateX(-0.5rem);
+}
+
+.cohort-nav__home-btn--disabled .arrow-back {
+  display: none;
+}
+
 .cohort-nav__item a,
 .cohort-nav time {
   display: inline-block;
@@ -84,6 +92,10 @@
   padding-left: 1rem;
   padding-right: 1.2rem;
   text-align: center;
+}
+
+.cohort-nav + .hero__tag {
+  margin-top: calc(var(--g-row) * 7);
 }
 
 @media (min-width: 31.25em) {
