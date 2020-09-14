@@ -68,7 +68,10 @@
 }
 
 .cohort-nav a:hover,
-.cohort-nav a:focus {
+.cohort-nav a:focus,
+[data-page="focus-area"] .cohort-nav [href*="focus-area"],
+[data-page="what-we-provide"] .cohort-nav [href*="what-we-provide"],
+[data-page="apply"] .cohort-nav [href*="apply"] {
   --shadow-offset: -3px;
   color: var(--color-accent-secondary);
 }
