@@ -30,13 +30,13 @@
 }
 
 .cohort-nav__home-btn a {
+  align-items: center;
   display: flex;
   max-width: 4.3rem;
   padding-top: 1rem;
 }
 
 .cohort-nav__home-btn svg {
-  display: inline-block;
   margin-left: 1.2rem;
 }
 
