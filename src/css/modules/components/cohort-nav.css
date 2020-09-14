@@ -1,0 +1,79 @@
+.cohort-nav {
+  --outer-radius: 50px;
+  background-color: white;
+  border: 1px solid var(--color-not-quite-white);
+  border-radius: var(--outer-radius);
+  box-shadow: var(--shadow-card);
+  display: flex;
+}
+
+.cohort-nav ul {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cohort-nav__item {
+  flex: 1;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.cohort-nav__home-btn {
+  display: flex;
+  padding: 0;
+  max-width: 4.3rem;
+}
+
+.cohort-nav__home-btn a {
+  display: flex;
+}
+
+.cohort-nav__home-btn svg {
+  display: block;
+  margin-left: 1.2rem;
+}
+
+.cohort-nav__home-btn .arrow-back {
+  transform: translateX(3px);
+  transition: 0.1s ease;
+}
+
+.cohort-nav__home-btn a:hover .arrow-back,
+.cohort-nav__home-btn a:focus .arrow-back {
+  fill: var(--color-accent-secondary);
+  transform: translateX(0);
+}
+
+.cohort-nav__item a,
+.cohort-nav time {
+  display: inline-block;
+  padding-bottom: 1.1rem;
+  padding-top: 1.2rem;
+  text-align: center;
+}
+
+.cohort-nav__item a {
+  --shadow-offset: 0;
+  box-shadow: inset 0 var(--shadow-offset) 0 var(--color-accent-secondary);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: box-shadow 0.1s ease;
+}
+
+.cohort-nav__item a:hover,
+.cohort-nav__item a:focus {
+  --shadow-offset: -3px;
+  color: var(--color-accent-secondary);
+}
+
+.cohort-nav time {
+  background-color: var(--color-brite-bird);
+  border-radius: 0 var(--outer-radius) var(--outer-radius) 0;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1.2rem;
+}
