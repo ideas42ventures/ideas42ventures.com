@@ -3,3 +3,33 @@
   margin: 0 auto calc(var(--g-row) * 2) auto;
   width: 4.25rem;
 }
+
+.cohort__hero .hero__body {
+  margin-bottom: 0;
+}
+
+.cohort__nav-container {
+  margin: 0 auto;
+  max-width: var(--g-cols-4--fixed);
+  position: relative;
+}
+
+.cohort__nav-container::before {
+  --arrow-width: 10.1875rem;
+  --arrow-offset: 1.2;
+  background: transparent url("/images/graphic-arrow.svg") no-repeat center;
+  content: "";
+  display: block;
+  height: 5.375rem;
+  left: calc(100% - var(--arrow-width) * var(--arrow-offset));
+  pointer-events: none;
+  position: relative;
+  transform: translateY(6px);
+  width: var(--arrow-width);
+}
+
+@media (min-width: 41.875em) {
+  .cohort__nav-container::before {
+    --arrow-offset: 1.9;
+  }
+}

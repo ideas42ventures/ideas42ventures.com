@@ -7,7 +7,7 @@ title: Ventures for Shared Prosperity
 
 {% block masthead %}
   {{ super() }}
-  <div class="hero hero--centered standard-restricted-width">
+  <div class="hero cohort__hero hero--centered standard-restricted-width">
     <p class="hero__tag">
       <img class="cohort__mark" src="/images/cohort-mark.svg" alt="" role="presentation">
       Cohort one: 2021-2022
@@ -19,7 +19,9 @@ title: Ventures for Shared Prosperity
       Improving the financial health and well-being of low and moderate income 
       people in America.
     </p>
-    {{ cohort_nav(centered=true, isHome=true) }}
+    <div class="cohort__nav-container">
+      {{ cohort_nav(centered=true, isHome=true) }}
+    </div>
   </div>
 {% endblock %}
 
