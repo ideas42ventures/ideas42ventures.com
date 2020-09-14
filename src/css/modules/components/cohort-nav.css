@@ -1,39 +1,42 @@
 .cohort-nav {
-  --outer-radius: 50px;
+  --outer-radius: 8px;
   background-color: white;
   border: 1px solid var(--color-not-quite-white);
   border-radius: var(--outer-radius);
   box-shadow: var(--shadow-card);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cohort-nav ul {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
+  display: grid;
+  flex: 1 1 100%;
+  grid-template-columns: 5.5rem 1fr;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
 }
 
 .cohort-nav__item {
+  display: flex;
   flex: 1;
+  grid-column: 2;
   padding: 0 1rem;
-  text-align: center;
 }
 
 .cohort-nav__home-btn {
   display: flex;
   padding: 0;
-  max-width: 4.3rem;
 }
 
 .cohort-nav__home-btn a {
   display: flex;
+  max-width: 4.3rem;
+  padding-top: 1rem;
 }
 
 .cohort-nav__home-btn svg {
-  display: block;
+  display: inline-block;
   margin-left: 1.2rem;
 }
 
@@ -44,7 +47,7 @@
 
 .cohort-nav__home-btn a:hover .arrow-back,
 .cohort-nav__home-btn a:focus .arrow-back {
-  fill: var(--color-accent-secondary);
+  fill: currentColor;
   transform: translateX(0);
 }
 
@@ -53,7 +56,6 @@
   display: inline-block;
   padding-bottom: 1.1rem;
   padding-top: 1.2rem;
-  text-align: center;
 }
 
 .cohort-nav__item a {
@@ -62,18 +64,58 @@
   color: var(--color-text-primary);
   text-decoration: none;
   transition: box-shadow 0.1s ease;
+  text-align: left;
 }
 
-.cohort-nav__item a:hover,
-.cohort-nav__item a:focus {
+.cohort-nav a:hover,
+.cohort-nav a:focus {
   --shadow-offset: -3px;
   color: var(--color-accent-secondary);
 }
 
 .cohort-nav time {
   background-color: var(--color-brite-bird);
-  border-radius: 0 var(--outer-radius) var(--outer-radius) 0;
-  margin-left: auto;
+  border-radius: 0 0 var(--outer-radius) var(--outer-radius);
+  flex: 1 1 100%;
+  line-height: 1.2;
   padding-left: 1rem;
   padding-right: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 31.25em) {
+  .cohort-nav ul {
+    display: flex;
+    padding: 0;
+  }
+
+  .cohort-nav__item {
+    justify-content: center;
+  }
+
+  .cohort-nav__item a {
+    text-align: center;
+  }
+
+  .cohort-nav__home-btn a {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 50em) {
+  .cohort-nav {
+    --outer-radius: 50px;
+    flex-wrap: nowrap;
+  }
+
+  .cohort-nav ul {
+    flex: 1 1 50%;
+  }
+
+  .cohort-nav time {
+    align-items: center;
+    border-radius: 0 var(--outer-radius) var(--outer-radius) 0;
+    display: flex;
+    flex: 0 1 auto;
+  }
 }
