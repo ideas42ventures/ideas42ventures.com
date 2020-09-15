@@ -23,6 +23,12 @@ html {
    */
   --color-not-quite-white: #dee7fc;
 
+  /**
+   * We use this for the footer background and nothing else at the time of
+   * this writing.
+   */
+  --color-needed-one-more: #313349;
+
   /* color general aliases */
   --color-accent-active: var(--color-electric-panther);
   --color-accent-secondary: var(--color-barney);

@@ -7,39 +7,32 @@
   display: block;
   font-size: var(--font-size-3);
   font-weight: 600;
-  padding: 0 0 var(--g-row) 0;
+  padding: 0;
 }
 
 .newsletter-info {
-  margin-bottom: calc(var(--g-row) * 3);
+  margin-bottom: calc(var(--g-row) * 4);
   margin-top: 0;
-  opacity: 0.8;
 }
 
 .newsletter-form label {
   display: block;
   font-size: var(--font-size-1);
   font-weight: 600;
-  opacity: 0.8;
-  padding: 0 0 0.8rem 0;
+  padding: 0 0 0.25rem 0;
   width: 100%;
 }
 
 .field--connected-btn {
   border-radius: 9px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-wrap: wrap;
   font-size: var(--font-size-2);
 }
 
-.field--connected-btn:focus-within {
-  border-color: rgba(255, 255, 255, 0.75);
-}
-
 .field--connected-btn input {
   --border-radius: 8px 8px 0 0;
-  background-color: var(--color-text-primary);
+  background-color: rgba(255, 255, 255, 0.08);
   border: 0;
   border-radius: var(--border-radius);
   color: var(--color-text-light);
@@ -64,6 +57,8 @@
 
   .field--connected-btn .btn {
     --border-radius: 0 8px 8px 0;
+    --padding-h: 1em;
+    padding: var(--padding-v) var(--padding-h);
     width: auto;
   }
 }
