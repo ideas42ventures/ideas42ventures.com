@@ -7,7 +7,7 @@ title: What the ideas42 Venture Studio can provide
 
 {% block masthead %}
   {{ super() }}
-  <div class="hero standard-restricted-width">
+  <div class="hero hero--what-we-provide standard-restricted-width">
     {{ cohort_nav() }}
     <p class="hero__tag">
       We’re with you
@@ -15,34 +15,33 @@ title: What the ideas42 Venture Studio can provide
     <h1 class="hero__title">
       What we provide our entrepreneurs
     </h1>
-    <div class="hero__body">
-      <p>
-        Starting a business is risky, and for many individuals without a personal 
-        financial safety net, or access to a network of individuals with 
-        significant capital to fund their venture, the risk is simply too high. 
-        We view this as an unacceptable barrier to entry for entrepreneurship and 
-        believe that it is both unfair, and reduces the volume and quality of new 
-        businesses as many individuals with the talent, motivation and passion to 
-        start their own business are unable to. At the ideas42 Venture Studio we 
-        can’t guarantee your success, but we can reduce your risk of trying to 
-        build an amazing business, and support those entrepreneurs who don’t have 
-        access today.
-      </p>
-      <p>
-        If you are selected to join the ideas42 Venture Studio as an 
-        entrepreneur, we will pay you a salary ($75k per year), and provide 
-        benefits for 18 months, while surrounding you with a dedicated team 
-        of business builders, and behavioral scientists to help bring your 
-        vision to life.
-      </p>
-    </div>
+    <p class="hero__body g-max-4">
+      Starting a business is risky, and for many individuals without a personal 
+      financial safety net, or access to a network of individuals with 
+      significant capital to fund their venture, the risk is simply too high. 
+      We view this as an unacceptable barrier to entry for entrepreneurship and 
+      believe that it is both unfair, and reduces the volume and quality of new 
+      businesses as many individuals with the talent, motivation and passion to 
+      start their own business are unable to. At the ideas42 Venture Studio we 
+      can’t guarantee your success, but we can reduce your risk of trying to 
+      build an amazing business, and support those entrepreneurs who don’t have 
+      access today.
+    </p>
+    <p class="callout font-size-3 g-max-3">
+      If you are selected to join the ideas42 Venture Studio as an 
+      entrepreneur, we will pay you a <strong>salary</strong> ($75k per year), and provide 
+      <strong>benefits</strong> for 18 months, while surrounding you with a dedicated <strong>team</strong> 
+      of business builders, and behavioral scientists to help bring your 
+      vision to life.
+    </p>
   </div>
 {% endblock %}
 
 {%block main%}
   <div class="standard-restricted-width">
-      <h2>The details</h2>
-      <p>
+    <div class="g-max-3 g-centered font-size-2">
+      {% headingAnchor "2", "The details" %}
+      <p class="font-size-3">
         Building a business is hard. Building a large, socially impactful 
         business is even harder. It shouldn’t require you to risk everything to 
         give it a go. Join us. Build something amazing. We don’t have all the 
@@ -51,14 +50,14 @@ title: What the ideas42 Venture Studio can provide
         business. We provide that foundation. 
       </p>
 
-      <h3>Compensation package</h3>
+      {% headingAnchor "3", "Compensation package" %}
       <ul>
         <li><strong>Salary:</strong> $75K annual salary for 18 months</li>
         <li><strong>Benefits:</strong> Healthcare + dependent care benefits</li>
         <li><strong>Workspace:</strong> Home office or remote office set-up support and supply (laptop, monitor, etc.)</li>
       </ul>
 
-      <h3>Technical and business building support</h3>
+      {% headingAnchor "3", "Technical and business building support" %}
       <p>
         Full time dedicated (shared across four entrepreneurs) from the ideas42 
         Venture Studio team, including two software developers, a product 
@@ -85,7 +84,7 @@ title: What the ideas42 Venture Studio can provide
         </li>
       </ul>
 
-      <h3>Business building capital</h3>
+      {% headingAnchor "3", "Business building capital" %}
       <p>
         There are lots of expenses that come with starting a business, not all 
         of which are predictable. As an entrepreneur at the ideas42 Venture 
@@ -94,7 +93,7 @@ title: What the ideas42 Venture Studio can provide
         support during your 18 months at the Studio.
       </p>
 
-      <h3>ideas42 support</h3>
+      {% headingAnchor "3", "ideas42 support" %}
       <ul>
         <li>
           <strong>Behavioral design:</strong>
@@ -106,7 +105,7 @@ title: What the ideas42 Venture Studio can provide
         </li>
       </ul>
 
-      <h3>Additional support from ideas42 and Wells Fargo</h3>
+      {% headingAnchor "3", "Additional support from ideas42 and Wells Fargo" %}
       <ul>
         <li>
           <strong>ideas42</strong>
@@ -142,13 +141,13 @@ title: What the ideas42 Venture Studio can provide
         </li>
       </ul>
 
-      <p>
+      <p class="font-size-3 has-end-cap">
         On a final note, being an entrepreneur can be lonely and a roller 
         coaster of emotional highs and lows. While we can’t make it easy, we 
         are here as your partner, and team. We will work to lift you up with 
         encouragement, feedback, and kindness so you can bring your best self 
         to the process.
       </p>
+    </div>
   </div>
-
 {%endblock%}
