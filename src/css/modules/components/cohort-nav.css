@@ -125,6 +125,7 @@
   .cohort-nav {
     --outer-radius: 50px;
     flex-wrap: nowrap;
+    transform: translateX(-1.5rem);
   }
 
   .cohort-nav ul {

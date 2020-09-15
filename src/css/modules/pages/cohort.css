@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.cohort__nav-container .cohort-nav {
+  transform: initial;
+}
+
 .cohort__nav-container::before {
   --arrow-width: 10.1875rem;
   --arrow-offset: 1.2;
