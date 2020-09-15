@@ -11,6 +11,7 @@ html {
   --g-col-width: calc(var(--g-col-width-px) / 16 * 1rem);
   --g-gutter-width: calc(var(--g-gutter-width-px) / 16 * 1rem);
   --g-row: 0.625rem;
+  --g-column-template: repeat(auto-fill, minmax(var(--g-col-width), 1fr));
 
   --g-cols-2--fixed: calc(var(--g-col-width) * 2 + var(--g-gutter-width));
   --g-cols-2-dot-5--fixed: calc(
@@ -28,6 +29,35 @@ html {
   --g-cols-4-dot-5--fixed: calc(
     var(--g-col-width) * 4.5 + calc(var(--g-gutter-width) * 4)
   );
+}
+
+/* 
+  NOTE: We're slowly trying going to CSS grid over setting max widths and
+  such. Will be a process to figure out what works best for us. 
+ */
+.grid {
+  --g-template-columns: 1fr;
+  display: grid;
+  gap: var(--g-gutter-width);
+  grid-template-columns: var(--g-template-columns);
+}
+
+@media (min-width: 56.25em) {
+  .grid {
+    --g-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 76.875em) {
+  .grid {
+    --g-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 91.25em) {
+  .grid {
+    --g-template-columns: var(--g-column-template);
+  }
 }
 
 .g-right {
@@ -81,6 +111,20 @@ html {
 
 .g-section-vertical + .g-section-vertical {
   --padding-t: 0;
+}
+
+.two-col-text {
+  column-count: 2;
+  column-width: calc(var(--g-col-width) * 1.5 + var(--g-gutter-width));
+  column-gap: calc(var(--g-gutter-width) * 2.25);
+}
+
+.two-col-text p:first-child {
+  margin-top: 0;
+}
+
+.two-col-text + p {
+  margin-top: 1.7em;
 }
 
 @media (min-width: 37.5em) {

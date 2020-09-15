@@ -6,6 +6,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+main {
+  padding-bottom: calc(var(--g-row) * 2);
+}
+
 a {
   color: var(--color-accent-active);
 }
@@ -19,6 +23,7 @@ input {
   line-height: 1.75;
 }
 
-.content-block__intro p:first-of-type:not([class]) {
-  margin-top: 1.25rem;
+::selection {
+  background-color: var(--color-accent-secondary);
+  color: white;
 }

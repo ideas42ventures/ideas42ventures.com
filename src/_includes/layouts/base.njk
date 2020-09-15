@@ -35,7 +35,7 @@
   <body>
     <div class="masthead">
       {% block masthead %}
-        {% include "banner.njk" %}
+        {% include "components/banner.njk" %}
       {% endblock %}
     </div>
 
@@ -48,7 +48,7 @@
         {% include "components/apply-cta.njk" %}
       {% endif %}
       
-      {% include "footer.njk" %}
+      {% include "components/footer.njk" %}
     {% endblock %}
   </body>
 </html>
