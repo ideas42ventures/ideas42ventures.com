@@ -10,7 +10,8 @@
 }
 
 .header-anchor:hover,
-.header-anchor:focus {
+.header-anchor:focus,
+:target .header-anchor {
   box-shadow: none;
   color: var(--color-accent-active);
   opacity: 1;
