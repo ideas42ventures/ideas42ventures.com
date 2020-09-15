@@ -29,36 +29,27 @@ noApplyCta: true
 <div class="standard-restricted-width">
   {% include "components/apply-note.njk" %}
   <div class="g-section-vertical">
-    <header class="content-block__intro g-max-3" id="the-application-process">
-      <h2>
-        <a class="header-anchor" href="#the-application-process" aria-hidden="true">#</a>
-        The application process
-      </h2>
+    <header class="content-block__intro g-max-3">
+      {% headingAnchor "2", "The application process" %}
       <p>
         Our process is set up to give you the opportunity to show and tell us 
         the impacts you want to make. It’s an opportunity for you to express 
         yourself in the ways you’re most comfortable.
       </p>
     </header>
-    <div class="apply__timeline" id="application-timeline">
-      <h3>
-        <a class="header-anchor" href="#application-timeline" aria-hidden="true">#</a>
-        Timeline
-      </h3>
+    <div class="apply__timeline">
+      {% headingAnchor "3", "Timeline" %}
       {% include "components/timeline.njk" %}
     </div>
   </div>
   <div class="g-section-vertical">
-    <header class="content-block__intro g-max-3" id="who-can-be-a-founder">
-      <h2>
-        <a class="header-anchor" href="#who-can-be-a-founder" aria-hidden="true">#</a>
-        Who can be a founder?
-      </h2>
+    <header class="content-block__intro g-max-3">
+      {% headingAnchor "2", "Who can be a founder?" %}
       <p>
-      There’s no one way to be a founder. Some founders will have a strong track record of work with a particular social problem. Others might have particular technical, design, or business skills. But all of our founders will be excited about using technology to solve social problems, and will bring this excitement and deep passion to their work. 
+        There’s no one way to be a founder. Some founders will have a strong track record of work with a particular social problem. Others might have particular technical, design, or business skills. But all of our founders will be excited about using technology to solve social problems, and will bring this excitement and deep passion to their work. 
       </p>
     </header>
-    <div class="apply__founders-body">
+    <div class="two-col-text font-size-3">
       <p>
         Additionally, our founders will bring <strong>direct, lived experience</strong> of the 
         challenges Americans from underrepresented communities face to their work. 
