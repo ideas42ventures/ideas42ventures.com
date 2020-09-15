@@ -12,6 +12,10 @@
   margin-bottom: 0;
 }
 
+.hero--what-we-provide .hero__title {
+  max-width: calc(var(--g-col-width) * 2.75 + calc(var(--g-gutter-width) * 2));
+}
+
 .cohort__nav-container {
   margin: 0 auto;
   max-width: var(--g-cols-4--fixed);
