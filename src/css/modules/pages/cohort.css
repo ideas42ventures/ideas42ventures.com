@@ -98,6 +98,11 @@
   margin-top: 1rem;
 }
 
+.apply__timeline,
+.apply__phases {
+  margin-top: calc(var(--g-row) * 10);
+}
+
 @media (min-width: 41.875em) {
   .cohort__nav-container::before {
     --arrow-offset: 1.9;
