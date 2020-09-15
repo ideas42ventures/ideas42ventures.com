@@ -113,6 +113,16 @@ html {
   --padding-t: 0;
 }
 
+.two-col-text {
+  column-count: 2;
+  column-width: calc(var(--g-col-width) * 1.5 + var(--g-gutter-width));
+  column-gap: calc(var(--g-gutter-width) * 2.25);
+}
+
+.two-col-text p:first-child {
+  margin-top: 0;
+}
+
 @media (min-width: 37.5em) {
   .standard-restricted-width {
     --padding-h: calc(var(--g-gutter-width) * 2.5);
