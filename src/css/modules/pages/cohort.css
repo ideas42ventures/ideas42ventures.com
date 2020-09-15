@@ -4,6 +4,10 @@
   width: 4.25rem;
 }
 
+.cohort__hero {
+  --top-max-rows: 6;
+}
+
 .cohort__hero .hero__body {
   margin-bottom: 0;
 }
