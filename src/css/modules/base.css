@@ -23,10 +23,6 @@ input {
   line-height: 1.75;
 }
 
-.content-block__intro p:first-of-type:not([class]) {
-  margin-top: 1.25rem;
-}
-
 ::selection {
   background-color: var(--color-accent-secondary);
   color: white;

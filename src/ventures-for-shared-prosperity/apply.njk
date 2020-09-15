@@ -27,62 +27,63 @@ noApplyCta: true
 {% endblock %}
 
 {% block main %}
-<div class="standard-restricted-width">
-  <div>
-    <header class="content-block__intro g-max-3">
-      {% headingAnchor "2", "The application process" %}
-      <p>
-        Our process is set up to give you the opportunity to show and tell us 
-        the impacts you want to make. It’s an opportunity for you to express 
-        yourself in the ways you’re most comfortable.
-      </p>
-    </header>
-    <div class="apply__timeline">
-      {% headingAnchor "3", "Timeline" %}
-      {% include "components/timeline.njk" %}
-    </div>
+<div class="standard-restricted-width apply__process">
+  <header class="content-block__intro g-max-3">
+    {% headingAnchor "2", "The application process" %}
+    <p>
+      Our process is set up to give you the opportunity to show and tell us 
+      the impacts you want to make. It’s an opportunity for you to express 
+      yourself in the ways you’re most comfortable.
+    </p>
+  </header>
+  <div class="apply__timeline">
+    {% headingAnchor "3", "Timeline" %}
+    {% include "components/timeline.njk" %}
   </div>
-  <div class="g-section-vertical">
-    <header class="content-block__intro g-max-3">
-      {% headingAnchor "2", "Who can be a founder?" %}
-      <p>
-        There’s no one way to be a founder. Some founders will have a strong track record of work with a particular social problem. Others might have particular technical, design, or business skills. But all of our founders will be excited about using technology to solve social problems, and will bring this excitement and deep passion to their work. 
-      </p>
-    </header>
-    <div class="two-col-text font-size-3">
-      <p>
-        Additionally, our founders will bring <strong>direct, lived experience</strong> of the 
-        challenges Americans from underrepresented communities face to their work. 
-        What is lived experience? It might be the knowledge of our broken 
-        healthcare system that you have from spending hours on the phone with an 
-        insurance company. Or maybe it’s what you know about the challenges of 
-        unpredictable shift scheduling from juggling multiple part-time jobs. Put 
-        simply, we believe that having a direct connection to the myriad 
-        hallenges facing people with low incomes will help founders build 
-        stronger, more impactful businesses, and will sustain our founders’ 
-        passion through the inevitable ups and downs of starting a business.
-      </p>
-      <p>
-        Aside from this experience, our founders will have several key traits. 
-        They will be <strong>resourceful</strong>: able to inspire others to work for, fund, and 
-        contribute to their eventual company. They will be <strong>gritty</strong>: able to stick 
-        with the challenges of starting a business, especially when it is hard. 
-        They will be <strong>emotionally mature</strong>: able to understand the perspectives of 
-        others and interrogate their own perspectives when making challenging 
-        decisions. They will have <strong>high acceleration</strong>: able to start solving a 
-        problem with something small and grow it quickly. And importantly, they 
-        will be <strong>creative</strong>: able to think of novel solutions to complex problems.
-      </p>
-      <p>
-        There are many ways to demonstrate these traits: through work and 
-        professional experience, through volunteering, or through other personal 
-        experiences. We care about what you’ve done in the past, but we care more 
-        about what you <strong>can do</strong> in the future. If these traits sound like you, and 
-        you’re excited about the chance to make social impact through technology, 
-        we encourage you to apply.
-      </p>
-    </div>
-    {%include "components/apply-note.njk"%}
+
+  <header class="content-block__intro g-max-3">
+    {% headingAnchor "2", "Who can be a entrepreneur?" %}
+    <p>
+      There’s no one way to be a entrepreneur. Some entrepreneurs will have a strong 
+      track record of work with a particular social problem. Others might 
+      have particular technical, design, or business skills. But all of our 
+      entrepreneurs will be excited about using technology to solve social 
+      problems, and will bring this excitement and deep passion to their work. 
+    </p>
+  </header>
+  <div class="two-col-text font-size-3 apply__entrepreneurs">
+    <p>
+      Additionally, our entrepreneurs will bring <strong>direct, lived experience</strong> of the 
+      challenges Americans from underrepresented communities face to their work. 
+      What is lived experience? It might be the knowledge of our broken 
+      healthcare system that you have from spending hours on the phone with an 
+      insurance company. Or maybe it’s what you know about the challenges of 
+      unpredictable shift scheduling from juggling multiple part-time jobs. Put 
+      simply, we believe that having a direct connection to the myriad 
+      challenges facing people with low incomes will help entrepreneurs build 
+      stronger, more impactful businesses, and will sustain our entrepreneurs’ 
+      passion through the inevitable ups and downs of starting a business.
+    </p>
+    <p>
+      Aside from this experience, our entrepreneurs will have several key traits. 
+      They will be <strong>resourceful</strong>: able to inspire others to work for, fund, and 
+      contribute to their eventual company. They will be <strong>gritty</strong>: able to stick 
+      with the challenges of starting a business, especially when it is hard. 
+      They will be <strong>emotionally mature</strong>: able to understand the perspectives of 
+      others and interrogate their own perspectives when making challenging 
+      decisions. They will have <strong>high acceleration</strong>: able to start solving a 
+      problem with something small and grow it quickly. And importantly, they 
+      will be <strong>creative</strong>: able to think of novel solutions to complex problems.
+    </p>
   </div>
+  <p class="font-size-3 has-end-cap g-max-3 apply__entrepreneurs">
+    There are many ways to demonstrate these traits: through work and 
+    professional experience, through volunteering, or through other personal 
+    experiences. We care about what you’ve done in the past, but we care more 
+    about what you <strong>can do</strong> in the future. If these traits sound like you, and 
+    you’re excited about the chance to make social impact through technology, 
+    we encourage you to apply.
+  </p>
+  {%include "components/apply-note.njk"%}
 </div>
 {% endblock %}

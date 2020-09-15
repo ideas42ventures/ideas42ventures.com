@@ -123,6 +123,10 @@ html {
   margin-top: 0;
 }
 
+.two-col-text + p {
+  margin-top: 1.7em;
+}
+
 @media (min-width: 37.5em) {
   .standard-restricted-width {
     --padding-h: calc(var(--g-gutter-width) * 2.5);

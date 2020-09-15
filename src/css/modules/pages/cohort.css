@@ -106,9 +106,17 @@
   margin-top: 1rem;
 }
 
-.apply__timeline,
-.apply__phases {
-  margin-top: calc(var(--g-row) * 10);
+.apply__timeline {
+  margin-bottom: calc(var(--g-row) * 12);
+  margin-top: calc(var(--g-row) * 6);
+}
+
+.apply__process .callout {
+  margin: calc(var(--g-row) * 6) 0;
+}
+
+.apply__entrepreneurs strong {
+  color: var(--color-accent-secondary);
 }
 
 @media (min-width: 41.875em) {
