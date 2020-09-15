@@ -1,0 +1,22 @@
+.callout {
+  background-color: var(--color-accent-tertiary);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.callout::before {
+  --size: 4.2rem;
+  background: transparent url("/images/graphic-shape-flock.svg") no-repeat
+    center;
+  content: "";
+  display: block;
+  height: var(--size);
+  left: calc(var(--size) * -1.1);
+  position: absolute;
+  width: var(--size);
+}
+
+.callout a {
+  color: var(--color-text-primary);
+}

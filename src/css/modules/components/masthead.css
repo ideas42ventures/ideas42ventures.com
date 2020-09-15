@@ -1,6 +1,6 @@
 .masthead {
   background-color: var(--color-white);
-  padding-bottom: calc(var(--g-row) * 10);
+  padding-bottom: calc(var(--g-row) * 9);
   overflow: hidden;
   position: relative;
 }
