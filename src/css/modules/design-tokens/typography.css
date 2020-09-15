@@ -86,7 +86,7 @@ main a:focus {
 main a {
   border-bottom: 1px solid var(--color-text-primary);
   box-shadow: 0 0 0 currentColor;
-  padding-bottom: 0.25em;
+  padding-bottom: 0.2em;
   text-decoration: none;
   transition: 0.1s ease;
 }
@@ -121,4 +121,32 @@ main a {
 
 .font-size-7 {
   font-size: var(--font-size-7);
+}
+
+h2 + p,
+h3 + p {
+  margin-top: 0.25em;
+}
+
+p + p {
+  margin-top: 2em;
+}
+
+.has-start-rule::before {
+  background-color: var(--color-text-primary);
+  content: "";
+  display: block;
+  height: 4px;
+  margin: calc(var(--g-row) * 8) 0;
+  width: 100%;
+}
+
+.has-end-cap::after {
+  --size: 0.75rem;
+  background-color: var(--color-text-primary);
+  content: "";
+  display: inline-block;
+  height: var(--size);
+  opacity: 0.2;
+  width: var(--size);
 }
