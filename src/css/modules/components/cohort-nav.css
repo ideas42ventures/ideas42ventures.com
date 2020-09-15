@@ -68,7 +68,7 @@
 
 .cohort-nav__item a {
   --shadow-offset: 0;
-  box-shadow: inset 0 var(--shadow-offset) 0 var(--color-accent-secondary);
+  box-shadow: inset 0 var(--shadow-offset) 0 currentColor;
   color: var(--color-text-primary);
   text-decoration: none;
   transition: box-shadow 0.1s ease;
@@ -76,7 +76,11 @@
 }
 
 .cohort-nav a:hover,
-.cohort-nav a:focus,
+.cohort-nav a:focus {
+  --shadow-offset: -3px;
+  color: var(--color-accent-active);
+}
+
 [data-page="focus-area"] .cohort-nav [href*="focus-area"],
 [data-page="what-we-provide"] .cohort-nav [href*="what-we-provide"],
 [data-page="apply"] .cohort-nav [href*="apply"] {
