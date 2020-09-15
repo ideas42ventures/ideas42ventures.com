@@ -13,6 +13,9 @@ html {
   --g-row: 0.625rem;
   --g-column-template: repeat(auto-fill, minmax(var(--g-col-width), 1fr));
 
+  --g-cols-1-dot-5--fixed: calc(
+    var(--g-col-width) * 1.5 + var(--g-gutter-width)
+  );
   --g-cols-2--fixed: calc(var(--g-col-width) * 2 + var(--g-gutter-width));
   --g-cols-2-dot-5--fixed: calc(
     var(--g-col-width) * 2.5 + calc(var(--g-gutter-width) * 2)
@@ -67,6 +70,10 @@ html {
 .g-centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+.g-max-1-half {
+  max-width: var(--g-cols-1-dot-5--fixed);
 }
 
 .g-max-2 {
