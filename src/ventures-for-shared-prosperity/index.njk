@@ -79,7 +79,7 @@ title: Ventures for Shared Prosperity
       {% for session in qaSessions %}
          <li>
           <a href="{{ session.url }}" target="_blank" rel="noopener">
-            <time datetime="{{ session.datetime }}">{{ session.datetime}}</time>
+            <time datetime="{{ session.datetime }}">{% dateFormat session.datetime %}</time>
           </a>
         </li>
       {% endfor %}

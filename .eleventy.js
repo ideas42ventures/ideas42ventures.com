@@ -1,8 +1,11 @@
-const pluginPWA = require("eleventy-plugin-pwa");
 const CleanCSS = require("clean-css");
+const { DateTime } = require("luxon");
 
 module.exports = function (conf) {
   conf.addFilter("cssmin", (code) => new CleanCSS({}).minify(code).styles);
+  conf.addShortcode("dateFormat", (dateStr, frmt = "DDD 'at' t ZZZZ") =>
+    DateTime.fromISO(dateStr).toFormat(frmt)
+  );
 
   conf.setTemplateFormats([
     "html",
@@ -18,7 +21,6 @@ module.exports = function (conf) {
 
   conf.addPassthroughCopy("./src/manifest.webmanifest");
   conf.addWatchTarget("./src/**/*.css");
-  conf.addPlugin(pluginPWA);
 
   return {
     dir: {
