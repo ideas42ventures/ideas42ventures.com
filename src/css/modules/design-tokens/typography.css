@@ -1,13 +1,59 @@
 @font-face {
-  font-family: "Epilogue";
+  font-family: "epilogue-var";
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
   src: url("/css/fonts/epilogue.var.woff2") format("woff2");
 }
 
+/**
+ * Variable font for browsers that support them.
+ *
+ */
+@font-face {
+  font-family: "epilogue";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/css/fonts/epilogue-regular.woff") format("woff");
+}
+
+/**
+ * Non-variable fonts for browsers that need them.
+ * NOTE: This is a mix of ttf and woff. Some weights of Epilogue have bugs
+ * when converting to woff. The semi-bold weight in particular could not be
+ * converted without issues to the rendering. Capital "A"s were messed up.
+ * We prefer woff because it's about half the size, but had to use ttf for
+ * semi-bold for now until we can figure out how to convert it without
+ * causing glitches.
+ */
+
+@font-face {
+  font-family: "epilogue";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/css/fonts/epilogue-semi-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "epilogue";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/css/fonts/epilogue-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "epilogue";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/css/fonts/epilogue-black.woff") format("woff");
+}
+
 html {
-  --font-sans: Epilogue, sans-serif;
+  --font-sans: "epilogue", helvetica, sans-serif;
 
   /* Using calc here to document the pixel value */
   --font-size-0: calc(14 / 16 * 1rem);
@@ -20,6 +66,12 @@ html {
   --font-size-7: calc(42 / 16 * 1rem);
   --font-size-8: calc(72 / 16 * 1rem);
   line-height: 1.7;
+}
+
+@supports (font-variation-settings: "wdth" 115) {
+  html {
+    --font-sans: "epilogue-var", helvetica, sans-serif;
+  }
 }
 
 h1,
