@@ -141,6 +141,6 @@ html {
 @media (min-width: 37.5em) {
   .g-padded,
   .standard-restricted-width {
-    --padding-h: calc(var(--g-gutter-width) * 2.5);
+    --padding-h: calc(var(--g-gutter-width) * 2.75);
   }
 }

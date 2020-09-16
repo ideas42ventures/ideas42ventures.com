@@ -49,6 +49,6 @@
 
 @media (min-width: 37.5em) {
   .contentinfo__contents {
-    --padding-h: calc(var(--g-gutter-width) * 2.5);
+    --padding-h: calc(var(--g-gutter-width) * 2.75);
   }
 }
