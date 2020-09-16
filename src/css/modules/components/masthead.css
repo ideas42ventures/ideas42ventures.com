@@ -1,16 +1,20 @@
 .masthead {
   background-color: var(--color-white);
-  padding-bottom: calc(var(--g-row) * 9);
+  padding-bottom: calc(var(--g-row) * 10);
   overflow: hidden;
   position: relative;
 }
 
 .masthead__graphic {
+  bottom: 0;
   pointer-events: none;
   position: absolute;
-  left: 48%;
-  top: 1.875rem;
+  left: 55%;
   z-index: 1;
+}
+
+.masthead__graphic {
+  max-width: 40rem;
 }
 
 .masthead__graphic--left {
