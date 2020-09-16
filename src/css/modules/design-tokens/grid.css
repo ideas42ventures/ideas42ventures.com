@@ -100,13 +100,17 @@ html {
   max-width: var(--g-cols-4-dot-5--fixed);
 }
 
+.g-padded,
 .standard-restricted-width {
   --padding-h: var(--g-gutter-width);
+  padding-left: var(--padding-h);
+  padding-right: var(--padding-h);
+}
+
+.standard-restricted-width {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--g-max-width);
-  padding-left: var(--padding-h);
-  padding-right: var(--padding-h);
 }
 
 .g-section-vertical {
@@ -135,6 +139,7 @@ html {
 }
 
 @media (min-width: 37.5em) {
+  .g-padded,
   .standard-restricted-width {
     --padding-h: calc(var(--g-gutter-width) * 2.5);
   }
