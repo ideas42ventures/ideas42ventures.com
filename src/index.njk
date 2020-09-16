@@ -2,78 +2,156 @@
 
 {% block masthead %}
   {{ super() }}
-  <div class="hero hero--home standard-restricted-width">
-    <h1 class="hero__title">We build companies that solve massive social challenges</h1>
-    <p class="hero__body g-max-3-half">
-      We recruit great entrepreneurs, surround them with design, technology, and 
-      behavioral science talent, and collaboratively build businesses that help 
-      solve meaningful problems at scale.
+  <div class="hero standard-restricted-width">
+    <h1 class="hero__title g-max-3">
+      We build companies that solve massive social challenges
+    </h1>
+    <p class="hero__body g-max-3">
+      We recruit motivated entrepreneurs, surround them with design, technology, 
+      and behavioral science talent, and collaboratively build businesses that 
+      help solve meaningful problems at scale.
     </p>
   </div>
-  <img class="masthead__graphic" src="/images/masthead-graphic-sphere.svg" alt="" />
+  {# <img class="masthead__graphic" src="/images/masthead-graphic-sphere.svg" alt="" /> #}
 {% endblock %}
 
 {% block main %}
-<div class="standard-restricted-width home-model">
-  <header class="content-block__intro g-max-4-half">
+<div class="standard-restricted-width">
+  <header class="g-max-4">
     <h2>Our model</h2>
-    <p>
+    <p class="font-size-4">
       We have helped launch and scale three businesses so far, each with their 
-      own unique origin story. For our next set of businesses we are operating 
-      an 18-month cohort model, with 3-5 entrepreneurs per cohort. For those 
-      18 months, we will work directly alongside those entrepreneurs through an 
-      intense research, design, prototype, sell, pilot deployment, and 
-      fundraising process. At the end of 18 months, we expect each of our 
-      entrepreneurs to have a product in market making a difference in the 
-      world, and capital to continue to grow far beyond the Venture Studio. Our 
-      first cohort of entrepreneurs will begin in early January 2021 as a part 
-      of <a href="/ventures-for-shared-prosperity">Ventures for Shared Prosperity</a>, funded by Wells Fargo.
+      own unique origin story. For our next set of businesses we are operating a 
+      cohort model, with four entrepreneurs per cohort. For 18 months, we will 
+      work directly alongside our entrepreneurs in an intense research, design, 
+      prototype, sell, pilot deployment, and fundraising process. At the end of 
+      18 months, we expect each of our entrepreneurs to have a product in-market 
+      <b>making a difference in the world</b>, with capital to continue to grow far 
+      beyond the Venture Studio. 
     </p>
-    <p><a href="/model">More about our model</a></p>
   </header>
+
+  <ul>
+    <li>
+      <h3>Months 1-6</h3>
+      <p>
+        <strong>Opportunity identification</strong> 
+        Market evaluation and prototype development.
+      </p>
+    </li>
+    <li>
+      <h3>Months 7-12</h3>
+      <p>
+        <strong>Sell pilots</strong> 
+        Market validation (and product iteration) through pilot sales.
+      </p>
+    </li>
+    <li>
+      <h3>Months 13-18</h3>
+      <p>
+        <strong>Go to market + raise capital</strong> 
+        Deliver pilots and raise external capital to grow the business.
+      </p>
+    </li>
+  </ul>
+
+  <div class="g-max-4 font-size-3 two-col-text">
+    <p>
+      To build impact businesses that scale, we use a Venture Studio model. We 
+      are not an Incubator, Accelerator or Venture Investor. We co-build 
+      businesses in our studio by identifying and framing possible problems to 
+      be solved, recruiting motivated entrepreneurs who are passionate about 
+      solving that problem, and providing them the resources and support they 
+      need to start great businesses. 
+    </p>
+    <p>
+      Building a great business is hard, and building a great, impact business 
+      that solves a critical social challenge is even harder. 
+    </p>
+    <p>
+      There are many different ways to succeed, and while we don’t think our 
+      methodology is right for everyone and for every problem, we are confident 
+      that our disciplined approach increases the probability of success for our 
+      entrepreneurs. 
+    </p>
+    <p>
+      Over the course of our 18-month direct partnership with our entrepreneurs 
+      we apply that framework, while iteratively moving through a research, 
+      design, prototype, sell, pilot deployment, and fundraising process, 
+      roughly chunked in three, six month long periods. 
+    </p>
+  </div>
 </div>
 
-<div class="standard-restricted-width home-portfolio">
-  <header class="content-block__intro g-max-4-half">
+<div class="standard-restricted-width">
+  <header>
+    <h2>How we evaluate business opportunities</h2>
+    <p class="font-size-3 g-max-3">
+      We apply a behavioral science lens to identify business opportunities, 
+      and focus on enterprise, value-based Software as a Service as our vehicle 
+      to scale our impact quickly. When evaluating opportunities 
+      <b>we ask, is there…</b>
+    </p>
+  </header>
+
+  <ul class="font-size-3">
+    <li>
+      An existing <strong>intention → action gap</strong>?
+      <small class="font-size-0">(e.g. where an individual plans to do or not do something, but fails to follow through on their intention)</small>
+    </li>
+    <li>
+      An <strong>enterprise</strong> who benefits from closing that intention → action gap?
+    </li>
+    <li>
+      A <strong>data powered intervention</strong> that helps the individual follow through on their intention?
+    </li>
+  </ul>
+
+  <p class="font-size-3 g-max-3">
+    Opportunities with these three characteristics allow us to make value based 
+    sales to existing enterprises, and build technology to deliver that value, 
+    powered by data, and informed by behavioral science. Making our businesses 
+    scalable, impactful and defensible. 
+  </p>
+</div>
+
+<div class="standard-restricted-width">
+  <header class="g-max-2">
     <h2>Our portfolio</h2>
-    <p>
+    <p class="font-size-4">
       Companies we’re working with today.
     </p>
   </header>
 
   <ul class="home-portfolio__list">
     <li>
-      <a href="https://everydaylabs.com/" target="_blank" rel="noopener"
-        ><img src="/images/portfolio-logo-everyday-labs.png" alt="EveryDay Labs logomark"
-      /></a>
+      <a href="https://everydaylabs.com/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-everyday-labs.png" alt="EveryDay Labs logomark"/>
+      </a>
       <p>
         Working with school districts to reduce K-12 chronic absenteeism.
       </p>
     </li>
     <li>
-      <a href="https://asknickels.com/" target="_blank" rel="noopener"
-        ><img src="/images/portfolio-logo-nickels.svg" alt="Nickels logomark"
-      /></a>
+      <a href="https://asknickels.com/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-nickels.svg" alt="Nickels logomark"/>
+      </a>
       <p>
         Helping borrowers manage their student debt and avoid default.
       </p>
     </li>
     <li>
-      <a href="https://www.vergil.app/" target="_blank" rel="noopener"
-        ><img src="/images/portfolio-logo-vergil.svg" alt="Vergil logomark"
-      /></a>
+      <a href="https://www.vergil.app/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-vergil.svg" alt="Vergil logomark"/>
+      </a>
       <p>
         Working with state and local governments to reduce recidivism.
       </p>
     </li>
     <li>
-      <a href="/apply"><img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" /></a>
-      <p>
-        We’re looking for entrepreneurs to build their companies with us.
-      </p>
-    </li>
-    <li>
-      <a href="/apply"><img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" /></a>
+      <a href="/ventures-for-shared-prosperity">
+        <img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" />
+      </a>
       <p>
         We’re looking for entrepreneurs to build their companies with us.
       </p>

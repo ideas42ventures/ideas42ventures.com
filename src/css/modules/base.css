@@ -20,7 +20,6 @@ input {
 
 .content-block__intro {
   font-size: var(--font-size-4);
-  line-height: 1.75;
 }
 
 ::selection {
