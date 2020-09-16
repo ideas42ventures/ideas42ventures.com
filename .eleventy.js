@@ -29,6 +29,8 @@ module.exports = function (conf) {
     "png",
     "webp",
     "svg",
+    "ttf",
+    "woff",
     "woff2",
     "ico",
   ]);
