@@ -89,7 +89,7 @@
 }
 
 .cohort-nav time {
-  background-color: var(--color-brite-bird);
+  background-color: var(--color-accent-tertiary);
   border-radius: 0 0 var(--outer-radius) var(--outer-radius);
   flex: 1 1 100%;
   line-height: 1.2;

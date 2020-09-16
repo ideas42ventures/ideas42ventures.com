@@ -41,6 +41,9 @@
   --border-radius: 12px;
   --font-size: var(--font-size-5);
   --margin-top: calc(var(--g-row) * 4);
+  background: var(--color-accent-tertiary);
+  border: 3px solid currentColor;
+  color: var(--color-text-primary);
   margin: var(--margin-top) auto 0 auto;
   max-width: calc(var(--g-col-width) + calc(var(--g-gutter-width) * 2));
   width: 100%;
