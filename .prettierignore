@@ -4,6 +4,9 @@ dist
 *.jpg
 *.gif
 *.webp
+*.woff
+*.woff2
+*.ttf
 
 # We have this here because there is no viable njk prettier plugin yet.
 *.njk
