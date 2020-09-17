@@ -75,10 +75,14 @@
   text-align: left;
 }
 
-.cohort-nav a:hover,
-.cohort-nav a:focus {
+.cohort-nav a:hover {
   --shadow-offset: -3px;
   color: var(--color-accent-active);
+}
+
+.cohort-nav a:focus {
+  /* --shadow-offset: -3px;
+  color: var(--color-accent-active); */
 }
 
 [data-page="focus-area"] .cohort-nav [href*="focus-area"],
