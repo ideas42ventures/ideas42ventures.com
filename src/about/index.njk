@@ -8,46 +8,54 @@ title: About the ideas42 Venture Studio
 {% block masthead %}
   {{ super() }}
   <div class="hero standard-restricted-width">
-    <div class="g-max-3 g-right">
+    <div class="g-max-4">
       <p class="hero__tag">Who we are</p>
       <h1 class="hero__title">
-        Meet the humans of the ideas42 Venture Studio
+        Meet the people at the ideas42 Venture Studio
       </h1>
       <p class="hero__body">
-       The ideas42 Venture Studio is made up of entrepreneurs, core members, contributors from ideas42, board members, and advisors. Our goal is to give our entrepreneurs access to the widest range of experiences and expertise as possible. 
+        The ideas42 Venture Studio is made up of entrepreneurs, core members, contributors from ideas42, board members, and advisors. Our goal is to give our entrepreneurs access to the widest range of experiences and expertise as possible.
       </p>
     </div>
   </div>
-  <img class="masthead__graphic masthead__graphic--left" src="/images/masthead-graphic-cube.svg" alt="" />
 {% endblock %}
 
 {% block main %}
 <div class="standard-restricted-width">
-  <h2>Core team</h2>
+  {% headingAnchor "2", "Core team" %}
   <p>Venture Studio staff and ideas42 core team members.</p>
+  <p><strong>Content in development</strong></p>
+  <div style="display: none">
   {%for member in people.team %}
     {{person_card(member)}}
   {%endfor%}
+  </div>
 
-<h2>Advisors</h2>
- {%for advisor in people.advisors%}
-  {{person_card(advisor)}}
-{%endfor%}
+  <div class="g-section-vertical">
+    {% headingAnchor "2", "Advisors" %}
+    <p><strong>Content in development</strong></p>
+    <div style="display: none">
+    {%for advisor in people.advisors%}
+      {{person_card(advisor)}}
+    {%endfor%}
+    </div>
+  </div>
 
 
+  <div class="g-max-3 g-centered font-size-3 g-section-vertical">
+    {% headingAnchor "2", "Our values" %}
+    <p>
+      At the ideas42 Venture Studio, our values are not words that guide our actions, but instead words that reflect who we are, what we do, and how we do it. While our business building model is constantly evolving, our actions, and thus our values are not.
+    </p>
 
-<h2>Our values</h2>
-<p>
-  At the ideas42 Venture Studio, our values are not words that guide our actions, but instead words that reflect who we are, what we do, and how we do it. While our business building model is constantly evolving, our actions, and thus our values are not.
-</p>
+    <p>
+      We are humble and ambitious, and see no conflict between those two. We trust each other, but are not afraid to ask questions (easy and hard ones). We share in our successes and failures, but understand that being low ego doesn’t mean having no ego. We are transparent, diverse, and always learning. Sometimes we get things wrong. 
+    </p>
 
-<p>
-  We are humble and ambitious, and see no conflict between those two. We trust each other, but are not afraid to ask questions (easy and hard ones). We share in our successes and failures, but understand that being low ego doesn’t mean having no ego. We are transparent, diverse, and always learning. Sometimes we get things wrong. 
-</p>
-
-<p>
-  We don’t believe we can solve every social problem (humble), but we believe that we can make things significantly better (ambitious), while not supporting or maintaining power for structurally racist, sexist or otherwise inequitable entities.
-</p>
+    <p>
+      We don’t believe we can solve every social problem (humble), but we believe that we can make things significantly better (ambitious), while not supporting or maintaining power for structurally racist, sexist or otherwise inequitable entities.
+    </p>
+  </div>
 </div>
 
 
