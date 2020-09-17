@@ -68,11 +68,13 @@ html {
   line-height: 1.7;
 }
 
-@supports (font-variation-settings: "wdth" 115) {
+/* clean-css ignore:start */
+@supports (font-variation-settings: "wdth" 285) {
   html {
     --font-sans: "epilogue-var", helvetica, sans-serif;
   }
 }
+/* clean-css ignore:end */
 
 h1,
 h2,
