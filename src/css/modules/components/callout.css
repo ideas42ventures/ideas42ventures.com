@@ -5,6 +5,14 @@
   position: relative;
 }
 
+.callout header p:first-child {
+  margin: 0.25rem 0 0 0;
+}
+
+.callout header p + p {
+  margin-top: 0;
+}
+
 .callout::before {
   --size: 4.2rem;
   background: transparent url("/images/graphic-shape-flock.svg") no-repeat
@@ -19,10 +27,6 @@
 
 .callout a {
   color: var(--color-text-primary);
-}
-
-.callout p:first-child {
-  margin-top: 0.25rem;
 }
 
 .callout ol {

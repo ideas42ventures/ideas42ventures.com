@@ -80,11 +80,6 @@
   color: var(--color-accent-active);
 }
 
-.cohort-nav a:focus {
-  /* --shadow-offset: -3px;
-  color: var(--color-accent-active); */
-}
-
 [data-page="focus-area"] .cohort-nav [href*="focus-area"],
 [data-page="what-we-provide"] .cohort-nav [href*="what-we-provide"],
 [data-page="apply"] .cohort-nav [href*="apply"] {
