@@ -16,7 +16,11 @@
 
 .banner__logo {
   display: block;
-  width: 10rem;
+  width: 8.75rem;
+}
+
+.banner__logo:focus path {
+  fill: white;
 }
 
 .banner__nav-item {
@@ -26,8 +30,7 @@
   text-decoration: none;
 }
 
-.banner__nav-item:hover,
-.banner__nav-item:focus {
+.banner__nav-item:hover {
   color: var(--color-accent-active);
 }
 
@@ -52,7 +55,6 @@
 }
 
 .banner__nav-item:hover::before,
-.banner__nav-item:focus::before,
 [data-page="model"] .banner__nav-item[href*="model"]::before,
 [data-page="about"] .banner__nav-item[href*="about"]::before {
   transform: scale3d(1, 1, 1);

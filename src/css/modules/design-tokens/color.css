@@ -12,7 +12,8 @@ html {
   /**
    * Use rarely for non-interactive accent. Do not use for text on white.
    */
-  --color-brite-bird: #f2f604;
+  --color-brite-bird: #ffdd33;
+  --color-big-bird: #ffdd33;
   /**
    * Use as the color for all standard dark text on light background.
    */
@@ -32,11 +33,15 @@ html {
   /* color general aliases */
   --color-accent-active: var(--color-electric-panther);
   --color-accent-secondary: var(--color-barney);
-  --color-accent-tertiary: var(--color-brite-bird);
+  --color-accent-tertiary: var(--color-big-bird);
   --color-text-primary: var(--color-eggplant);
   --color-text-primary-rgb: var(--color-eggplant-rgb);
   --color-text-light: var(--color-not-quite-white);
 
   /* This doesn't really fit in color, but we'll leave it here for now. */
   --shadow-card: 0px 6px 12px rgba(23, 93, 199, 0.15);
+}
+
+.highlight-text {
+  color: var(--color-accent-secondary);
 }
