@@ -131,7 +131,7 @@
   }
 }
 
-@media (min-width: 91.25em) {
+@media (min-width: 91.875em) {
   .cohort__landing-intro {
     --g-column-span: 3;
   }

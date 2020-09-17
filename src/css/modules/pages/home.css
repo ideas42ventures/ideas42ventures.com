@@ -1,11 +1,13 @@
-.model__timeline {
+.model__timeline,
+.evaluate__questions {
   display: grid;
-  gap: 5%;
+  gap: 6%;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   justify-items: center;
   list-style: none;
+  padding: calc(var(--g-row) * 4) 0
+    calc(var(--g-row) * var(--padding-b-rows, 10)) 0;
   margin: 0;
-  padding: calc(var(--g-row) * 4) 0 calc(var(--g-row) * 10) 0;
 }
 
 .model__segment {
@@ -56,4 +58,54 @@
 
 .model__segment p {
   font-size: var(--font-size-2);
+}
+
+.evaluate__questions {
+  --padding-b-rows: 8;
+}
+
+.evaluate_q {
+  margin-top: calc(var(--g-row) * 2);
+  max-width: 30rem;
+  text-align: center;
+}
+
+.evaluate_q img {
+  display: block;
+  margin: 0 auto var(--g-row) auto;
+}
+
+.evaluate_q small {
+  display: block;
+}
+
+.portfolio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.portfolio__item {
+  --padding-h: calc(var(--g-gutter-width) * 2);
+  background-color: white;
+  border: 1px solid var(--color-text-light);
+  border-radius: 6px;
+  box-shadow: var(--shadow-card);
+  /* margin-top: calc(var(--g-row) * 3); */
+  max-width: 24rem;
+  padding: calc(var(--g-row) * 2) var(--padding-h);
+  text-align: center;
+}
+
+.portfolio__item a {
+  border-bottom: none;
+}
+
+.portfolio__item img {
+  max-width: 15.625rem;
 }

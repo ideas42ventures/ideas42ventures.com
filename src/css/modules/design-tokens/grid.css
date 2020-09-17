@@ -3,7 +3,7 @@ html {
     Pixel values. We don't use these directly in styles. We use these to
     calculate relative units. These are here so we don't have to math in our heads
    */
-  --g-max-width-px: 1460;
+  --g-max-width-px: 1476;
   --g-col-width-px: 256;
   --g-gutter-width-px: 20;
 
