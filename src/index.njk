@@ -32,21 +32,21 @@
   </header>
 
   <ul class="model__timeline">
-    <li class="model__segment">
+    <li class="model__segment card">
       <h3>Months 1-6</h3>
       <p>
         <strong>Opportunity identification</strong> 
         Market evaluation and prototype development.
       </p>
     </li>
-    <li class="model__segment">
+    <li class="model__segment card">
       <h3>Months 7-12</h3>
       <p>
         <strong>Sell pilots</strong> 
         Market validation (and product iteration) through pilot sales.
       </p>
     </li>
-    <li class="model__segment">
+    <li class="model__segment card">
       <h3>Months 13-18</h3>
       <p>
         <strong>Go to market + raise capital</strong> 
@@ -123,7 +123,7 @@
   </p>
 </div>
 
-<div class="standard-restricted-width g-section-vertical">
+<div class="standard-restricted-width g-section-vertical portfolio">
   <header class="g-max-2">
     <h2>Our portfolio</h2>
     <p class="font-size-4">
@@ -132,38 +132,31 @@
   </header>
 
   <ul class="portfolio__list g-max-3">
-    <li class="portfolio__item">
-      <a href="https://everydaylabs.com/" target="_blank" rel="noopener">
-        <img src="/images/portfolio-logo-everyday-labs.png" alt="EveryDay Labs logomark"/>
-      </a>
-      <p>
+    <li>
+      <a class="portfolio__org card" href="https://everydaylabs.com/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-everyday-labs.png" alt="EveryDay Labs" width="250" height="95"/>
         Working with school districts to reduce K-12 chronic absenteeism.
-      </p>
-    </li>
-    <li class="portfolio__item">
-      <a href="https://asknickels.com/" target="_blank" rel="noopener">
-        <img src="/images/portfolio-logo-nickels.svg" alt="Nickels logomark"/>
       </a>
-      <p>
+    </li>
+    <li>
+      <a class="portfolio__org card" href="https://asknickels.com/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-nickels.svg" alt="Nickels" width="250" height="95" />
         Helping borrowers manage their student debt and avoid default.
-      </p>
-    </li>
-    <li class="portfolio__item">
-      <a href="https://www.vergil.app/" target="_blank" rel="noopener">
-        <img src="/images/portfolio-logo-vergil.svg" alt="Vergil logomark"/>
       </a>
-      <p>
+    </li>
+    <li>
+      <a class="portfolio__org card" href="https://www.vergil.app/" target="_blank" rel="noopener">
+        <img src="/images/portfolio-logo-vergil.svg" alt="Vergil" width="250" height="95" />
         Working with state and local governments to reduce recidivism.
-      </p>
-    </li>
-    <li class="portfolio__item">
-      <a href="/ventures-for-shared-prosperity">
-        <img src="/images/portfolio-logo-business-co.svg" alt="Your Co. mock logomark" />
       </a>
-      <p>
-        We’re looking for entrepreneurs to build their companies with us.
-      </p>
+    </li>
+    <li>
+      <a class="portfolio__org card" href="/ventures-for-shared-prosperity">
+        <img src="/images/portfolio-logo-business-co.svg" alt="Your Co." width="250" height="95" />
+        <b>We’re looking for entrepreneurs to build their companies with us.</b>
+      </a>
     </li>
   </ul>
+  <img class="portfolio__graphic" src="/images/graphic-tri-circle.svg" alt="" width="810" />
 </div>
 {% endblock %}
