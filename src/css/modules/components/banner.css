@@ -4,7 +4,11 @@
 }
 
 .banner__contents {
-  padding-top: 1rem;
+  padding-top: var(--padding-v, 1rem);
+}
+
+.banner__cta + .banner__contents {
+  --padding-v: 5rem;
 }
 
 .banner__nav {
@@ -61,22 +65,32 @@
 }
 
 .banner__cta {
+  --border-radius: 0;
+  --padding-v: 0.9rem;
+  --width-max: 46rem;
+  --pos-left: 0;
+  --pos-top: 0;
   align-items: center;
   background-color: white;
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   border: 1px solid var(--color-not-quite-white);
   box-shadow: var(--shadow-card);
   color: var(--color-text-primary);
   display: flex;
   justify-content: space-between;
+  left: var(--pos-left);
   line-height: 1.4;
-  margin: 0 auto calc(var(--g-row) * -2) auto;
-  max-width: 46rem;
-  padding: 0.5rem 1.4rem;
-  position: relative;
-  transform: translateY(calc(var(--g-row) * 4));
+  margin: 0 auto;
+  margin-bottom: var(--margin-bottom, 0);
+  max-width: var(--width-max);
+  padding: var(--padding-v) 1.4rem;
+  position: absolute;
   text-decoration: none;
+  top: var(--pos-top);
+  transform: translateY(var(--translate-y, 0));
   transition: 0.1s ease;
+  width: 100%;
+  z-index: 2;
 }
 
 .banner__cta img {
@@ -96,7 +110,7 @@
 }
 
 .banner__cta:focus {
-  border-radius: 40px;
+  border-radius: var(--border-radius);
 }
 
 .banner__cta:focus .btn__arrow {
@@ -109,11 +123,14 @@
 }
 
 @media (min-width: 31.25em) {
-  .banner::after {
-    background-size: 100%;
-    margin-top: -1.5rem;
-    margin-left: auto;
-    width: calc(100% - 12rem);
+  .banner__cta {
+    --padding-h: var(--g-gutter-width) * 2;
+    --border-radius: 40px;
+    --padding-v: 0.5rem;
+    --pos-top: calc(var(--g-row) * 2);
+    --pos-left: var(--g-gutter-width);
+    position: fixed;
+    width: calc(100% - var(--padding-h));
   }
 
   .banner__contents {
@@ -127,5 +144,29 @@
 
   .banner__nav a + a {
     margin-left: min(4vw, 3.75rem);
+  }
+}
+
+@media (min-width: 37.5em) {
+  .banner__cta {
+    --padding-h: calc((var(--g-gutter-width) * 2.75) * 2);
+    --pos-left: calc(var(--g-gutter-width) * 2.75);
+  }
+}
+
+@media (min-width: 52.8125em) {
+  .banner__cta {
+    --pos-top: calc(var(--g-row) * 3);
+    --pos-left: calc(50% - var(--width-max) / 2);
+  }
+
+  .banner__cta + .banner__contents {
+    --padding-v: 3rem;
+  }
+}
+
+@media (min-width: 96.25em) {
+  .banner__cta + .banner__contents {
+    --padding-v: 2rem;
   }
 }
