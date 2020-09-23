@@ -60,6 +60,54 @@
   transform: scale3d(1, 1, 1);
 }
 
+.banner__cta {
+  align-items: center;
+  background-color: white;
+  border-radius: 40px;
+  border: 1px solid var(--color-not-quite-white);
+  box-shadow: var(--shadow-card);
+  color: var(--color-text-primary);
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+  margin: 0 auto calc(var(--g-row) * -2) auto;
+  max-width: 46rem;
+  padding: 0.5rem 1.4rem;
+  position: relative;
+  transform: translateY(calc(var(--g-row) * 4));
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+
+.banner__cta img {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.banner__cta .btn__arrow {
+  color: var(--color-accent-active);
+  margin-top: 0.4rem;
+  transition: 0.12s ease;
+}
+
+.banner__cta:hover {
+  border-color: var(--color-accent-active);
+  color: var(--color-accent-active);
+}
+
+.banner__cta:focus {
+  border-radius: 40px;
+}
+
+.banner__cta:focus .btn__arrow {
+  color: white;
+}
+
+.banner__cta:hover .btn__arrow,
+.banner__cta:focus .btn__arrow {
+  transform: translate3d(5px, 0, 0);
+}
+
 @media (min-width: 31.25em) {
   .banner::after {
     background-size: 100%;

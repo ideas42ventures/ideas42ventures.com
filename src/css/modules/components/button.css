@@ -19,3 +19,8 @@
 .btn:focus {
   border-radius: var(--border-radius, 8px);
 }
+
+.btn__arrow svg {
+  height: 23px;
+  width: 31px;
+}
