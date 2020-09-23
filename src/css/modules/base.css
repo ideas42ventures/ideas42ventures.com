@@ -33,3 +33,30 @@ input {
   border-radius: 6px;
   box-shadow: var(--shadow-card);
 }
+
+.card__intro {
+  padding: calc(var(--g-row) * 2) calc(var(--g-gutter-width) * 2);
+  text-align: center;
+}
+
+.card__title {
+  color: var(--color-accent-secondary);
+  display: block;
+  font-size: var(--font-size-4);
+}
+
+.card__body {
+  padding: 0 calc(var(--g-gutter-width) * 2);
+  padding-bottom: calc(var(--g-row) * 4);
+}
+
+.card__body ul,
+.card__body ol {
+  margin: 0;
+  margin-left: var(--g-gutter-width);
+  padding: 0;
+}
+
+.card__body li {
+  padding-bottom: calc(var(--g-row) * 1.5);
+}

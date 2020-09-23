@@ -112,6 +112,38 @@
   margin: calc(var(--g-row) * 6) 0;
 }
 
+.apply-note__actions {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--g-row) 0;
+}
+
+.actions__btns {
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.actions__btns .btn {
+  --padding-h: 0.75em;
+  --font-size: var(--font-size-0);
+}
+
+.apply-note__actions p {
+  margin: 0;
+}
+
+.actions__note {
+  flex: 1 1;
+  font-size: var(--font-size-0);
+  line-height: 1.2;
+  min-width: 15ch;
+}
+
+.provide__details-card {
+  align-self: flex-start;
+}
+
 @media (min-width: 41.875em) {
   .cohort__nav-container::before {
     --arrow-offset: 1.9;
