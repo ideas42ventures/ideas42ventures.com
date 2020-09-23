@@ -41,10 +41,20 @@
   --border-radius: 12px;
   --font-size: var(--font-size-5);
   --margin-top: calc(var(--g-row) * 4);
-  background: var(--color-accent-tertiary);
-  border: 3px solid currentColor;
-  color: var(--color-text-primary);
+  --color: var(--color-text-primary);
+  border-width: 3px;
   margin: var(--margin-top) auto 0 auto;
   max-width: calc(var(--g-col-width) + calc(var(--g-gutter-width) * 2));
   width: 100%;
+}
+
+.apply-cta__btn .btn__arrow {
+  display: inline-block;
+  transform: translate3d(0.75rem, 0.25rem, 0);
+  transition: 0.12s ease;
+}
+
+.apply-cta__btn:hover .btn__arrow,
+.apply-cta__btn:focus .btn__arrow {
+  transform: translate3d(1rem, 0.25rem, 0);
 }
