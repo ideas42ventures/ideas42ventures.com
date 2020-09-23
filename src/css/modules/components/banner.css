@@ -122,6 +122,14 @@
   transform: translate3d(5px, 0, 0);
 }
 
+.btn.banner__apply-btn {
+  --color: var(--color-text-primary);
+}
+
+.btn.banner__apply-btn:hover {
+  --color: var(--color-accent-active);
+}
+
 @media (min-width: 31.25em) {
   .banner__cta {
     --padding-h: var(--g-gutter-width) * 2;
