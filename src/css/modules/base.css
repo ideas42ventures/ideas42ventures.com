@@ -26,3 +26,10 @@ input {
   background-color: var(--color-accent-secondary);
   color: white;
 }
+
+.card {
+  background-color: white;
+  border: 1px solid var(--color-text-light);
+  border-radius: 6px;
+  box-shadow: var(--shadow-card);
+}
