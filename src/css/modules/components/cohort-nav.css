@@ -6,6 +6,7 @@
   box-shadow: var(--shadow-card);
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: calc(var(--g-row) * 7);
 }
 
 .cohort-nav ul {
@@ -95,10 +96,6 @@
   padding-left: 1rem;
   padding-right: 1.2rem;
   text-align: center;
-}
-
-.cohort-nav + .hero__tag {
-  margin-top: calc(var(--g-row) * 7);
 }
 
 @media (min-width: 31.25em) {

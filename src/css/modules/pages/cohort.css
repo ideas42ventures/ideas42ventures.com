@@ -118,19 +118,8 @@
   }
 }
 
-@media (min-width: 76.875em) {
-  .cohort__landing-intro {
-    grid-column: 1 / span var(--g-column-span, 2);
-  }
-}
-
 @media (min-width: 91.875em) {
-  .cohort__landing-intro {
-    --g-column-span: 3;
-  }
-
   .cohort__landing-qa {
-    grid-column-end: span 2;
     margin-left: 1.5rem;
   }
 }

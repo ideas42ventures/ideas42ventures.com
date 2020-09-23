@@ -55,11 +55,25 @@ html {
   .grid {
     --g-template-columns: 1fr 1fr 1fr;
   }
+
+  .grid--max-3 {
+    grid-column: 1 / span var(--g-column-span, 2);
+  }
 }
 
 @media (min-width: 91.25em) {
   .grid {
     --g-template-columns: var(--g-column-template);
+  }
+}
+
+@media (min-width: 91.875em) {
+  .grid--max-3 {
+    --g-column-span: 3;
+  }
+
+  .grid--max-2 {
+    grid-column-end: span 2;
   }
 }
 
