@@ -8,33 +8,49 @@ noCohortCta: true
 
 {% block masthead %}
   {{ super() }}
-  <div class="hero hero--what-we-provide standard-restricted-width">
+  <div class="hero cohort__hero hero--what-we-provide standard-restricted-width">
     {{ cohort_nav() }}
-    <p class="hero__tag">
-      We’re with you
-    </p>
-    <h1 class="hero__title">
-      What we provide our entrepreneurs
-    </h1>
-    <p class="hero__body g-max-4">
-      Starting a business is risky, and for many individuals without a personal 
-      financial safety net, or access to a network of individuals with 
-      significant capital to fund their venture, the risk is simply too high. 
-      We view this as an unacceptable barrier to entry for entrepreneurship and 
-      believe that it is both unfair, and reduces the volume and quality of new 
-      businesses as many individuals with the talent, motivation and passion to 
-      start their own business are unable to. At the ideas42 Venture Studio we 
-      can’t guarantee your success, but we can reduce your risk of trying to 
-      build an amazing business, and support those entrepreneurs who don’t have 
-      access today.
-    </p>
-    <p class="callout font-size-3 g-max-3">
-      If you are selected to join the ideas42 Venture Studio as an 
-      entrepreneur, we will pay you a <strong>salary</strong> ($75k per year), and provide 
-      <strong>benefits</strong> for 18 months, while surrounding you with a dedicated <strong>team</strong> 
-      of business builders, and behavioral scientists to help bring your 
-      vision to life.
-    </p>
+    <div class="grid">
+      <div class="grid--max-3">
+        <p class="hero__tag">
+          The support
+        </p>
+        <h1 class="hero__title">
+          We’re with you
+        </h1>
+        <p class="hero__body">
+          Starting a business is risky, and for many individuals without a personal 
+          financial safety net, or access to a network of individuals with 
+          significant capital to fund their venture, the risk is simply too high. 
+          We view this as an unacceptable barrier to entry for entrepreneurship and 
+          believe that it is both unfair, and reduces the volume and quality of new 
+          businesses as many individuals with the talent, motivation and passion to 
+          start their own business are unable to. At the ideas42 Venture Studio we 
+          can’t guarantee your success, but we can reduce your risk of trying to 
+          build an amazing business, and support those entrepreneurs who don’t have 
+          access today.
+        </p>
+      </div>
+      <div class="card grid--max-2 provide__details-card">
+        <header class="card__intro">
+          <p><strong class="card__title">If you are selected to join, we will… </strong></p>
+        </header>
+        <div class="card__body">
+          <ul>
+            <li>
+              Pay you a <strong>salary</strong> of $75k per year
+            </li>
+            <li>
+              Provide <strong>benefits</strong> for 18 months
+            </li>
+            <li>
+              Surround you with a dedicated <strong>team</strong> of business 
+              builders and behavioral scientests to help bring your vision to life
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
 

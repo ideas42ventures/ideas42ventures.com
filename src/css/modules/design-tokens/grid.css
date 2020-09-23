@@ -1,15 +1,7 @@
 html {
-  /* 
-    Pixel values. We don't use these directly in styles. We use these to
-    calculate relative units. These are here so we don't have to math in our heads
-   */
-  --g-max-width-px: 1476;
-  --g-col-width-px: 256;
-  --g-gutter-width-px: 20;
-
-  --g-max-width: calc(var(--g-max-width-px) / 16 * 1rem);
-  --g-col-width: calc(var(--g-col-width-px) / 16 * 1rem);
-  --g-gutter-width: calc(var(--g-gutter-width-px) / 16 * 1rem);
+  --g-max-width: calc(1476 / 16 * 1rem);
+  --g-col-width: calc(256 / 16 * 1rem);
+  --g-gutter-width: calc(20 / 16 * 1rem);
   --g-row: 0.625rem;
   --g-column-template: repeat(auto-fill, minmax(var(--g-col-width), 1fr));
 
@@ -53,13 +45,27 @@ html {
 
 @media (min-width: 76.875em) {
   .grid {
-    --g-template-columns: 1fr 1fr 1fr;
+    --g-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .grid--max-3 {
+    grid-column: 1 / span var(--g-column-span, 2);
+  }
+
+  .grid--max-2 {
+    grid-column-end: span 2;
   }
 }
 
 @media (min-width: 91.25em) {
   .grid {
     --g-template-columns: var(--g-column-template);
+  }
+}
+
+@media (min-width: 91.875em) {
+  .grid--max-3 {
+    --g-column-span: 3;
   }
 }
 

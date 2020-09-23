@@ -1,9 +1,10 @@
 .btn {
   --padding-v: 0.7em;
   --padding-h: 1.5em;
-  background: var(--color-accent-active);
+  --color: var(--color-accent-active);
+  background: var(--color);
   border-radius: var(--border-radius, 8px);
-  border: 0;
+  border: 2px solid var(--color);
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -14,6 +15,11 @@
     var(--padding-h);
   text-align: center;
   text-decoration: none;
+}
+
+.btn--outlined {
+  background-color: transparent;
+  color: var(--color);
 }
 
 .btn:focus {

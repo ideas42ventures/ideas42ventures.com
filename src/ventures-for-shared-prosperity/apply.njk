@@ -9,21 +9,25 @@ noCohortCta: true
 
 {% block masthead %}
   {{ super() }}
-  <div class="hero standard-restricted-width">
+  <div class="hero cohort__hero standard-restricted-width">
     {{ cohort_nav() }}
-    <p class="hero__tag">
-      You belong here
-    </p>
-    <h1 class="hero__title">
-      Apply to join Ventures for Shared Prosperity
-    </h1>
-    <p class="hero__body g-max-4">
-      We’re recruiting four motivated individuals to co-build businesses with us 
-      that help address the excess costs of poverty. We’re looking for people (you?) 
-      that believe if given the time, the money, and the audience, they can channel 
-      their lived experiences, ideas, and talents into positive impact.  
-    </p>
-    {% include "components/apply-note.njk" %}
+    <div class="grid">
+      <div class="grid--max-3">
+        <p class="hero__tag">
+          The process
+        </p>
+        <h1 class="hero__title">
+          You belong here
+        </h1>
+        <p class="hero__body g-max-4">
+          We’re recruiting four motivated individuals to co-build businesses with us 
+          that help address the excess costs of poverty. We’re looking for people (you?) 
+          that believe if given the time, the money, and the audience, they can channel 
+          their lived experiences, ideas, and talents into positive impact.  
+        </p>
+      </div>
+      {% include "components/apply-note.njk" %}
+    </div>
   </div>
 {% endblock %}
 
@@ -84,6 +88,5 @@ noCohortCta: true
     you’re excited about the chance to make social impact through technology, 
     we encourage you to apply.
   </p>
-  {%include "components/apply-note.njk"%}
 </div>
 {% endblock %}
