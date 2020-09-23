@@ -41,7 +41,3 @@ html {
   /* This doesn't really fit in color, but we'll leave it here for now. */
   --shadow-card: 0px 6px 12px rgba(23, 93, 199, 0.15);
 }
-
-.highlight-text {
-  color: var(--color-accent-secondary);
-}
