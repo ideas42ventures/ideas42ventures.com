@@ -1,3 +1,7 @@
+.hero__body--home {
+  padding-right: 1rem;
+}
+
 .model__timeline,
 .evaluate__questions {
   display: grid;
