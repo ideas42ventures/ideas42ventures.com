@@ -16,8 +16,7 @@
 .model__segment {
   display: flex;
   flex: 1 1;
-  margin: 0 auto;
-  margin-top: calc(var(--g-row) * 3);
+  margin: calc(var(--g-row) * 4) auto;
   max-width: 25rem;
   min-width: 18.75rem;
   position: relative;
@@ -63,14 +62,19 @@
 }
 
 .model__segment .card::before,
+.model__segment .card::after,
 .model__segment::before {
   background: transparent var(--segment-graphic) no-repeat center;
   background-size: 100%;
   content: "";
   display: block;
-  height: var(--graphic-size);
   pointer-events: none;
   position: absolute;
+}
+
+.model__segment .card::before,
+.model__segment::before {
+  height: var(--graphic-size);
   width: var(--graphic-size);
 }
 
@@ -108,10 +112,54 @@
   transform: rotate(18deg);
 }
 
+.model__segment:nth-child(2) .card::after {
+  background-image: url("/images/graphic-arrow-brite-bird.svg");
+  top: -4.5rem;
+  height: 2.75rem;
+  right: -1rem;
+  transform: rotate(90deg) scaleY(-1);
+  width: 9.1875rem;
+}
+
 .model__segment:nth-child(3) .card::before {
   left: -0.8rem;
   opacity: 0.7;
   top: 70%;
+}
+
+.model__segment:nth-child(3) .card::after {
+  background-image: url("/images/graphic-arrow-barney.svg");
+  top: -4.5rem;
+  height: 2.75rem;
+  left: -1rem;
+  transform: rotate(90deg) scaleY(-1);
+  width: 9.1875rem;
+}
+
+@media (min-width: 45.625em) {
+  .model__segment:nth-child(2) .card::after {
+    bottom: -1.75rem;
+    left: -6.5rem;
+    right: initial;
+    top: initial;
+    transform: none;
+  }
+
+  .model__segment:nth-child(3) .card::after {
+    right: -8rem;
+    left: initial;
+    top: -4rem;
+    transform: rotate(120deg) scaleY(1);
+  }
+}
+
+@media (min-width: 65.625em) {
+  .model__segment:nth-child(3) .card::after {
+    left: -5.75rem;
+    right: initial;
+    top: -2rem;
+    transform: none;
+  }
 }
 
 .model__segment:nth-child(3)::before {
