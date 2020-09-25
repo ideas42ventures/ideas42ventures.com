@@ -182,8 +182,10 @@
 }
 
 .evaluate_q {
-  margin-top: calc(var(--g-row) * 2);
+  flex: 1 1;
+  margin: calc(var(--g-row) * 2) auto 0 auto;
   max-width: 30rem;
+  min-width: 18.75rem;
   text-align: center;
 }
 
