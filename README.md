@@ -5,6 +5,15 @@ The ideas42 Venture Studio website.
 - Production (temp): [https://ideas42ventures.netlify.app/](https://ideas42ventures.netlify.app/)
 - Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify for it.
 
+### Analytics
+
+We do not use Google Analytics because we respect the privacy of people that visit our websites.
+
+We still want to track how our site is being used, so instead, we use the privacy-focused [Fathom](https://usefathom.com/).
+
+- The main Fathom account is under `tyler@ideas42ventures.com`
+- The analytics dashboard is available–password protected–at [https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com](https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com) Ping Tyler in Slack or email for the password.
+
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
