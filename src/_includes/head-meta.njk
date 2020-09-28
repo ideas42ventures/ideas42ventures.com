@@ -3,18 +3,31 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="We Build Companies to Solve Massive Social Challenges">
-<meta name="og:description" content="We Build Companies to Solve Massive Social Challenges">
-<meta name="twitter:description" content="We Build Companies to Solve Massive Social Challenges">
+{% set metaTitle = title or "ideas42 Venture Studio" -%}
+{% set ogDescription = meta.description or "We build companies to solve massive social challenges" -%}
 
-<meta property="og:image" content="https://ideas42ventures.com/social-default.png">
-<meta name="twitter:image:src" content="https://ideas42ventures.com/social-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="ideas42 Venture Studio">
-<meta name="twitter:title" content="ideas42 Venture Studio">
+{% set metaImage = meta.image or "https://ideas42ventures.com/social-default.png" -%}
+{% set metaImageAlt = meta.imageAlt or "A photo illustration made up of squares, circles, and triangles to represent the three building blocks of ideas42 Ventures" -%}
 
-<meta property="og:url" content="https://ideas42ventures.com">
-<meta name="twitter:url" content="https://ideas42ventures.com">
+<title>{{ metaTitle }}</title>
+<meta property="og:title" content="{{ metaTitle }}">
+<meta name="twitter:title" content="{{ metaTitle }}">
+<meta property="og:site_name" content="{{ metaTitle }}">
 
-<meta name="twitter:site" content="@ideas42">
-<meta property="og:type" content="article">
+<meta name="description" content="{{ ogDescription }}">
+<meta property="og:description" content="{{ ogDescription }}">
+<meta name="twitter:description" content="{{ ogDescription }}">
+
+<meta property="og:url" content="https://ideas42ventures.com{{ page.url}}">
+<meta name="twitter:url" content="https://ideas42ventures.com{{ page.url}}">
+
+<meta property="og:image" content="{{ metaImage }}">
+<meta property="og:image:alt" content="{{ metaImageAlt }}">
+
+<meta name="twitter:image" content="{{ metaImage }}">
+<meta name="twitter:image:alt" content="{{ metaImageAlt }}">
+
+<meta name="twitter:card" content="{{ meta.card or 'summary' }}">
+
+<meta name="twitter:site" content="@ideas42ventures">
+<meta property="og:type" content="website">
