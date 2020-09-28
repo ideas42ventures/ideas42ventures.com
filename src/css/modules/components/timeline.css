@@ -159,15 +159,15 @@
 }
 
 .timeline__date:nth-child(2) {
-  --pos: 26;
+  --pos: 35;
 }
 
 .timeline__range:nth-child(1) {
-  --pos: 10 / 28;
+  --pos: 10 / 37;
 }
 
 .timeline__event:nth-child(1) {
-  --pos: 13 / 26;
+  --pos: 18 / 31;
 }
 /* end Sep 30 - Oct 18 */
 
@@ -326,7 +326,7 @@
   }
 
   .timeline__event:nth-child(1) {
-    --pos: 6 / 31;
+    --pos: 15 / 32;
   }
 
   .timeline__event:nth-child(2) {
