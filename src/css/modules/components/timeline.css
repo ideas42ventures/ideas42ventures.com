@@ -21,8 +21,9 @@
 }
 
 .timeline__month {
+  --num-rows: 20;
   display: block;
-  height: calc(var(--g-row) * 20);
+  height: calc(var(--g-row) * var(--num-rows));
   padding-bottom: var(--g-row);
   padding-right: 1rem;
   position: relative;
@@ -31,6 +32,14 @@
 
 .timeline__month strong {
   position: relative;
+}
+
+.timeline__month:first-child {
+  --num-rows: 5;
+}
+
+.timeline__month:last-child {
+  --num-rows: 25;
 }
 
 .timeline__month:last-child::before {
@@ -50,46 +59,21 @@
 .timeline__dates,
 .timeline__ranges,
 .timeline__events {
+  --num-days: 130;
   display: grid;
-  grid-template-rows: repeat(150, 0.667%);
+  grid-template-rows: repeat(var(--num-days), 0.667%);
+}
+
+.timeline__events {
+  list-style: none;
+  padding: 0;
 }
 
 .timeline__date,
 .timeline__range,
+.timeline__marker,
 .timeline__event {
   grid-row: var(--pos);
-}
-
-.timeline__date:nth-child(1) {
-  --pos: 17;
-}
-
-.timeline__date:nth-child(2) {
-  --pos: 26;
-}
-
-.timeline__date:nth-child(3) {
-  --pos: 43;
-}
-
-.timeline__date:nth-child(4) {
-  --pos: 55;
-}
-
-.timeline__date:nth-child(5) {
-  --pos: 64;
-}
-
-.timeline__date:nth-child(6) {
-  --pos: 86;
-}
-
-.timeline__date:nth-child(7) {
-  --pos: 92;
-}
-
-.timeline__date:nth-child(8) {
-  --pos: 106;
 }
 
 .timeline__date {
@@ -132,7 +116,6 @@
   border: 1px solid var(--color-text-primary);
   border-left: 0;
   border-radius: 0 4px 4px 0;
-  display: block;
   width: calc(var(--g-row) * 1.5);
 }
 
@@ -147,6 +130,14 @@
   width: calc(var(--g-row) * 2);
 }
 
+.timeline__marker {
+  background-color: var(--color-text-primary);
+  display: block;
+  height: 1px;
+  margin-left: -2rem;
+  width: calc(var(--g-row) * 8);
+}
+
 .timeline__event {
   margin: 0;
   text-align: left;
@@ -154,6 +145,7 @@
 
 .timeline__event strong {
   display: block;
+  line-height: 1.1;
 }
 
 .timeline__event p {
@@ -161,56 +153,95 @@
   margin-top: 0.25rem;
 }
 
-.timeline__event:nth-child(1) {
-  --pos: 30 / 46;
+/* Sep 30 - Oct 18 */
+.timeline__date:nth-child(1) {
+  --pos: 8;
+}
+
+.timeline__date:nth-child(2) {
+  --pos: 26;
 }
 
 .timeline__range:nth-child(1) {
-  --pos: 18 / 45;
+  --pos: 10 / 28;
 }
 
-/* FIXME */
-.timeline__event:nth-child(2) {
-  grid-column: 26;
-  display: none;
+.timeline__event:nth-child(1) {
+  --pos: 13 / 26;
+}
+/* end Sep 30 - Oct 18 */
+
+/* Nov 6 - Nov 15 */
+.timeline__date:nth-child(3) {
+  --pos: 46;
 }
 
-.timeline__event:nth-child(3) {
-  --pos: 59 / 65;
+.timeline__date:nth-child(4) {
+  --pos: 55;
 }
 
 .timeline__range:nth-child(2) {
-  --pos: 56 / 65;
+  --pos: 48 / 57;
+}
+
+.timeline__event:nth-child(2) {
+  --pos: 48 / 61;
+}
+/* end Nov 6 - Nov 15 */
+
+/* Dec 7 - Dec 18 */
+.timeline__date:nth-child(5) {
+  --pos: 81;
+}
+
+.timeline__date:nth-child(6) {
+  --pos: 92;
 }
 
 .timeline__range:nth-child(3) {
-  --pos: 87 / 93;
+  --pos: 83 / 94;
 }
 
-.timeline__event:nth-child(4) {
-  --pos: 88 / 92;
+.timeline__event:nth-child(3) {
+  --pos: 85 / 98;
+}
+/* end Dec 7 - Dec 18 */
+
+/* Jan 4 - Jan 8 */
+.timeline__date:nth-child(7) {
+  --pos: 112;
+}
+
+.timeline__date:nth-child(8) {
+  --pos: 117;
 }
 
 .timeline__range:nth-child(4) {
-  --pos: 107 / 121;
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
+  --pos: 114 / 119;
+}
+
+.timeline__event:nth-child(4) {
+  --pos: 113 / 126;
+}
+/* end Jan 4 - Jan 8 */
+
+/* Offers */
+.timeline__date:nth-child(9) {
+  --pos: 127;
+}
+
+.timeline__marker:nth-child(5) {
+  --pos: 128 / 128;
 }
 
 .timeline__event:nth-child(5) {
-  --pos: 112 / 121;
-}
-
-.timeline__event:nth-child(6) {
-  --pos: 121 / 150;
-  border-top: 1px solid var(--color-text-primary);
-  margin-left: -3.3rem;
+  --pos: 128 / 150;
   padding-right: 1.25rem;
-  padding-left: 1.25rem;
-  padding-top: 2rem;
+  position: relative;
 }
+/* end Offers */
 
-@media (min-width: 56em) {
+@media (min-width: 57.5em) {
   .timeline {
     display: block;
     max-width: 100%;
@@ -218,7 +249,7 @@
 
   .timeline__months {
     display: grid;
-    grid-template-columns: 0.5fr repeat(4, 1fr);
+    grid-template-columns: 0.25fr repeat(4, 1fr);
   }
 
   .timeline__months::after {
@@ -241,8 +272,10 @@
 
   .timeline__month:last-child::before {
     bottom: initial;
+    height: 5.5rem;
     right: 0;
-    top: -46px;
+    top: -1rem;
+    width: 6.25rem;
     z-index: 0;
   }
 
@@ -265,7 +298,6 @@
     border: 1px solid var(--color-text-primary);
     border-top: 0;
     border-radius: 0 0 4px 4px;
-    display: block;
     height: calc(var(--g-row) * 2);
     width: auto;
   }
@@ -278,61 +310,57 @@
     width: 1px;
   }
 
+  .timeline__marker {
+    margin-left: 0;
+    height: calc(var(--g-row) * 2);
+    grid-row: 1;
+    width: 1px;
+  }
+
   .timeline__event {
     text-align: center;
   }
 
   .timeline__event strong {
-    margin-top: 1.75rem;
+    margin-top: 0.5rem;
   }
 
-  .timeline__event:nth-child(1),
-  .timeline__range:nth-child(1) {
-    --pos: 18 / 44;
+  .timeline__event:nth-child(1) {
+    --pos: 6 / 31;
+  }
+
+  .timeline__event:nth-child(2) {
+    --pos: 42 / 63;
   }
 
   .timeline__event:nth-child(3) {
-    --pos: 50 / 71;
+    --pos: 74 / 103;
   }
 
   .timeline__event:nth-child(4) {
-    --pos: 81 / 99;
-  }
-
-  .timeline__range:nth-child(4) {
-    border-bottom: 1px solid;
-    border-right: 0;
+    --pos: 104 / 126;
   }
 
   .timeline__event:nth-child(5) {
-    --pos: 106 / 121;
-  }
-
-  .timeline__event:nth-child(6) strong {
-    margin-top: 0;
-  }
-
-  .timeline__event:nth-child(6) {
-    --pos: 121 / 150;
-    border-left: 1px solid var(--color-text-primary);
-    border-top: 0;
-    padding-right: 1.25rem;
-    padding-left: 1.75rem;
-    padding-top: 2rem;
-    margin-left: 0;
-    margin-top: calc(var(--g-row) * -5.6);
+    --pos: 128 / 135;
+    padding-right: 0;
     text-align: left;
+  }
+
+  .timeline__marker:nth-child(5) {
+    --pos: 128;
   }
 
   .timeline__dates,
   .timeline__ranges,
   .timeline__events {
-    grid-template-columns: repeat(135, 0.649%);
+    grid-template-columns: repeat(var(--num-days), 0.667%);
     grid-template-rows: auto;
   }
 
   .timeline__date,
   .timeline__range,
+  .timeline__marker,
   .timeline__event {
     grid-row: initial;
     grid-column: var(--pos);
