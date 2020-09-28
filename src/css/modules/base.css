@@ -18,10 +18,6 @@ input {
   font-family: var(--font-sans);
 }
 
-.content-block__intro {
-  font-size: var(--font-size-4);
-}
-
 ::selection {
   background-color: var(--color-accent-secondary);
   color: white;
