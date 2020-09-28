@@ -102,11 +102,24 @@
 }
 
 .cohort__qa-sessions {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   padding: calc(var(--g-row) * 2) calc(var(--g-gutter-width) * 2.5);
 }
 
-.cohort__qa-sessions li + li {
-  margin-top: 1rem;
+.cohort__qa-sessions li {
+  display: flex;
+  flex: 1 1 50%;
+  padding: 0.5rem;
+}
+
+.cohort__qa-sessions a {
+  align-items: center;
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  text-align: center;
 }
 
 .apply__timeline {
