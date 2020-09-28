@@ -76,6 +76,12 @@
   text-align: center;
 }
 
+.qa__note {
+  background-color: rgba(var(--color-not-quite-white-rgb), 0.4);
+  padding: calc(var(--g-row) * 2.5) calc(var(--g-gutter-width) * 2);
+  margin-bottom: 0;
+}
+
 .qa__intro-graphic {
   padding: calc(var(--g-row) * 3) 0 calc(var(--g-row) * 0.5) 0;
 }
