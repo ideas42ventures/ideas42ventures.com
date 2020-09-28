@@ -1,8 +1,41 @@
 .timeline {
+  margin: calc(var(--g-row) * 4) 0 0 0;
+  max-width: var(--g-cols-2--fixed);
+}
+
+.timeline__contents {
   display: grid;
   grid-template-columns: 0.4fr 0.25fr 0.25fr 1fr;
+}
+
+.timeline__caption {
   margin-top: calc(var(--g-row) * 4);
-  max-width: var(--g-cols-2--fixed);
+}
+
+.timeline__caption p::before {
+  background-color: var(--color-text-primary);
+  border-radius: 0.5rem;
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.timeline__caption ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline__caption li {
+  padding: 0.25rem;
+}
+
+.timeline__caption .btn {
+  --font-size: var(--font-size-0);
 }
 
 .timeline__months {
@@ -112,6 +145,14 @@
   width: var(--size-inner);
 }
 
+.timeline__date.date--session::before {
+  display: none;
+}
+
+.timeline__date.date--session::after {
+  background: var(--color-text-primary);
+}
+
 .timeline__range {
   border: 1px solid var(--color-text-primary);
   border-left: 0;
@@ -159,24 +200,32 @@
 }
 
 .timeline__date:nth-child(2) {
-  --pos: 26;
+  --pos: 18;
+}
+
+.timeline__date:nth-child(3) {
+  --pos: 24;
+}
+
+.timeline__date:nth-child(4) {
+  --pos: 35;
 }
 
 .timeline__range:nth-child(1) {
-  --pos: 10 / 28;
+  --pos: 10 / 37;
 }
 
 .timeline__event:nth-child(1) {
-  --pos: 13 / 26;
+  --pos: 18 / 31;
 }
 /* end Sep 30 - Oct 18 */
 
 /* Nov 6 - Nov 15 */
-.timeline__date:nth-child(3) {
+.timeline__date:nth-child(5) {
   --pos: 46;
 }
 
-.timeline__date:nth-child(4) {
+.timeline__date:nth-child(6) {
   --pos: 55;
 }
 
@@ -190,11 +239,11 @@
 /* end Nov 6 - Nov 15 */
 
 /* Dec 7 - Dec 18 */
-.timeline__date:nth-child(5) {
+.timeline__date:nth-child(7) {
   --pos: 81;
 }
 
-.timeline__date:nth-child(6) {
+.timeline__date:nth-child(8) {
   --pos: 92;
 }
 
@@ -208,11 +257,11 @@
 /* end Dec 7 - Dec 18 */
 
 /* Jan 4 - Jan 8 */
-.timeline__date:nth-child(7) {
+.timeline__date:nth-child(9) {
   --pos: 112;
 }
 
-.timeline__date:nth-child(8) {
+.timeline__date:nth-child(10) {
   --pos: 117;
 }
 
@@ -226,7 +275,7 @@
 /* end Jan 4 - Jan 8 */
 
 /* Offers */
-.timeline__date:nth-child(9) {
+.timeline__date:nth-child(11) {
   --pos: 127;
 }
 
@@ -243,8 +292,11 @@
 
 @media (min-width: 57.5em) {
   .timeline {
-    display: block;
     max-width: 100%;
+  }
+
+  .timeline__contents {
+    display: block;
   }
 
   .timeline__months {
@@ -326,7 +378,7 @@
   }
 
   .timeline__event:nth-child(1) {
-    --pos: 6 / 31;
+    --pos: 15 / 32;
   }
 
   .timeline__event:nth-child(2) {

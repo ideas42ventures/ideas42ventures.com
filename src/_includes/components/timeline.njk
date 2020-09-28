@@ -1,60 +1,81 @@
-<div class="timeline">
-  <div class="timeline__months">
-    <time datetime="2020-09" class="timeline__month">Sep</time>
-    <time datetime="2020-10" class="timeline__month">Oct</time>
-    <time datetime="2020-11" class="timeline__month">Nov</time>
-    <time datetime="2020-12" class="timeline__month">Dec</time>
-    <time datetime="2021-01" class="timeline__month"><strong>Jan 2021</strong></time>
+<figure class="timeline">
+  <div class="timeline__contents">
+    <div class="timeline__months">
+      <time datetime="2020-09" class="timeline__month">Sep</time>
+      <time datetime="2020-10" class="timeline__month">Oct</time>
+      <time datetime="2020-11" class="timeline__month">Nov</time>
+      <time datetime="2020-12" class="timeline__month">Dec</time>
+      <time datetime="2021-01" class="timeline__month"><strong>Jan 2021</strong></time>
+    </div>
+    <div class="timeline__dates">
+      <time datetime="2020-09-30" class="timeline__date">30th</time>
+      <time datetime="2020-10-10" class="timeline__date date--session">10th</time>
+      <time datetime="2020-10-15" class="timeline__date date--session">15th</time>
+      <time datetime="2020-10-25" class="timeline__date">25th</time>
+
+      <time datetime="2020-11-06" class="timeline__date">6th</time>
+      <time datetime="2020-11-15" class="timeline__date">15th</time>
+
+      <time datetime="2020-12-07" class="timeline__date">7th</time>
+      <time datetime="2020-12-18" class="timeline__date">18th</time>
+
+      <time datetime="2021-01-04" class="timeline__date">4th</time>
+      <time datetime="2021-01-08" class="timeline__date">8th</time>
+
+      <time datetime="2021-01-18" class="timeline__date"></time>
+    </div>
+
+    <div class="timeline__ranges" aria-hidden="true">
+      <span class="timeline__range"></span>
+      <span class="timeline__range"></span>
+      <span class="timeline__range"></span>
+      <span class="timeline__range"></span>
+      <span class="timeline__marker"></span>
+    </div>
+
+    <ul class="timeline__events">
+      <li class="timeline__event">
+        <strong>Applications</strong>
+        Sep 30 - Oct 25
+      </li>
+
+      <li class="timeline__event">
+        <strong>Case Studies</strong>
+        Nov 6 - Nov 15
+      </li>
+    
+      <li class="timeline__event">
+        <strong>Interviews round 1</strong>
+        Dec 7 - Dec 18
+      </li>
+
+      <li class="timeline__event">
+        <strong>Interviews round 2</strong>
+        Jan 4 - Jan 8
+      </li>
+
+      <li class="timeline__event">
+        <strong>Offers</strong>
+        Mid January. We don’t have an exact date for when we’ll send offers. It 
+        will depend on the previous phases.
+      </li>
+    </ul>
   </div>
-  <div class="timeline__dates">
-    <time datetime="2020-09-30" class="timeline__date">30th</time>
-    <time datetime="2020-10-18" class="timeline__date">18th</time>
-
-    <time datetime="2020-11-06" class="timeline__date">6th</time>
-    <time datetime="2020-11-15" class="timeline__date">15th</time>
-
-    <time datetime="2020-12-07" class="timeline__date">7th</time>
-    <time datetime="2020-12-18" class="timeline__date">18th</time>
-
-    <time datetime="2021-01-04" class="timeline__date">4th</time>
-    <time datetime="2021-01-08" class="timeline__date">8th</time>
-
-    <time datetime="2021-01-18" class="timeline__date"></time>
-  </div>
-
-  <div class="timeline__ranges" aria-hidden="true">
-    <span class="timeline__range"></span>
-    <span class="timeline__range"></span>
-    <span class="timeline__range"></span>
-    <span class="timeline__range"></span>
-    <span class="timeline__marker"></span>
-  </div>
-
-  <ul class="timeline__events">
-    <li class="timeline__event">
-      <strong>Applications</strong>
-      Sep 30 - Oct 18
-    </li>
-
-    <li class="timeline__event">
-      <strong>Case Studies</strong>
-      Nov 6 - Nov 15
-    </li>
-   
-    <li class="timeline__event">
-      <strong>Interviews round 1</strong>
-      Dec 7 - Dec 18
-    </li>
-
-    <li class="timeline__event">
-      <strong>Interviews round 2</strong>
-      Jan 4 - Jan 8
-    </li>
-
-    <li class="timeline__event">
-      <strong>Offers</strong>
-      Mid January. We don’t have an exact date for when we’ll send offers. It 
-      will depend on the previous phases.
-    </li>
-  </div>
-</div>
+  <figcaption class="timeline__caption font-size-2 g-max-2-half">
+    <p>
+      Learn more about the ideas42 Venture Studio and our business building program 
+      at one of the following open ended conference calls.
+    </p>
+    <ul>
+    {% for session in qaSessions %}
+      <li>
+        <a class="btn btn--outlined" href="{{ session.url }}" target="_blank" rel="noopener">
+          <time datetime="{{ session.datetime }}">
+            {% dateFormat session.datetime, "LLL d yyyy '<br/>' t ZZZZ" %}
+          </time>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </figcaption>
+</figure>
