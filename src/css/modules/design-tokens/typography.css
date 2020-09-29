@@ -128,10 +128,7 @@ b {
 }
 
 a:focus {
-  background-color: var(--color-accent-active);
-  border-radius: 4px;
-  color: white !important;
-  outline: none;
+  outline: 3px solid currentColor;
 }
 
 main a:not([class]):hover,

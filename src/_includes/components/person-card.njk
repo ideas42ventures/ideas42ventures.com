@@ -2,11 +2,19 @@
 <div class="card" id="{% slugify person.name %}">
   <img class="person__img" src="/images/people/{{ person.img }}" alt="">
   <div class="person__info">
-    {% if person.team %}<small class="person__team">{{ person.team }}</small>{% endif %}
+    {% if person.team %}
+      <small class="person__team">{{ person.team }}</small>
+    {% endif %}
     <h3 class="person__name">{{ person.name }}</h3>
     <p class="person__focus">
       {{ person.role }}
     </p>
+
+    {% if person.linkedin %}
+      <a class="person__social-link" href="{{ person.linkedin }}" target="_blank" rel="noopener">
+        <img src="/images/logo-linkedin.png" alt="Go to {{ person.name }}'s LinkedIn Profile">
+      </a>
+    {% endif %}
   </div>
 </div>
 {% endmacro %}
