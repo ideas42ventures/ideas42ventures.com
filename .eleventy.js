@@ -10,7 +10,7 @@ const slugify = (str) =>
 module.exports = function (conf) {
   conf.addFilter("cssmin", (code) => new CleanCSS({}).minify(code).styles);
   conf.addShortcode("dateFormat", (dateStr, frmt = "DDD 'at' t ZZZZ") =>
-    DateTime.fromISO(dateStr).toFormat(frmt)
+    DateTime.fromISO(dateStr, { zone: "America/New_York" }).toFormat(frmt)
   );
   conf.addShortcode("headingAnchor", (level, text, id) => {
     const finalId = id ? id : slugify(text);
