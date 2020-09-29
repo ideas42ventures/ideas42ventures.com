@@ -18,8 +18,9 @@
 }
 
 .masthead__graphic--left {
+  bottom: 10%;
   left: initial;
-  right: 52%;
+  right: 72%;
 }
 
 .masthead__graphic--centered {
