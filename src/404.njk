@@ -6,29 +6,22 @@ title: ideas42 Venture Studio 404 page
 {% block masthead %}
   {{ super() }}
   <div class="hero standard-restricted-width">
-    <div class="g-max-3 g-right">
-      <h1 class="hero__title">
-      Sorry, we can't find the page you're looking
-      </h1>
-      <p class="hero__body">
-       We're happy you decided to look around! 
-      </p>
-       <h2>Check out some of the links below</h2>
-      <ul>
-        <li>
+    <h1 class="hero__title">
+      Not Found
+    </h1>
+    <p class="hero__body">
+      We couldn’t find a page at {{page.url}}.
+    </p>
+    <ul>
+      <li>
         <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/ventures-for-shared-prosperity/focus-area">Focus area</a>
-        </li>
-        <li>
-        <a href="/ventures-for-shared-prosperity/what-we-provide">What we provide</a>
       </li>
       <li>
-        <a href="/about">About us</a>
+        <a href="/about">About Us</a>
       </li>
-      </ul>
-    </div>
+      <li>
+        <a href="/ventures-for-shared-prosperity">Ventures for Shared Prosperity</a>
+      </li>
+    </ul>
   </div>
-  <img class="masthead__graphic masthead__graphic--left" src="/images/masthead-graphic-cube.svg" alt=""/>
 {% endblock %}
