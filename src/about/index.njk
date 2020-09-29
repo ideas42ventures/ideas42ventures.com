@@ -24,39 +24,56 @@ title: About the ideas42 Venture Studio
 {% endblock %}
 
 {% block main %}
-<div class="standard-restricted-width">
+<div class="standard-restricted-width about__team">
   {% headingAnchor "2", "Core team" %}
-  <p>Venture Studio staff and ideas42 core team members.</p>
-  <p><strong>Content in development</strong></p>
-  <div style="display: none">
-  {%for member in people.team %}
-    {{person_card(member)}}
-  {%endfor%}
-  </div>
+  <p class="font-size-3">
+    Venture Studio staff and ideas42 core team members.
+  </p>
 
-  <div class="g-section-vertical">
-    {% headingAnchor "2", "Advisors" %}
-    <p><strong>Content in development</strong></p>
-    <div style="display: none">
-    {%for advisor in people.advisors%}
-      {{person_card(advisor)}}
-    {%endfor%}
-    </div>
-  </div>
+  <ul class="people-list">
+    {% for person in people.team %}
+      <li class="person">
+        {{ person_card(person) }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
+<div class="standard-restricted-width">
+  {% headingAnchor "2", "Advisors" %}
 
+  <ul class="people-list">
+    {% for person in people.advisors %}
+      <li class="person">
+        <div class="card">
+          {{ person_card(person) }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="standard-restricted-width">
   <div class="g-max-3 g-centered font-size-3 g-section-vertical">
     {% headingAnchor "2", "Our values" %}
     <p>
-      At the ideas42 Venture Studio, our values are not words that guide our actions, but instead words that reflect who we are, what we do, and how we do it. While our business building model is constantly evolving, our actions, and thus our values are not.
+      At the ideas42 Venture Studio, our values are not words that guide our 
+      actions, but instead words that reflect who we are, what we do, and how 
+      we do it. While our business building model is constantly evolving, our 
+      actions, and thus our values are not.
     </p>
-
     <p>
-      We are humble and ambitious, and see no conflict between those two. We trust each other, but are not afraid to ask questions (easy and hard ones). We share in our successes and failures, but understand that being low ego doesn’t mean having no ego. We are transparent, diverse, and always learning. Sometimes we get things wrong. 
+      We are humble and ambitious, and see no conflict between those two. We 
+      trust each other, but are not afraid to ask questions (easy and hard ones). 
+      We share in our successes and failures, but understand that being low ego 
+      doesn’t mean having no ego. We are transparent, diverse, and always learning. 
+      Sometimes we get things wrong. 
     </p>
-
     <p>
-      We don’t believe we can solve every social problem (humble), but we believe that we can make things significantly better (ambitious), while not supporting or maintaining power for structurally racist, sexist or otherwise inequitable entities.
+      We don’t believe we can solve every social problem (humble), but we believe 
+      that we can make things significantly better (ambitious), while not 
+      supporting or maintaining power for structurally racist, sexist or otherwise 
+      inequitable entities.
     </p>
   </div>
 </div>
