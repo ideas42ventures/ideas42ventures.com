@@ -3,18 +3,17 @@
   gap: var(--g-gutter-width);
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   list-style: none;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0 8rem 0;
   padding: 0;
 }
 
 .person {
   display: flex;
-  flex: 1 1;
-  max-width: 19rem;
-  min-width: 15rem;
 }
 
 .person .card {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   overflow: hidden;
 }
@@ -32,29 +31,28 @@
 }
 
 .person__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0.75rem 1rem 0.75rem 1rem;
 }
 
 .person__name {
   font-size: var(--font-size-2);
-  margin: 0;
+  margin: 0.2rem 0;
 }
 
 .person__focus {
+  line-height: 1.2;
   margin: 0;
 }
 
 .person__social-link {
   border: 0;
   display: inline-block;
-  filter: grayscale(100%) contrast(300%);
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   max-width: 4rem;
-}
-
-.person__social-link:hover,
-.person__social-link:focus {
-  filter: grayscale(0) contrast(100%);
 }
 
 .person__social-link img {

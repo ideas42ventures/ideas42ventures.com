@@ -100,10 +100,47 @@
     }
   ],
   "advisors": [
-    "Emily Bailard",
-    "Phil Bronner",
-    "Joseph Gracia ",
-    "Molly HIll Patten",
-    "Josh Wright "
+    {
+      "name": "Bruno del Ama",
+      "role": "Investing, Entrepreneurship",
+      "img": "bruno-del-ama.jpg",
+      "linkedin": "https://www.linkedin.com/in/delama/"
+    },
+    {
+      "name": "Tami Garcia",
+      "role": "Entrepreneurship",
+      "img": "tami-garcia.jpg",
+      "linkedin": "https://www.linkedin.com/in/tamidgarcia/"
+    },
+    {
+      "name": "Castleigh Johnson",
+      "role": "Entrepreneurship, Finance",
+      "img": "castleigh-johnson.jpg",
+      "linkedin": "https://www.linkedin.com/in/castleighjohnson/"
+    },
+    {
+      "name": "Jamie Lopez",
+      "role": "Design",
+      "img": "jamie-lopez.jpg",
+      "linkedin": "https://www.linkedin.com/in/jaime-lopez-5748bb91/"
+    },
+    {
+      "name": "Stacey Sivak",
+      "role": "Enterprise Sales, Marketing",
+      "img": "stacey-sivak.jpg",
+      "linkedin": "https://www.linkedin.com/in/stacey-sivak-a04b062/"
+    },
+    {
+      "name": "Irene Sher",
+      "role": "Enterprise Sales, Marketing",
+      "img": "irene-sher.jpg",
+      "linkedin": "https://www.linkedin.com/in/irene-scher-64264911/"
+    },
+    {
+      "name": "Amaya Smith",
+      "role": "Entrepreneurship, Communications",
+      "img": "amaya-smith.jpg",
+      "linkedin": "https://www.linkedin.com/in/amaya-smith-8054a28/"
+    }
   ]
 }

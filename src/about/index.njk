@@ -39,15 +39,13 @@ title: About the ideas42 Venture Studio
   </ul>
 </div>
 
-<div class="standard-restricted-width">
+<div class="standard-restricted-width about__advisors">
   {% headingAnchor "2", "Advisors" %}
 
   <ul class="people-list">
     {% for person in people.advisors %}
       <li class="person">
-        <div class="card">
-          {{ person_card(person) }}
-        </div>
+        {{ person_card(person) }}
       </li>
     {% endfor %}
   </ul>

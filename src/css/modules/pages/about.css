@@ -1,5 +1,13 @@
-.about__team {
-  background: transparent url("/images/graphic-assorted-shapes.svg") no-repeat
-    left center;
+.about__team,
+.about__advisors {
+  background: transparent var(--bg-image) no-repeat left center;
   background-size: 100%;
+}
+
+.about__team {
+  --bg-image: url("/images/graphic-assorted-shapes.svg");
+}
+
+.about__advisors {
+  --bg-image: url("/images/graphic-assorted-shapes-again.svg");
 }
