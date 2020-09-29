@@ -9,6 +9,7 @@ const slugify = (str) =>
 
 module.exports = function (conf) {
   conf.addFilter("cssmin", (code) => new CleanCSS({}).minify(code).styles);
+  conf.addShortcode("slugify", (str = "") => slugify(str));
   conf.addShortcode("dateFormat", (dateStr, frmt = "DDD 'at' t ZZZZ") =>
     DateTime.fromISO(dateStr, { zone: "America/New_York" }).toFormat(frmt)
   );

@@ -1,20 +1,146 @@
 {
   "team": [
-    "Mike Burshteyn",
-    "Tamika Cummings",
-    "Katy Davis ",
-    "Manasee Desai",
-    "Tyler Gaw",
-    "Marc Laitin",
-    "Harrison Neuert",
-    "Blessing Ogunyemi",
-    "Dinardo rodriguez "
+    {
+      "name": "William Bogans",
+      "team": "Venture Studio",
+      "role": "Software Engineer",
+      "img": "william-bogans.jpg",
+      "linkedin": "https://www.linkedin.com/in/william-bogans-b5758a16b/"
+    },
+    {
+      "name": "Mike Burshteyn",
+      "team": "ideas42",
+      "role": "Behavioral Designer",
+      "img": "mike-burshteyn.jpg",
+      "linkedin": "https://www.linkedin.com/in/mikeburshteyn/"
+    },
+    {
+      "name": "Vivien Caetano",
+      "team": "ideas42",
+      "role": "Behavioral Designer",
+      "img": "vivien-caetano.jpg",
+      "linkedin": "https://www.linkedin.com/in/vivien-caetano-a8b60a63/"
+    },
+    {
+      "name": "Tamika Cummings",
+      "team": "ideas42",
+      "role": "General Counsel",
+      "img": "tamika-cummings.jpg",
+      "linkedin": "https://www.linkedin.com/in/tamika-cummings-25432032/"
+    },
+    {
+      "name": "Katy Davis",
+      "team": "ideas42",
+      "role": "Managing Director, ideas42",
+      "img": "katy-davis.jpg",
+      "linkedin": "https://www.linkedin.com/in/katy-davis-b5965b2/"
+    },
+    {
+      "name": "Manasee Desai",
+      "team": "ideas42",
+      "role": "Vice President, ideas42",
+      "img": "manasee-desai.jpg",
+      "linkedin": "https://www.linkedin.com/in/manasee-desai-7145333/"
+    },
+    {
+      "name": "Tyler Gaw",
+      "team": "Venture Studio",
+      "role": "Lead Software Engineer",
+      "img": "tyler-gaw.jpg",
+      "linkedin": "https://www.linkedin.com/in/tyler-gaw-designer-engineer/"
+    },
+    {
+      "name": "Marc Laitin",
+      "team": "Venture Studio",
+      "role": "Studio Lead",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+    },
+    {
+      "name": "Victoria Lucas",
+      "team": "ideas42",
+      "role": "Vice President, Talent",
+      "img": "victoria-lucas.jpg",
+      "linkedin": "https://www.linkedin.com/in/vslucas/"
+    },
+    {
+      "name": "Harrison Neuert",
+      "team": "ideas42",
+      "role": "Behavioral Designer",
+      "img": "harrison-neuert.jpg",
+      "linkedin": "https://www.linkedin.com/in/harrison-neuert-60339416b/"
+    },
+    {
+      "name": "Blessing Ogunyemi",
+      "team": "ideas42",
+      "role": "Behavioral Designer",
+      "img": "blessing-ogunyemi.jpg",
+      "linkedin": "https://www.linkedin.com/in/blessing-ogunyemi-64427ba2/"
+    },
+    {
+      "name": "Dinardo Rodriguez",
+      "team": "ideas42",
+      "role": "Behavioral Designer",
+      "img": "dinardo-rodriguez.jpg",
+      "linkedin": "https://www.linkedin.com/in/dinardorodriguez/"
+    },
+    {
+      "name": "Mitra Salasel",
+      "team": "ideas42",
+      "role": "Director of Communications",
+      "img": "mitra-salasel.jpg",
+      "linkedin": "https://www.linkedin.com/in/mitra-salasel-50574013/"
+    },
+    {
+      "name": "Josh Wright",
+      "team": "ideas42",
+      "role": "Executive Director, ideas42",
+      "img": "josh-wright.jpg",
+      "linkedin": "https://www.linkedin.com/in/wright/"
+    }
   ],
   "advisors": [
-    "Emily Bailard",
-    "Phil Bronner",
-    "Joseph Gracia ",
-    "Molly HIll Patten",
-    "Josh Wright "
+    {
+      "name": "Bruno del Ama",
+      "role": "Investing, Entrepreneurship",
+      "img": "bruno-del-ama.jpg",
+      "linkedin": "https://www.linkedin.com/in/delama/"
+    },
+    {
+      "name": "Tami Garcia",
+      "role": "Entrepreneurship",
+      "img": "tami-garcia.jpg",
+      "linkedin": "https://www.linkedin.com/in/tamidgarcia/"
+    },
+    {
+      "name": "Castleigh Johnson",
+      "role": "Entrepreneurship, Finance",
+      "img": "castleigh-johnson.jpg",
+      "linkedin": "https://www.linkedin.com/in/castleighjohnson/"
+    },
+    {
+      "name": "Jamie Lopez",
+      "role": "Design",
+      "img": "jamie-lopez.jpg",
+      "linkedin": "https://www.linkedin.com/in/jaime-lopez-5748bb91/"
+    },
+    {
+      "name": "Stacey Sivak",
+      "role": "Enterprise Sales, Marketing",
+      "img": "stacey-sivak.jpg",
+      "linkedin": "https://www.linkedin.com/in/stacey-sivak-a04b062/"
+    },
+    {
+      "name": "Irene Sher",
+      "role": "Enterprise Sales, Marketing",
+      "img": "irene-sher.jpg",
+      "linkedin": "https://www.linkedin.com/in/irene-scher-64264911/"
+    },
+    {
+      "name": "Amaya Smith",
+      "role": "Entrepreneurship, Communications",
+      "img": "amaya-smith.jpg",
+      "linkedin": "https://www.linkedin.com/in/amaya-smith-8054a28/"
+    }
   ]
 }

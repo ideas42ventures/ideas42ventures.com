@@ -23,10 +23,6 @@
   width: 8.75rem;
 }
 
-.banner__logo:focus path {
-  fill: white;
-}
-
 .banner__nav-item {
   color: var(--text-primary);
   font-weight: 600;
