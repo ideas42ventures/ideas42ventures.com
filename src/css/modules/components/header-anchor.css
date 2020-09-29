@@ -1,3 +1,28 @@
+@media (hover: hover) {
+  h1 .header-anchor,
+  h2 .header-anchor,
+  h3 .header-anchor,
+  h4 .header-anchor,
+  h5 .header-anchor,
+  h6 .header-anchor {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  h1:hover .header-anchor,
+  h2:hover .header-anchor,
+  h3:hover .header-anchor,
+  h4:hover .header-anchor,
+  h5:hover .header-anchor,
+  h6:hover .header-anchor,
+  .header-anchor:hover,
+  .header-anchor:focus,
+  :target .header-anchor {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .header-anchor {
   border: none;
   color: var(--color-text-primary);
