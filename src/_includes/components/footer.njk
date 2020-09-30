@@ -1,6 +1,8 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" action="#" method="post">
+    <form class="newsletter-form g-max-2" name="newsletter" action="/subscribed" 
+      method="post" data-netlify="true" netlify-honeypot="bot-field" 
+      id="newsletter-form">
       <fieldset>
         <legend>
           Get updates
@@ -13,11 +15,40 @@
           <label for="newsletter-email">Email address</label>
           <div class="field--connected-btn">
             <input id="newsletter-email" type="email" name="email" 
-              placeholder="name@example.com" required />
+              placeholder="name@example.com" autocapitalize="off" required />
             <button type="submit" class="btn">Subscribe</button>
           </div>
+          <p class="form-success hidden">
+            Thanks for signing up
+          </p>
         </div>
       </fieldset>
+
+      <p class="hidden" hidden>
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <script>
+        const form = document.getElementById("newsletter-form");
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const url = form.getAttribute("action");
+          const body = new URLSearchParams(new FormData(form)).toString();
+          const success = form.querySelector(".form-success");
+
+          fetch(url, {
+            method: "post",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body
+          }).then((res) => {
+            form.reset();
+            success.classList.remove("hidden");
+          })
+        });
+      </script>
     </form>
 
     <nav class="contentinfo__nav">
