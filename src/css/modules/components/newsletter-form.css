@@ -50,6 +50,17 @@
   width: 100%;
 }
 
+.form-success {
+  background-color: white;
+  border-radius: 8px;
+  color: var(--color-needed-one-more);
+  display: block;
+  font-size: var(--font-size-0);
+  font-weight: 700;
+  padding: 0.25rem;
+  text-align: center;
+}
+
 @media (min-width: 40.625em) {
   .field--connected-btn input {
     --border-radius: 8px 0 0 8px;
