@@ -56,3 +56,8 @@ input {
 .card__body li {
   padding-bottom: calc(var(--g-row) * 1.5);
 }
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}

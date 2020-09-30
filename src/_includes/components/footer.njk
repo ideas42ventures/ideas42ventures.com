@@ -1,6 +1,7 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" action="#" method="post">
+    <form class="newsletter-form g-max-2" name="newsletter" action="/subscribed" 
+      method="post" data-netlify="true" netlify-honeypot="bot-field">
       <fieldset>
         <legend>
           Get updates
@@ -18,6 +19,10 @@
           </div>
         </div>
       </fieldset>
+
+      <p class="hidden" hidden>
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
     </form>
 
     <nav class="contentinfo__nav">
