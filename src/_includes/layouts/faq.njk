@@ -1,0 +1,35 @@
+{% extends "layouts/base.njk" %}
+
+{% block masthead %}
+  {{ super() }}
+  <div class="hero standard-restricted-width">
+    <div class="g-max-4">
+      <p class="hero__tag">The knowledge</p>
+      <h1 class="hero__title">
+        Frequently asked questions
+      </h1>
+      <div class="hero__body">
+        <p>
+          This page is a living document that we’ll 
+          update as questions come in (frequently or even only semi-frequently). 
+          One of our core <a href="/about/#our-values">values</a> is transparency, and this document, and 
+          our entire site reflects that. We don’t know all the questions people 
+          have, so will do our best to answer them, and then post our replies here.
+        </p>
+        <p>
+          Email us with any questions at <a href="mailto:info@ideas42ventures.com">info@ideas42ventures.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block main %}
+
+<div class="standard-restricted-width">
+  <div class="font-size-2 g-max-3 g-centered">
+  {{ content | safe }}
+  </div>
+</div>
+
+{% endblock %}

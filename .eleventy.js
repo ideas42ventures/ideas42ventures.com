@@ -1,5 +1,7 @@
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 const slugify = (str) =>
   str
@@ -24,6 +26,7 @@ module.exports = function (conf) {
 
   conf.setTemplateFormats([
     "html",
+    "md",
     "njk",
     "gif",
     "jpg",
@@ -38,6 +41,15 @@ module.exports = function (conf) {
 
   conf.addPassthroughCopy("./src/manifest.webmanifest");
   conf.addWatchTarget("./src/**/*.css");
+
+  conf.setLibrary(
+    "md",
+    markdownIt({ html: true }).use(markdownItAnchor, {
+      permalink: true,
+      permalinkBefore: true,
+      permalinkSymbol: "#",
+    })
+  );
 
   return {
     dir: {
