@@ -35,6 +35,7 @@ We don’t think software can solve every problem, or even most problems, but th
 
 Nope.
 
+<!-- REMOVE THIS LINE WHEN READY
 ### If I start a business while an entrepreneur at the ideas42 Venture Studio what will my stake be in the business?
 
 Entrepreneurs who join as a part of the Ventures for Shared Prosperity will own 40% (vesting over five years) in the business they start while at the studio. We hold aside 10% for an employee stock option pool and the ideas42 Venture Studio owns 50%, between Studio investors, Studio owners and Studio employees.
@@ -52,3 +53,5 @@ All investment capital in the Venture Studio to date has come from ideas42, and 
 ### What role does Wells Fargo play in the Ventures for Shared Prosperity effort?
 
 The Wells Fargo foundation has made a generous three year commitment to ideas42 for the [Shared Prosperity Catalyst](https://sharedprosperity.ideas42.org), a multi-pronged approach to improve the financial health and well-being of low and moderate income people in America. Ventures for Shared Prosperity is one of those three prongs, but Wells Fargo has no financial stake in any of the ventures we launch and no control over what kinds of businesses we build.
+
+REMOVE THIS LINE WHEN READY -->
