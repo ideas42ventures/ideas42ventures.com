@@ -24,6 +24,7 @@ module.exports = function (conf) {
 
   conf.setTemplateFormats([
     "html",
+    "md",
     "njk",
     "gif",
     "jpg",
