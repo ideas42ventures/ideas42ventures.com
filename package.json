@@ -24,6 +24,7 @@
     "eslint-config-prettier": "6.11.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
+    "markdown-it-anchor": "6.0.0",
     "prettier": "2.0.5"
   },
   "husky": {
