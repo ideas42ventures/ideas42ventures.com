@@ -1,6 +1,6 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" name="newsletter" action="/subscribed" 
+    <form class="newsletter-form g-max-2" name="newsletter" action="/api/submission-created" 
       method="post" data-netlify="true" netlify-honeypot="bot-field" 
       id="newsletter-form">
       <fieldset>
@@ -45,8 +45,11 @@
             },
             body
           }).then((res) => {
+            if (res.status === 400) throw Error("The email you provided was invalid");
             form.reset();
             success.classList.remove("hidden");
+          }).catch((err) => {
+           //TODO: set the inner html of the sucess to be an error message if the email was invalid
           })
         });
       </script>
