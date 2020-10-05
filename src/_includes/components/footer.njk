@@ -31,12 +31,12 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
+        const success = form.querySelector(".form-success");
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-          const success = form.querySelector(".form-success");
 
           fetch(url, {
             method: "post",
@@ -46,12 +46,24 @@
             body
           }).then((res) => {
             if (res.status === 400) throw Error("The email you provided was invalid");
-            form.reset();
-            success.classList.remove("hidden");
+           showSuccessMsg()
           }).catch((err) => {
-           //TODO: set the inner html of the sucess to be an error message if the email was invalid
+            showErrorMsg()
           })
         });
+
+        function showSuccessMsg() {
+          form.reset();
+          //NOTE: Maybe add a 'green' success style
+          success.innerHTML = `Thanks for signing up`
+          success.classList.remove("hidden");
+        }
+
+        function showErrorMsg() {
+          //NOTE: Maybe add a 'red' error style
+          success.innerHTML = `The email you provided is invalid`
+          success.classList.remove("hidden");
+        }
       </script>
     </form>
 
