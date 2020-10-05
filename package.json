@@ -14,7 +14,9 @@
     "start": "eleventy --serve",
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "eslint --fix --ext .js",
-    "prettier": "prettier --write src/"
+    "prettier": "prettier --write src/",
+    "start:lambda": "netlify-lambda serve lambda_funcs",
+    "build:lambda": "netlify-lambda build lambda_funcs"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
@@ -35,5 +37,8 @@
   "lint-staged": {
     "src/**/*.js": "eslint --fix",
     "src/**/*": "prettier --write"
+  },
+  "dependencies": {
+    "netlify-lambda": "2.0.1"
   }
 }
