@@ -13,7 +13,7 @@ Note that Design and Engineering are within Product, not separate. This is by de
 
 <figure>
   <img src="/images/handbook/team-structure-graphic.svg" alt="A representation of our team structure. A large circle to represent Product with two smaller, equal-size, overlapping circles to represent Design and Engineering.">
-  <figcaption>The structure of our Product team. Design and Engineering are in service of the product. They also intersect. No one works in silos.</figcaption>
+  <figcaption>The structure of our Product team. Design and Engineering are in service of the product. They also intersect. We don't work in silos.</figcaption>
 </figure>
 
 ### For Entrepreneurs
@@ -70,14 +70,14 @@ Our first attempts will be wrong. Our second attempts may be wrong. Our third, o
 
 We follow the [Rule of Least Power](https://www.w3.org/2001/tag/doc/leastPower.html) when making all design decisions.
 
-#### Tools
+#### Design tools
 
 - **Pencil and paper**: Don’t forget about these, they are your friends. We sketch and draw ideas for fast iteration and sharing.
 - **Figma**: This is our primary UI design software. We’ve chosen it over alternatives because it’s open by default.
 - **Adobe Illustrator**: This is our preferred vector illustration tool. If you’re producing illustrations and need to share a working file, this is what we want.
 - **Adobe Photoshop**: This is our preferred raster illustration tool. If you’re producing raster photo illustrations and need to share a working file, this is what we want.
 
-#### Process
+#### Design process
 
 This a general design process that we follow for large and small projects. We apply these steps when building a first MVP of an entire product and also when building new features of an existing product. Some projects won’t require every one these steps, we often use a subset.
 
@@ -90,7 +90,11 @@ This a general design process that we follow for large and small projects. We ap
 1. Further refine designs during implementation
 1. Iterate on static designs as needed based on learnings during implementation
 
-#### Design Reviews
+#### Design feedback
+
+WIP
+
+#### Design reviews
 
 WIP
 

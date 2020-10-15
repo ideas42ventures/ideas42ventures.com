@@ -15,17 +15,42 @@
 {% block main %}
 
 <div class="standard-restricted-width">
-  <nav>
-    <a href="/handbook">Handbook</a>
-    <ul>
-      <li><a href="/handbook/product">Product</a></li>
-      <ul>
-        <li><a href="/handbook/product#for-entrepreneurs">For Entrepreneurs</a></li>
-      </ul>
-    </ul>
-  </nav>
-  <div class="font-size-2 g-max-3">
-  {{ content | safe }}
+  <div class="grid">
+    <div class="font-size-2 grid--max-3 handbook__content">
+      {{ content | safe }}
+    </div>
+
+    <nav class="handbook__nav grid--max-2">
+      <div class="nav__contents g-max-1-half g-centered">
+        <a href="/handbook">Handbook</a>
+        <ul>
+          <li>
+            <a href="/handbook/product">Product</a>
+            <ul>
+              <li><a href="/handbook/product#for-entrepreneurs">For Entrepreneurs</a></li>
+              <li><a href="/handbook/product#for-candidates">For Candidates</a></li>
+              <li><a href="/handbook/product#for-team-members">For Team Members</a></li>
+              <li><a href="/handbook/product#principles">Principles</a></li>
+              <li>
+                <a href="/handbook/product#design">Design</a>
+                <ul>
+                  <li><a href="/handbook/product#design-tools">Design tools</a></li>
+                  <li><a href="/handbook/product#design-process">Design process</a></li>
+                  <li><a href="/handbook/product#design-feedback">Design feedback</a></li>
+                  <li><a href="/handbook/product#design-reviews">Design reviews</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/handbook/product#design">Engineering</a>
+                <ul>
+                  <li><a href="/handbook/product#technology-recommendations">Technology recommendations</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </div>
 
