@@ -1,6 +1,6 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" name="newsletter" action="/api/submission-created" 
+    <form class="newsletter-form g-max-2" name="newsletter"
       method="post" data-netlify="true" netlify-honeypot="bot-field" 
       id="newsletter-form">
       <fieldset>
@@ -15,8 +15,15 @@
           <label for="newsletter-email">Email address</label>
           <div class="field--connected-btn">
             <input id="newsletter-email" type="email" name="email" 
+<<<<<<< HEAD
               placeholder="name@example.com" autocapitalize="off" required />
             <input type="hidden" name="tags" value="Web Sign up"/>
+=======
+              placeholder="name@example.com" autocapitalize="off" 
+              pattern="^[^@]+@[^@]+\.[^@]+$"
+              required 
+              />
+>>>>>>> Updates footer.njk file and submission created lambda
             <button type="submit" class="btn">Subscribe</button>
           </div>
           <p class="form-success hidden">
