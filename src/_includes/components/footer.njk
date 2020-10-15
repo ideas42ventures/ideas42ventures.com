@@ -50,18 +50,17 @@
           })
         });
         
-        if (window.fathom) {
-          try {
-            [...document.querySelectorAll("a[data-fathom-goal]")].forEach(a => {
-              a.addEventListener("click", (e) => {
-                e.preventDefault();
-                const goalId = e.target.getAttribute("data-fathom-goal");
+        try {
+          [...document.querySelectorAll("a[data-fathom-goal]")].forEach(a => {
+            a.addEventListener("click", (e) => {
+              const goalId = e.target.getAttribute("data-fathom-goal");
+              if (window.fathom) {
                 window.fathom.trackGoal(goalId, 0);
-              })
-            });
-          } catch (err) {
-            console.warning("Hit a JavaScript programming error trying to add Fathom goal tracking.");
-          }
+              }
+            })
+          });
+        } catch (err) {
+          console.warning("Hit a JavaScript programming error trying to add Fathom goal tracking.");
         }
       </script>
     </form>
