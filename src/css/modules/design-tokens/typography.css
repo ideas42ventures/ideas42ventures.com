@@ -138,7 +138,8 @@ main a:not([class]):hover,
 }
 
 main a,
-.card a:not([class]) {
+.card a:not([class]),
+.fancy-link {
   border-bottom: 1px solid var(--color-text-primary);
   box-shadow: 0 0 0 currentColor;
   padding-bottom: 0.2em;
