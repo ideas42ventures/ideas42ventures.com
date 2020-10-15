@@ -19,7 +19,7 @@ module.exports = function (conf) {
     const finalId = id ? id : slugify(text);
 
     return `<h${level} id="${finalId}">
-        <a class="header-anchor" href="#${finalId}">#</a>
+        <a class="header-anchor" href="#${finalId}" aria-label="Anchor link to ${text}">#</a>
         ${text}
       </h${level}>`;
   });
