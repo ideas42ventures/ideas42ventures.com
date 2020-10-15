@@ -86,8 +86,8 @@ noCohortCta: true
     </header>
     <ul class="cohort__qa-sessions">
       {% for session in qaSessions %}
-         <li>
-          <a class="btn btn--outlined" href="{{ session.url }}" target="_blank" rel="noopener">
+        <li>
+          <a class="btn btn--outlined {% if session.past %}btn--disabled{% endif %}" href="{{ session.url }}" target="_blank" rel="noopener">
             <time datetime="{{ session.datetime }}">
               {% dateFormat session.datetime, "LLL d yyyy '<br/>' t ZZZZ" %}
             </time>
