@@ -12,7 +12,7 @@ This is how we build technology products. We use the principles and processes de
 Note that Design and Engineering are within Product, not separate. This is by design. All Design and Engineering is in service of the products we build.
 
 <figure>
-  <img src="/images/handbook/team-structure-graphic.svg" alt="A representation of our team structure. A large circle to represent Product with two smaller, equal-size, overlapping circles to represent Design and Engineering.">
+  <img class="figure--centered" src="/images/handbook/team-structure-graphic.svg" alt="A representation of our team structure. A large circle to represent Product with two smaller, equal-size, overlapping circles to represent Design and Engineering." width="665" height="642">
   <figcaption>The structure of our Product team. Design and Engineering are in service of the product. They also intersect. We don't work in silos.</figcaption>
 </figure>
 

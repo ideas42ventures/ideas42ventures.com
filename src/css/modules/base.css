@@ -29,8 +29,15 @@ figure {
   margin-bottom: calc(var(--g-row) * 5);
 }
 
+.figure--centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figcaption {
   font-size: var(--font-size-1);
+  margin-top: var(--g-row);
 }
 
 .card {
