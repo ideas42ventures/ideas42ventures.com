@@ -36,6 +36,11 @@
   margin-top: calc(var(--g-row) * 2);
 }
 
+.apply-cta__contents a {
+  border-color: currentColor;
+  color: currentColor;
+}
+
 .btn.apply-cta__btn {
   --padding-v: 0.9em;
   --border-radius: 12px;

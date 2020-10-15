@@ -30,3 +30,9 @@
   height: 23px;
   width: 31px;
 }
+
+.btn--disabled {
+  --color: var(--color-text-primary);
+  cursor: default;
+  opacity: 0.4;
+}

@@ -1,6 +1,6 @@
 {% macro person_card(person) %}
 <div class="card" id="{% slugify person.name %}">
-  <img class="person__img" src="/images/people/{{ person.img }}" alt="">
+  <img class="person__img" src="/images/people/{{ person.img }}" alt="A photo of {{ person.name }}">
   <div class="person__info">
     <div>
       {% if person.team %}

@@ -1,8 +1,9 @@
-# ideas42ventures.com [![Netlify Status](https://api.netlify.com/api/v1/badges/06655ace-67fc-4a5e-a30a-2d9066bc4cd2/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
+# [ideas42ventures.com](https://www.ideas42ventures.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/06655ace-67fc-4a5e-a30a-2d9066bc4cd2/deploy-status)](https://app.netlify.com/sites/ideas42ventures/deploys)
 
 The ideas42 Venture Studio website.
 
-- Production (temp): [https://ideas42ventures.netlify.app/](https://ideas42ventures.netlify.app/)
+- Production: [ideas42ventures.com](https://www.ideas42ventures.com)
+- Netlify URL: [https://ideas42ventures.netlify.app/](https://ideas42ventures.netlify.app/)
 - Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify for it.
 
 ### Analytics
@@ -13,6 +14,14 @@ We still want to track how our site is being used, so instead, we use the privac
 
 - The main Fathom account is under `tyler@ideas42ventures.com`
 - The analytics dashboard is available–password protected–at [https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com](https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com) Ping Tyler in Slack or email for the password.
+
+### Email subscription form
+
+We use [Netlify forms](https://docs.netlify.com/forms/setup/) to handle the form submission.
+
+- Form submissions are stored in the forms section of Netlify
+- We send a copy of every submission to `tyler@ideas42ventures.com`
+- Currently, we manually export a CSV for import into our mailer, Buttondown. This will change.
 
 ## Contributing
 

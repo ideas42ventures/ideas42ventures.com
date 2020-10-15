@@ -77,7 +77,7 @@
 }
 
 .qa__note {
-  background-color: rgba(var(--color-not-quite-white-rgb), 0.4);
+  border-top: 1px solid rgba(var(--color-not-quite-white-rgb), 0.8);
   padding: calc(var(--g-row) * 2.5) calc(var(--g-gutter-width) * 2);
   margin-bottom: 0;
 }
