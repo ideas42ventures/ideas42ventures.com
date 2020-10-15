@@ -12,7 +12,7 @@ We do not use Google Analytics because we respect the privacy of people that vis
 
 We still want to track how our site is being used, so instead, we use the privacy-focused [Fathom](https://usefathom.com/).
 
-- The main Fathom account is under username `tyler@ideas42ventures.com`
+- The main Fathom account is under `tyler@ideas42ventures.com`
 - The analytics dashboard is available–password protected–at [https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com](https://app.usefathom.com/share/jggxgdmd/ideas42ventures.com) Ping Tyler in Slack or email for the password.
 - We track custom Goals. That's Fathom's term for custom events. There is JS set up to track goals for any `a` element that includes a `data-fathom-goal` attribute. Example; `<a data-fathom-goal="1234" href="/">Link</a>`. Goals must be set up in the Fathom dashboard, that's where the goal ids come from. Again, for now, ping Tyler in Slack or email if you need to track a goal.
 
