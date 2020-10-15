@@ -1,0 +1,32 @@
+{% extends "layouts/base.njk" %}
+
+{% block masthead %}
+  {{ super() }}
+  <div class="hero standard-restricted-width">
+    <div class="g-max-4">
+      <p class="hero__tag">The ingredients</p>
+      <h1 class="hero__title">
+        Handbook
+      </h1>
+    </div>
+  </div>
+{% endblock %}
+
+{% block main %}
+
+<div class="standard-restricted-width">
+  <nav>
+    <a href="/handbook">Handbook</a>
+    <ul>
+      <li><a href="/handbook/product">Product</a></li>
+      <ul>
+        <li><a href="/handbook/product#for-entrepreneurs">For Entrepreneurs</a></li>
+      </ul>
+    </ul>
+  </nav>
+  <div class="font-size-2 g-max-3">
+  {{ content | safe }}
+  </div>
+</div>
+
+{% endblock %}
