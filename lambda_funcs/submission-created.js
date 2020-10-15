@@ -1,34 +1,39 @@
+// NOTE: This is to test on deploy link. When approved I can change this to our proper URL
+const URL = `ideas42ventures`
 const headers = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": `${URL}`,
   "Access-Control-Allow-Headers": "Content-Type",
   "Access-Control-Allow-Methods": "POST",
 };
 
 exports.handler = function (event, context, callback) {
-  if (event.httpMethod !== "POST") {
-    callback(null, {
-      statusCode: 400,
-      headers,
-      body: JSON.stringify("Method not allowed"),
-    });
-  }
+
+  verifyReq(callback,event)
+
   const email = JSON.parse(event.body).payload.email;
   const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
 
   if (!isEmail) {
-    return callback(null, {
-      statusCode: 400,
-      headers,
-      body: JSON.stringify({
-        msg: "This is an invalid email",
-      }),
-    });
+    return respondWith(callback,400,"This is an invalid email")
   }
-  return callback(null, {
-    statusCode: 200,
-    headers,
-    body: JSON.stringify({
-      msg: "Your email has been successfully recieved",
-    }),
-  });
+  return respondWith(callback,200,"Thanks for signing up")
 };
+
+function verifyReq(cb,event) {
+  const {host} = event.multiValueHeaders
+  const origin = host[0]
+
+  if (event.httpMethod !== "POST") {
+    return respondWith(cb,400,"Method not allowed")
+  } else if (!(origin.include(URL))) {
+    return respondWith(cb,400,"You are not allowed to submit an email address from here")
+  }
+}
+
+function respondWith(cb,statusCode,msg) {
+  cb(null, {
+    statusCode,
+    headers,
+    body: JSON.stringify({msg})
+  })
+}
