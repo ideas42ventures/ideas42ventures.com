@@ -106,6 +106,11 @@ We follow the [Rule of Least Power](https://www.w3.org/2001/tag/doc/leastPower.h
 
 The recommendations are not an attempt to say which technologies are the best. They are the ones that work best for **us**. They're what we have expertise and experience using. These recommendations may change over time as our team, and tech in general, changes.
 
+##### General recommendations
+
+- **[Fathom](https://usefathom.com/)**: Privacy-focused analytics
+- **[Buttondown](https://buttondown.email/)**: Minimalist email newsletters
+
 ##### Front-end recommendations
 
 - **Browser native HTML, CSS, JavaScript**: We don’t use libraries, frameworks, or other abstractions unless there is a clear need for them.
