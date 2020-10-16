@@ -1,4 +1,34 @@
-@media (hover: hover) {
+.header-anchor {
+  border: none;
+  color: var(--color-text-primary);
+  display: inline-block;
+  font-size: 87%;
+  opacity: 0.45;
+  padding-bottom: 0;
+  text-decoration: none;
+  transition: 0.12s ease;
+}
+
+.header-anchor:hover,
+.header-anchor:focus,
+:target .header-anchor {
+  box-shadow: none;
+  color: var(--color-accent-active);
+  opacity: 1;
+}
+
+/* 
+  This is a quick workaround for our fixed cohort banner, may not always be necessary 
+*/
+@media (min-width: 31.25em) {
+  :target::before {
+    content: "";
+    display: block;
+    height: 6.25rem;
+  }
+}
+
+@media (min-width: 37.5em) and (hover: hover) {
   h1 .header-anchor,
   h2 .header-anchor,
   h3 .header-anchor,
@@ -21,25 +51,6 @@
     opacity: 1;
     transform: scale(1);
   }
-}
-
-.header-anchor {
-  border: none;
-  color: var(--color-text-primary);
-  display: inline-block;
-  font-size: 87%;
-  opacity: 0.45;
-  padding-bottom: 0;
-  text-decoration: none;
-  transition: 0.12s ease;
-}
-
-.header-anchor:hover,
-.header-anchor:focus,
-:target .header-anchor {
-  box-shadow: none;
-  color: var(--color-accent-active);
-  opacity: 1;
 }
 
 @media (min-width: 37.5em) {
