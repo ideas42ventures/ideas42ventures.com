@@ -49,6 +49,7 @@
           }).then((res) => {
             if (!res.ok) {
               res.text().then(text => {
+                console.log(text)
                 const message = getMessage(text)
                 showError(message)
               })
