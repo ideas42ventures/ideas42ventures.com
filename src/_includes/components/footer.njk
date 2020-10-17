@@ -18,7 +18,7 @@
               placeholder="name@example.com" autocapitalize="off" 
               required 
               />
-                           <input type="hidden" name="tags" value="Web Sign up"/> 
+            <input type="hidden" name="tags" value="Web Sign up"/> 
             <button type="submit" class="btn">Subscribe</button>
           </div>
           <p class="form-success hidden">
@@ -47,25 +47,41 @@
             },
             body
           }).then((res) => {
-            if (res.status === 400) throw Error("The email you provided was invalid");
-           showSuccessMsg()
-          }).catch((err) => {
-            showErrorMsg()
+            if (!res.ok) {
+              res.text().then(text => {
+                const message = getMessage(text)
+                showError(message)
+              })
+              return
+            } 
+           res.text().then(text => {
+             const message = getMessage(text)
+             showSuccess(message)
+           })
           })
         });
 
-        function showSuccessMsg() {
+        function getMessage(text) {
+          const json = JSON.parse(text)
+          const {message} = json 
+                 
+          return message
+        }
+
+        function showSuccess(text) {
           form.reset();
           //NOTE: Maybe add a 'green' success style
-          success.innerHTML = `Thanks for signing up`
+          success.innerHTML = text
           success.classList.remove("hidden");
         }
 
-        function showErrorMsg() {
+        function showError(text) {      
           //NOTE: Maybe add a 'red' error style
-          success.innerHTML = `The email you provided is invalid`
+          success.innerHTML = text
           success.classList.remove("hidden");
         }
+
+        
       </script>
     </form>
 

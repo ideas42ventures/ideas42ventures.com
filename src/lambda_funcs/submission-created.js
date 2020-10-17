@@ -32,10 +32,10 @@ function verifyReq(cb, event) {
   }
 }
 
-function respondWith(cb, statusCode, msg) {
+function respondWith(cb, statusCode, message) {
   cb(null, {
     statusCode,
     headers,
-    body: JSON.stringify({ msg }),
+    body: JSON.stringify({ message }),
   });
 }
