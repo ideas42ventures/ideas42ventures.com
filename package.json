@@ -15,8 +15,7 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "eslint --fix --ext .js",
     "prettier": "prettier --write src/",
-    "start:lambda": "netlify-lambda serve lambda_funcs",
-    "build:lambda": "netlify-lambda build lambda_funcs"
+    "start:dev": "netlify dev"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
@@ -27,6 +26,8 @@
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
     "markdown-it-anchor": "6.0.0",
+    "netlify-cli": "2.65.6",
+    "netlify-lambda": "2.0.1",
     "prettier": "2.0.5"
   },
   "husky": {
@@ -37,8 +38,5 @@
   "lint-staged": {
     "src/**/*.js": "eslint --fix",
     "src/**/*": "prettier --write"
-  },
-  "dependencies": {
-    "netlify-lambda": "2.0.1"
   }
 }

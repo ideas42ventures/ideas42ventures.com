@@ -55,6 +55,12 @@ yarn
 yarn start
 ```
 
+#### Start the Netlify dev server along with the [serverless functions](https://www.netlify.com/blog/2018/09/14/forms-and-functions/)
+
+```
+yarn start:dev
+```
+
 The site will be available at [http://localhost:8080/](http://localhost:8080/).
 
 #### Build without dev server or watcher
