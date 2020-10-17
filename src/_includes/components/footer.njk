@@ -48,17 +48,10 @@
             body
           }).then((res) => {
             if (!res.ok) {
-              res.text().then(text => {
-                console.log(text)
-                const message = getMessage(text)
-                showError(message)
-              })
-              return
-            } 
-           res.text().then(text => {
-             const message = getMessage(text)
-             showSuccess(message)
-           })
+             console.log(res)
+             return
+            }
+            console.log(res)
           }).catch(err => console.log(err))
         });
 
