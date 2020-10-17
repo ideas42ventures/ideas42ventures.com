@@ -70,19 +70,31 @@
 
         function showSuccess(text) {
           form.reset();
-          //NOTE: Maybe add a 'green' success style
           success.innerHTML = text
           success.classList.remove("hidden");
         }
 
         function showError(text) {      
-          //NOTE: Maybe add a 'red' error style
           success.innerHTML = text
           success.classList.remove("hidden");
         }
 
         
-      </script>
+        
+        try {
+          [...document.querySelectorAll("a[data-fathom-goal]")].forEach(a => {
+            a.addEventListener("click", (e) => {
+              const goalId = e.target.getAttribute("data-fathom-goal");
+              if (window.fathom) {
+                window.fathom.trackGoal(goalId, 0);
+              }
+            })
+          });
+        } catch (err) {
+          console.warning("Hit a JavaScript programming error trying to add Fathom goal tracking.");
+        }
+
+</script>
     </form>
 
     <nav class="contentinfo__nav">
