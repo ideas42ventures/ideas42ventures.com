@@ -35,8 +35,7 @@
       <script>
         const form = document.getElementById("newsletter-form");
         const success = form.querySelector(".form-success");
-
-        form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
           e.preventDefault();
           const body = new URLSearchParams(new FormData(form)).toString();
 
@@ -59,8 +58,8 @@
              const message = getMessage(text)
              showSuccess(message)
            })
-          )
-        });
+          }
+        )})
 
         function getMessage(text) {
           const json = JSON.parse(text)
