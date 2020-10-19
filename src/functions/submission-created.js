@@ -6,36 +6,36 @@ const headers = {
 };
 
 exports.handler = function async(event, context) {
-  console.log(event);
-  // // verifyReq(event);
+  const statusCode = verifyReq(event).statusCode;
+  const email = JSON.parse(event.body).payload.email;
+  const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
 
-  // const email = JSON.parse(event.body).payload.email;
-  // const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
-
-  // if (!isEmail) {
-  //   return respondWith(400, "This is an invalid email");
-  // }
-  // return respondWith(200, "Thanks for signing up");
+  if (!isEmail || statusCode === 400) {
+    return respondWith(400, "This is an invalid email");
+  } else {
+    return respondWith(200, "Thanks for signing up");
+  }
 };
 
-// function verifyReq( event) {
-//   const { host } = event.multiValueHeaders;
-//   const origin = host[0];
+function verifyReq(event) {
+  const { host } = event.multiValueHeaders;
+  const origin = host[0];
 
-//   if (event.httpMethod !== "POST") {
-//     return respondWith(400, "Method not allowed");
-//   } else if (!origin.includes(BASE)) {
-//     return respondWith(
-//       400,
-//       "You are not allowed to submit an email address from here"
-//     );
-//   }
-// }
+  if (event.httpMethod !== "POST") {
+    return respondWith(400, "Method not allowed");
+  } else if (origin.includes(BASE) === false) {
+    console.log("Not allowed");
+    return respondWith(
+      400,
+      "You are not allowed to submit an email address from here"
+    );
+  }
+}
 
-// async function respondWith(statusCode, message) {
-//   return {
-//     statusCode,
-//     headers,
-//     body: JSON.stringify({ message })
-//   }
-// }
+function respondWith(statusCode, message) {
+  return {
+    statusCode,
+    headers,
+    body: JSON.stringify({ message }),
+  };
+}
