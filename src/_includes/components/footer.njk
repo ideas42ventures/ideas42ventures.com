@@ -47,6 +47,7 @@
             },
             body
           }).then((res) => {
+            console.log(res)
           if (!res.ok) {
               res.text().then(text => {
                 const message = getMessage(text)
