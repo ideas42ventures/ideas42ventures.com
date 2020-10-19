@@ -5,24 +5,24 @@ title: ideas42 Venture Studio Handbook - Product
 
 ## Product
 
-The goal of this document is to paint a vivid picture of how we build technology projects for you, the reader. If we have not accomplished that as a whole or in individual sections, email Tyler at [tyler@ideas42ventures.com](mailto:tyler@ideas42ventures.com) and let him know.
+The goal of this document is to paint a vivid picture of how we build technology-powered products. If we have not accomplished that as a whole or in individual sections, email Tyler at [tyler@ideas42ventures.com](mailto:tyler@ideas42ventures.com) and let him know.
 
-This is how we build technology products. We use the principles and processes described here when making both long-term strategic decisions and day-to-day tactical decisions.
+We use the principles and processes described in this document when making both long-term strategic decisions and day-to-day tactical decisions.
 
-Note that Design and Engineering are within Product, not separate. This is by design. All Design and Engineering is in service of the products we build.
+Note that Design and Engineering are within Product, not separate. This is by design. All Design and Engineering at the Studio is in service of the products we build.
 
 <figure>
   <img class="figure--centered" src="/images/handbook/team-structure-graphic.svg" alt="A representation of our team structure. A large circle to represent Product with two smaller, equal-size, overlapping circles to represent Design and Engineering." width="665" height="642">
-  <figcaption>The structure of our Product team. Design and Engineering are in service of the product. They also intersect. We don't work in silos.</figcaption>
+  <figcaption>The structure of our Product team. Design and Engineering are in service of the products. They also intersect. We don't work in silos.</figcaption>
 </figure>
 
 ### For Entrepreneurs
 
-If you’re an Entrepreneur at the Studio or thinking about applying, this document exists to give as clear a picture as possible of how we’ll build your product together. Every product development process is different, but they all have overlapping characteristics. We’ll use the principles, processes, and technology described here to bring your product to life.
+If you’re an Entrepreneur at the Studio or thinking about applying, this document exists to give you as clear a picture as possible of how we build products together. Every business is different, so every product development process is different, but they all have shared characteristics. We’ll use the principles, processes, and technology described here to bring your product to life.
 
 ### For Candidates
 
-If you are thinking about applying to join the Studio or already in the interview process, this document exists to give you as clear a picture as possible of what day-to-day work is like. And to give you an idea of the expectations we’ll have of you depending on your role.
+If you’re thinking about applying to join the Studio or already in the interview process, this document exists to give you as clear a picture as possible of what day-to-day work is like here. And to give you an idea of the expectations we’ll have of you depending on your role.
 
 ### For Team Members
 
@@ -30,7 +30,7 @@ If you're a current Studio team member, this document exists as a reference to h
 
 ### Principles
 
-These are a select few principles that we follow. They’re inspired and informed by others’ similar principles. Some specific lists we’ve taken inspiration from include, but are not limited to:
+These are a select few principles that we follow when designing and building products. They’re inspired and informed by others’ similar principles. Some specific lists we’ve taken inspiration from include, but are not limited to:
 
 - [GOV.UK Design Principles](https://www.gov.uk/guidance/government-design-principles)
 - [Calm Technology](https://calmtech.com)
@@ -73,9 +73,9 @@ We follow the [Rule of Least Power](https://www.w3.org/2001/tag/doc/leastPower.h
 #### Design tools
 
 - **Pencil and paper**: Don’t forget about these, they are your friends. We sketch and draw ideas for fast iteration and sharing.
-- **Figma**: This is our primary UI design software. We’ve chosen it over alternatives because it’s open by default.
-- **Adobe Illustrator**: This is our preferred vector illustration tool. If you’re producing illustrations and need to share a working file, this is what we want.
-- **Adobe Photoshop**: This is our preferred raster illustration tool. If you’re producing raster photo illustrations and need to share a working file, this is what we want.
+- **Figma**: This is our primary UI design software. We’ve chosen it over alternatives because it’s open by default. If you’re producing static UI designs and need to share a working file, this is what we want.
+- **Adobe Illustrator**: This is our preferred vector illustration tool when Figma is not appropriate. If you’re producing illustrations and need to share a working file, this is what we want.
+- **Adobe Photoshop**: This is our preferred raster illustration tool when Figma is not appropriate. If you’re producing raster photo illustrations and need to share a working file, this is what we want.
 
 #### Design process
 
@@ -87,12 +87,13 @@ This a general design process that we follow for large and small projects. We ap
 1. Iterate on static designs based on feedback
 1. Get more feedback on static designs as needed
 1. Refine and organize static designs and prototypes
-1. Further refine designs during implementation
-1. Iterate on static designs as needed based on learnings during implementation
+1. Further iterate and refine designs during implementation (in HTML, CSS, JS, etc) and backfill to Figma as needed
 
 #### Design feedback
 
 When **giving design feedback** it's most helpful to focus on specific portions of designs that are working or not working so the designer can take action. While every designer appreciates hearing that someone likes their design, that type of feedback isn't actionable so it's not helpful in a design cycle.
+
+When **getting design feedback** on your designs: ask questions. It's up to you as the designer to ask clarifying questions to understand feedback in the fullest way possible. All bits of design feedback should elicit follow-up questions.
 
 #### Design reviews
 
