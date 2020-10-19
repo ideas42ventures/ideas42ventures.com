@@ -130,4 +130,19 @@ The recommendations are not an attempt to say which technologies are the best. T
 - **Flask**: Not all our applications are CRUD that necessitate Django. We use Flask for applications with fewer needs.
 - **Node.js**: While Python is our preferred language for server side code, Node.js is ubiquitous and we use it in certain instances. We write Netlify Functions in Node.js and may spin up quick services in it as needed.
 - **PostgreSQL**: Document storage or NoSQL approaches are tempting, but we don’t use them unless we determine they’re absolutely necessary. Postgres is boring and predictable. We like boring and predictable.
-- **Heroku**: We’re building new products. That means they will have low usage and high iteration. Products of this age do not need the type of fine-grained control offered by using AWS, Google Cloud, etc directly. For us, it’s better to pay money to be able to spin up services quickly with the less amount of time spent on configuration as possible.
+- **Heroku**: We’re building new products. That means they will have low usage and high iteration. Products of this age do not need the type of fine-grained control offered by using AWS, Google Cloud, etc. directly. For us, it’s better to pay money to be able to spin up services quickly with the less amount of time spent on configuration as possible.
+
+### Resources
+
+We’re constantly learning and taking inspiration from other people that write about the work we do. This is any ever-growing list of resources that we recommend.
+
+#### Books
+
+These books have had a direct influence in how we build technology-powered products and provide more of a window into how we approach product.
+
+- [Technically Wrong](https://www.goodreads.com/book/show/38212110-technically-wrong)
+- [Design for Real Life](https://abookapart.com/products/design-for-real-life)
+- [Resilient Web Design](https://resilientwebdesign.com/)
+- [Accessibility for Everyone](https://abookapart.com/products/accessibility-for-everyone)
+- [Nicely Said](https://www.nicelysaid.co/)
+- [Several Short Sentences About Writing](https://www.goodreads.com/book/show/13155290-several-short-sentences-about-writing)
