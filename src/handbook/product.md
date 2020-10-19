@@ -18,15 +18,15 @@ Note that Design and Engineering are within Product, not separate. This is by de
 
 ### For Entrepreneurs
 
-If you are thinking about applying to join the Studio or already a part of it, this is here to give as clear a picture as possible of how we’ll build products together. Every product development process is different, but they all have overlapping characteristics. We’ll use the principles, processes, and technology described here to bring your product to life.
+If you’re an Entrepreneur at the Studio or thinking about applying, this document exists to give as clear a picture as possible of how we’ll build your product together. Every product development process is different, but they all have overlapping characteristics. We’ll use the principles, processes, and technology described here to bring your product to life.
 
 ### For Candidates
 
-If you are thinking about applying to join the Studio or already in the interview process, this is here to give you as clear a picture as possible about our day to day work. And to give you an idea of the expectations we’ll have of you depending on your role.
+If you are thinking about applying to join the Studio or already in the interview process, this document exists to give you as clear a picture as possible of what day-to-day work is like. And to give you an idea of the expectations we’ll have of you depending on your role.
 
 ### For Team Members
 
-WIP
+If you're a current Studio team member, this document exists as a reference to help you make decisions. When you’re unsure about how to proceed, use this document as guidance.
 
 ### Principles
 
@@ -81,10 +81,10 @@ We follow the [Rule of Least Power](https://www.w3.org/2001/tag/doc/leastPower.h
 
 This a general design process that we follow for large and small projects. We apply these steps when building a first MVP of an entire product and also when building new features of an existing product. Some projects won’t require every one these steps, we often use a subset.
 
-1. Define, refine, and communicate the root problem we’re working to solve
-1. Produce static designs and prototypes in Figma
+1. Define, refine, and communicate the root problem we’re working to solve. [Principle #1](#1.-start-with-problems%2C-not-solutions)
+1. Produce static designs and prototypes in Figma. This is a chance to explore ideas for user flows, aesthetics, and copy.
 1. Present and get feedback on static designs
-1. Iterate on static designs
+1. Iterate on static designs based on feedback
 1. Get more feedback on static designs as needed
 1. Refine and organize static designs and prototypes
 1. Further refine designs during implementation
@@ -92,11 +92,13 @@ This a general design process that we follow for large and small projects. We ap
 
 #### Design feedback
 
-WIP
+When **giving design feedback** it's most helpful to focus on specific portions of designs that are working or not working so the designer can take action. While every designer appreciates hearing that someone likes their design, that type of feedback isn't actionable so it's not helpful in a design cycle.
 
 #### Design reviews
 
-WIP
+For each effort, the primary designer is responsible for conducting design reviews as needed. Your job as the primary designer is to set the stage for what areas you need feedback, what specific questions you have, and what type of feedback you are and are not looking for.
+
+All design review meetings need to have a clear agenda and goal(s).
 
 ### Engineering
 
