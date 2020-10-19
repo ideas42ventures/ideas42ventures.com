@@ -48,12 +48,12 @@ html {
     --g-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .grid--max-3 {
-    grid-column: 1 / span var(--g-column-span, 2);
-  }
-
   .grid--max-2 {
     grid-column-end: span 2;
+  }
+
+  .grid--max-3 {
+    grid-column: 1 / span var(--g-column-span, 2);
   }
 }
 

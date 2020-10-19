@@ -77,12 +77,18 @@ html {
 /* clean-css ignore:end */
 
 h1,
-h2,
+h2 {
+  font-style: normal;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1.1;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -90,35 +96,29 @@ h1 {
   font-weight: 900;
 }
 
-h1,
-h2 {
-  font-style: normal;
-}
-
 h2 {
   font-size: var(--font-size-7);
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
 }
 
 h3 {
   font-size: var(--font-size-6);
   font-weight: 600;
-  margin-bottom: 0;
 }
 
 h4 {
-  font-size: var(--font-size-5);
-  font-weight: 600;
-}
-
-h5 {
   font-size: var(--font-size-4);
   font-weight: 600;
 }
 
-h6 {
+h5 {
   font-size: var(--font-size-3);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: var(--font-size-2);
   font-weight: 700;
 }
 
@@ -180,12 +180,25 @@ main a,
 }
 
 h2 + p,
-h3 + p {
+h3 + p,
+h4 + p,
+h5 + p {
   margin-top: 0.25em;
 }
 
 p + p {
-  margin-top: 2em;
+  margin-top: 1.3em;
+}
+
+p + h3,
+ul + h3,
+ol + h3,
+figure + h3,
+p + h4,
+ul + h4,
+ol + h4,
+figure + h4 {
+  margin-top: 2.5rem;
 }
 
 .has-start-rule::before {
