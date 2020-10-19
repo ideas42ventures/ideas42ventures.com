@@ -24,7 +24,6 @@ function verifyReq(event) {
   if (event.httpMethod !== "POST") {
     return respondWith(400, "Method not allowed");
   } else if (origin.includes(BASE) === false) {
-    console.log("Not allowed");
     return respondWith(
       400,
       "You are not allowed to submit an email address from here"
