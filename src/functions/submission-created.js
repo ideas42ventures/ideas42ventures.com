@@ -1,7 +1,8 @@
 exports.handler = async (event, context) => {
-  console.log("SUBMISSION CREATED------------------");
   console.log(event);
   console.log(context);
+  console.log("-----------------------");
+  console.log(event.body);
 
   return {
     statusCode: 200,
