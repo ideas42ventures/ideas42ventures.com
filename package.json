@@ -15,7 +15,7 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "eslint --fix --ext .js",
     "prettier": "prettier --write src/",
-    "start:dev": "netlify dev",
+    "start:dev": "ntl dev",
     "start:lambda": "netlify-lambda serve src/functions",
     "build:lambda": "netlify-lambda build src/functions"
   },
