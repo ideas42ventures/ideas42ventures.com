@@ -7,22 +7,29 @@ const headers = {
 
 exports.handler = function (event, context, callback) {
   verifyReq(callback, event);
-
-  const { email } = JSON.parse(event.body).payload;
-  const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
-
-  if (!isEmail || statusCode === 400) {
-    return respondWith(callback, 400, "This is an invalid email");
-  } else {
-    return respondWith(callback, 200, "Thanks for signing up");
+  const { body } = event;
+  const formTag = JSON.parse(body).payload.data.tags[0];
+  if (formTag === "Web Sign up") {
+    handleNewsletter(body);
   }
 };
 
-function verifyReq(callback, event) {
-  const { host } = event.multiValueHeaders;
+function handleNewsletter(body) {
+  const { email } = JSON.parse(body).payload;
+  const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
+
+  if (!isEmail || statusCode === 400) {
+    respondWith(callback, 400, "This is an invalid email");
+  } else {
+    respondWith(callback, 200, "Thanks for signing up");
+  }
+}
+
+function verifyReq(callback, { multiValueHeaders, httpMethod }) {
+  const { host } = multiValueHeaders;
   const origin = host[0];
 
-  if (event.httpMethod !== "POST") {
+  if (httpMethod !== "POST") {
     respondWith(callback, 400, "Method not allowed");
   } else if (origin.includes(BASE) === false) {
     respondWith(

@@ -37,7 +37,7 @@
         const form = document.getElementById("newsletter-form");
         const success = form.querySelector(".form-success");
        form.addEventListener("submit", e => {
-  e.preventDefault();
+        e.preventDefault();
             const body = new URLSearchParams(new FormData(form)).toString();
 
         fetch('/', {
