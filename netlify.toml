@@ -10,6 +10,8 @@
   # directory located at the absolute path "root/project/build-output"
   publish = "dist/"
 
+  functions = "src/functions"
+
 
 [[redirects]]
 from = "/apply"
