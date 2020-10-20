@@ -1,7 +1,7 @@
 const BASE = "ideas42ventures";
 const headers = {
   "Access-Control-Allow-Origin": `https://www.${BASE}.com/`,
-  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Headers": "application/json",
   "Access-Control-Allow-Methods": "POST",
 };
 
@@ -37,6 +37,6 @@ function respondWith(callback, statusCode, message) {
   callback(null, {
     statusCode,
     headers,
-    body: JSON.stringify({ message }),
+    body: JSON.stringify({ message, statusCode }),
   });
 }

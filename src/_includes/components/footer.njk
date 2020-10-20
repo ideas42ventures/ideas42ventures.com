@@ -3,6 +3,7 @@
     <form class="newsletter-form g-max-2" name="newsletter"
       method="post" data-netlify="true" netlify-honeypot="bot-field" 
       id="newsletter-form">
+
       <input type="hidden" name="tags" value="Web Sign up"/> 
       <fieldset>
         <legend>
@@ -35,30 +36,28 @@
       <script>
         const form = document.getElementById("newsletter-form");
         const success = form.querySelector(".form-success");
-          form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          const body = new URLSearchParams(new FormData(form)).toString();
+       form.addEventListener("submit", e => {
+  e.preventDefault();
+            const body = new URLSearchParams(new FormData(form)).toString();
 
-          fetch('/', {
-            method: "post",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body
-          }).then((res => console.log(res)))
-          .catch(err => console.log(err))
-          
-          
-          }
-          
+        fetch('/', {
+    method: "post",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body
+  })
+  .then((res => res.json()))
+  .then(data => {
+    if (data.statusCode === 400) {
+      throw new Error(data.message)
+    }
+    showSuccess(data.message)
+  })
+  .catch(err => showError(err))
+  })
 
-        function getMessage(text) {
-          console.log(text)
-          const json = JSON.parse(text)
-          const {message} = json 
-                 
-          return message
-        }
+    
 
         function showSuccess(text) {
           form.reset();
