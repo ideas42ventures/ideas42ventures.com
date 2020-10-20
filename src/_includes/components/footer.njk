@@ -40,7 +40,7 @@
         e.preventDefault();
             const body = new URLSearchParams(new FormData(form)).toString();
 
-        fetch('/', {
+        fetch('/api/submission-created', {
     method: "post",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
