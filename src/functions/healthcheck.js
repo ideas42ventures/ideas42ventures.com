@@ -1,13 +1,6 @@
-const headers = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "application/json",
-  "Access-Control-Allow-Methods": "GET",
-};
-
-exports.handler = (event, context, callback) => {
-  callback(null, {
+exports.handler = async (event, context) => {
+  return {
     statusCode: 200,
-    headers,
-    body: JSON.stringify({ message: "I am alive" }),
-  });
+    body: JSON.stringify({ message: "The function server is up" }),
+  };
 };

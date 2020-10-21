@@ -5,27 +5,23 @@ const headers = {
   "Access-Control-Allow-Methods": "POST",
 };
 
-exports.handler = (event, context, callback) => {
-  console.log(event);
+exports.handler = async ({ body }, context) => {
+  console.log(body.payload);
+
+  const { email } = JSON.parse(body).payload;
+  const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
+
+  if (!isEmail) {
+    return respondWith(400, "This is an invalid email");
+  } else {
+    return respondWith(200, "Thanks for signing up");
+  }
 };
 
-// function handleNewsletter(body) {
-//   console.log(body)
-//   const { email } = JSON.parse(body).payload;
-//   const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
-//   if (httpMethod !== "POST") respondWith(callback, 400, "Method not allowed");
-
-//   if (!isEmail || statusCode === 400) {
-//     respondWith(callback, 400, "This is an invalid email");
-//   } else {
-//     respondWith(callback, 200, "Thanks for signing up");
-//   }
-// }
-
-// function respondWith(callback, statusCode, message) {
-//   callback(null, {
-//     statusCode,
-//     headers,
-//     body: JSON.stringify({ message, statusCode }),
-//   });
-// }
+function respondWith(statusCode, message) {
+  return {
+    statusCode,
+    headers,
+    body: JSON.stringify({ message, statusCode }),
+  };
+}

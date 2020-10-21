@@ -15,12 +15,11 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "eslint --fix --ext .js",
     "prettier": "prettier --write src/",
-    "start:dev": "ntl dev",
-    "start:lambda": "netlify-lambda serve src/functions",
-    "build:lambda": "netlify-lambda build src/functions"
+    "start:dev": "ntl dev"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
+    "babel-eslint": "10.1.0",
     "clean-css": "4.2.3",
     "eleventy-plugin-pwa": "1.0.8",
     "eslint": "7.5.0",
