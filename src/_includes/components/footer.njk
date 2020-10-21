@@ -35,12 +35,12 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
-        const success = form.querySelector(".form-success");
        form.addEventListener("submit", e => {
         e.preventDefault();
-            const body = new URLSearchParams(new FormData(form)).toString();
-
-    fetch('/', {
+        const body = new URLSearchParams(new FormData(form)).toString();
+          const url = form.getAttribute("action");
+        const success = form.querySelector(".form-success");
+    fetch(url, {
     method: "post",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
