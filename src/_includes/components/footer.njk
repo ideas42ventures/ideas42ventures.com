@@ -38,7 +38,7 @@
           const body = new URLSearchParams(new FormData(form)).toString();
           const success = form.querySelector(".form-success");
 
-          fetch(url, {
+          fetch("/.netlify/functions/submission-created", {
             method: "post",
             headers: {
               "Content-Type": "application/x-www-form-urlencoded"
