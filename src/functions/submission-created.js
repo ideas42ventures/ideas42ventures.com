@@ -6,15 +6,24 @@ const headers = {
 };
 
 exports.handler = async ({ body }, context) => {
-  console.log(body.payload);
+  const {
+    data: { tags },
+  } = JSON.parse(body).payload;
+  let isSubscribeForm;
+  try {
+    isSubscribeForm = tags[0].toLowerCase() === "web sign up";
+  } catch {
+    isSubscribeForm = false;
+  }
+  if (isSubscribeForm) {
+    const { email } = JSON.parse(body).payload;
+    const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
 
-  const { email } = JSON.parse(body).payload;
-  const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
-
-  if (!isEmail) {
-    return respondWith(400, "This is an invalid email");
-  } else {
-    return respondWith(200, "Thanks for signing up");
+    if (!isEmail) {
+      return respondWith(400, "This is an invalid email");
+    } else {
+      return respondWith(200, "Thanks for signing up");
+    }
   }
 };
 
