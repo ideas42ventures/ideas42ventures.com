@@ -6,6 +6,7 @@ const headers = {
 };
 
 exports.handler = async ({ body }, context) => {
+  console.log(body);
   const {
     data: { tags },
   } = JSON.parse(body).payload;
