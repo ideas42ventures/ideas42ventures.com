@@ -6,32 +6,28 @@ const headers = {
 };
 
 exports.handler = async ({ body }, context) => {
-  console.log(body);
-  const {
-    data: { tags },
-  } = JSON.parse(body).payload;
-  let isSubscribeForm;
-  try {
-    isSubscribeForm = tags[0].toLowerCase() === "web sign up";
-  } catch {
-    isSubscribeForm = false;
-  }
-  if (isSubscribeForm) {
-    const { email } = JSON.parse(body).payload;
-    const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
-
-    if (!isEmail) {
-      return respondWith(400, "This is an invalid email");
-    } else {
-      return respondWith(200, "Thanks for signing up");
-    }
-  }
-};
-
-function respondWith(statusCode, message) {
   return {
-    statusCode,
-    headers,
-    body: JSON.stringify({ message, statusCode }),
+    statusCode: 200,
+    body: JSON.stringify({ message: "cool" }),
   };
-}
+  // console.log(body)
+  // const {
+  //   data: { tags },
+  // } = JSON.parse(body).payload;
+  // let isSubscribeForm;
+  // try {
+  //   isSubscribeForm = tags[0].toLowerCase() === "web sign up";
+  // } catch {
+  //   isSubscribeForm = false;
+  // }
+  // if (isSubscribeForm) {
+  //   const { email } = JSON.parse(body).payload;
+  //   const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(email);
+
+  //   if (!isEmail) {
+  //     return respondWith(400, "This is an invalid email");
+  //   } else {
+  //     return respondWith(200, "Thanks for signing up");
+  //   }
+  // }
+};
