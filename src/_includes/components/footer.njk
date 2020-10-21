@@ -38,7 +38,7 @@
           const body = new URLSearchParams(new FormData(form)).toString();
           const success = form.querySelector(".form-success");
 
-          fetch("/", {
+          fetch(url, {
             method: "post",
             body
           }).then((res) => {
