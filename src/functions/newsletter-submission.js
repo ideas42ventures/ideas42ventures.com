@@ -2,7 +2,11 @@ const fetch = require("node-fetch");
 const { BUTTONDOWN_API_KEY } = process.env;
 
 exports.handler = async ({ body }) => {
-  const email = getEmail(body);
+  const params = new URLSearchParams(body);
+  const email = params.get("email");
+  const tag = params.get("tags");
+  const tags = [];
+  tags.push(tag);
 
   try {
     const response = await fetch(
@@ -13,23 +17,21 @@ exports.handler = async ({ body }) => {
           Authorization: `Token ${BUTTONDOWN_API_KEY}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email: userEmail }),
+        body: JSON.stringify({ email, tags }),
       }
     );
 
     const data = await response.json();
     if (!hasError(data)) {
-      return respondWith(400, "Could not sign user up to newsletter");
+      console.error({ error: data });
+      return respondWith(400, "We ran into an error. Please try again");
     }
     return respondWith(200, "Thanks for signing up!");
   } catch (error) {
-    return respondWith(500, "Could not sign user up to newsletter");
+    console.log({ error });
+    return respondWith(500, "We ran into an error. Please try again");
   }
 };
-
-function getEmail(email) {
-  return decodeURIComponent(email).slice(6).split("&")[0];
-}
 
 function respondWith(statusCode, message) {
   return {

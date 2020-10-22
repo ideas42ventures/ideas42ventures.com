@@ -27,7 +27,8 @@
     "lint-staged": "10.2.11",
     "markdown-it-anchor": "6.0.0",
     "netlify-cli": "2.65.7",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "node-fetch": "2.6.1"
   },
   "husky": {
     "hooks": {
@@ -39,6 +40,5 @@
     "src/**/*": "prettier --write"
   },
   "dependencies": {
-    "node-fetch": "2.6.1"
   }
 }
