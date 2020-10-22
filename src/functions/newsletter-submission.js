@@ -50,7 +50,7 @@ function hasError(data) {
 }
 
 async function handleRequest(email, tags) {
-  const data = await fetch("https://api.buttondown.email/v1/subscribers", {
+  return await fetch("https://api.buttondown.email/v1/subscribers", {
     method: "POST",
     headers: {
       Authorization: `Token ${BUTTONDOWN_API_KEY}`,
@@ -58,5 +58,4 @@ async function handleRequest(email, tags) {
     },
     body: JSON.stringify({ email, tags }),
   });
-  return data;
 }

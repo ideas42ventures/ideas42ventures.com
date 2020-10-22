@@ -37,7 +37,6 @@
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-          console.log(body)
           fetch(url, {
             method: "post",
             body
