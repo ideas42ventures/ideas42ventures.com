@@ -9,6 +9,7 @@ exports.handler = async ({ headers, body }) => {
   tags.push(tag);
 
   if (headers["content-type"] === "application/x-www-form-urlencoded") {
+    await handleRequest(email, tags);
     return {
       statusCode: 302,
       headers: {
@@ -19,17 +20,7 @@ exports.handler = async ({ headers, body }) => {
   }
 
   try {
-    const response = await fetch(
-      "https://api.buttondown.email/v1/subscribers",
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Token ${BUTTONDOWN_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, tags }),
-      }
-    );
+    const response = await handleRequest(email, tags);
 
     const data = await response.json();
     if (!hasError(data)) {
@@ -56,4 +47,16 @@ function hasError(data) {
     data.length === 1 ||
     /^[^@]+@[^@]+\.[^@]+$/.test(data.email)
   );
+}
+
+async function handleRequest(email, tags) {
+  const data = await fetch("https://api.buttondown.email/v1/subscribers", {
+    method: "POST",
+    headers: {
+      Authorization: `Token ${BUTTONDOWN_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, tags }),
+  });
+  return data;
 }
