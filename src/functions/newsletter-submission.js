@@ -1,24 +1,20 @@
 const fetch = require("node-fetch");
 const { BUTTONDOWN_API_KEY } = process.env;
 
-const config = (userEmail) => {
-  return {
-    method: "POST",
-    headers: {
-      Authorization: `Token ${BUTTONDOWN_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email: userEmail }),
-  };
-};
-
 exports.handler = async ({ body }) => {
   const email = getEmail(body);
 
   try {
     const response = await fetch(
       "https://api.buttondown.email/v1/subscribers",
-      config(email)
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Token ${BUTTONDOWN_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: userEmail }),
+      }
     );
 
     const data = await response.json();
