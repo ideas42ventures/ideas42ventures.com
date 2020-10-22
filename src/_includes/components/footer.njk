@@ -37,12 +37,9 @@
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-
+          console.log(body)
           fetch(url, {
             method: "post",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            },
             body
           }).then(res => res.json())
           .then(data => {

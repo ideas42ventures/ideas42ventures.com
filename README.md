@@ -24,6 +24,10 @@ We use [Netlify forms](https://docs.netlify.com/forms/setup/) to handle the form
 - We send a copy of every submission to `tyler@ideas42ventures.com`
 - Currently, we manually export a CSV for import into our mailer, Buttondown. This will change.
 
+#### Buttondown API
+
+- the `env` variable is set in the Netlify environment UI.
+
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)

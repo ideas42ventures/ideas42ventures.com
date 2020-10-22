@@ -1,12 +1,22 @@
 const fetch = require("node-fetch");
 const { BUTTONDOWN_API_KEY } = process.env;
 
-exports.handler = async ({ body }) => {
+exports.handler = async ({ headers, body }) => {
   const params = new URLSearchParams(body);
   const email = params.get("email");
   const tag = params.get("tags");
   const tags = [];
   tags.push(tag);
+
+  if (headers["content-type"] === "application/x-www-form-urlencoded") {
+    return {
+      statusCode: 302,
+      headers: {
+        Location: "/subscribed",
+        "Cache-Control": "no-cache",
+      },
+    };
+  }
 
   try {
     const response = await fetch(
