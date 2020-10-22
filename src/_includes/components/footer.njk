@@ -1,6 +1,6 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" name="newsletter" action="/subscribed" 
+    <form class="newsletter-form g-max-2" name="newsletter" action=".netlify/functions/newsletter-submission" 
       method="post"
       id="newsletter-form">
       <fieldset>
@@ -31,12 +31,12 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
+          const success = form.querySelector(".form-success");
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-          const success = form.querySelector(".form-success");
 
           fetch(url, {
             method: "post",
@@ -44,11 +44,26 @@
               "Content-Type": "application/x-www-form-urlencoded"
             },
             body
-          }).then((res) => {
-            form.reset();
-            success.classList.remove("hidden");
+          }).then(res => res.json())
+          .then(data => {
+            if (data.statusCode === 400) {
+              throw new Error(data.message)
+            } 
+            showSuccess(data.message)
+            return
           })
+          .catch(err => showError(err))
         });
+
+        function showSuccess(text) {
+          form.reset();
+          success.innerHTML = text
+          success.classList.remove("hidden");
+        }
+        function showError(text) {      
+          success.innerHTML = text
+          success.classList.remove("hidden");
+        }
         
         try {
           [...document.querySelectorAll("a[data-fathom-goal]")].forEach(a => {
