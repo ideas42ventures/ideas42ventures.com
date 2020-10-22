@@ -18,11 +18,11 @@ We still want to track how our site is being used, so instead, we use the privac
 
 ### Email subscription form
 
-We use [Netlify forms](https://docs.netlify.com/forms/setup/) to handle the form submission.
+We use [Buttondown](https://buttondown.email/) to handle the form submission.
 
-- Form submissions are stored in the forms section of Netlify
-- We send a copy of every submission to `tyler@ideas42ventures.com`
-- Currently, we manually export a CSV for import into our mailer, Buttondown. This will change.
+- Form submissions are stored in the subscriber tab in the Buttondown dashboard.
+- The `env` variable for the Buttondown is set in the Netlify environment UI.
+- We handle browsers that have JS disabled with redirects to static pages.
 
 ## Contributing
 

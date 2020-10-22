@@ -1,7 +1,7 @@
 <footer class="contentinfo">
   <div class="contentinfo__contents standard-restricted-width">
-    <form class="newsletter-form g-max-2" name="newsletter" action="/subscribed" 
-      method="post" data-netlify="true" netlify-honeypot="bot-field" 
+    <form class="newsletter-form g-max-2" name="newsletter" action=".netlify/functions/newsletter-submission" 
+      method="post"
       id="newsletter-form">
       <fieldset>
         <legend>
@@ -16,7 +16,7 @@
           <div class="field--connected-btn">
             <input id="newsletter-email" type="email" name="email" 
               placeholder="name@example.com" autocapitalize="off" required />
-            <input type="hidden" name="tags" value="Web Sign up"/>
+        <input type="hidden" name="tags" value="Web Sign up"/> 
             <button type="submit" class="btn">Subscribe</button>
           </div>
           <p class="form-success hidden">
@@ -31,24 +31,35 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
+          const success = form.querySelector(".form-success");
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-          const success = form.querySelector(".form-success");
-
           fetch(url, {
             method: "post",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            },
             body
-          }).then((res) => {
-            form.reset();
-            success.classList.remove("hidden");
+          }).then(res => res.json())
+          .then(data => {
+            if (data.statusCode === 400) {
+              throw new Error(data.message)
+            } 
+            showSuccess(data.message)
+            return
           })
+          .catch(err => showError(err))
         });
+
+        function showSuccess(text) {
+          form.reset();
+          success.innerHTML = text
+          success.classList.remove("hidden");
+        }
+        function showError(text) {      
+          success.innerHTML = text
+          success.classList.remove("hidden");
+        }
         
         try {
           [...document.querySelectorAll("a[data-fathom-goal]")].forEach(a => {
