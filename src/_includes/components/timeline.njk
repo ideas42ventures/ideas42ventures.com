@@ -61,21 +61,17 @@
       </li>
     </ul>
   </div>
-  <figcaption class="timeline__caption font-size-2 g-max-2-half">
+  <figcaption class="timeline__caption font-size-2 g-max-3">
     <p>
-      Learn more about the ideas42 Venture Studio and our business building program 
-      at one of the following open ended conference calls.
-    </p>
-    <ul>
+      We recorded two Q&A sessions where we shared more about our process, motivation, and what we provide.
     {% for session in qaSessions %}
-      <li>
-        <a class="btn btn--outlined" href="{{ session.url }}" target="_blank" rel="noopener">
-          <time datetime="{{ session.datetime }}">
-            {% dateFormat session.datetime, "LLL d yyyy '<br/>' t ZZZZ" %}
-          </time>
-        </a>
-      </li>
+      <a href="{% if session.past %}{{ session.videoUrl }}{% else %}{{ session.url }}{% endif %}" target="_blank" rel="noopener">
+        Session {{ loop.index }}:
+        <time datetime="{{ session.datetime }}">
+          {% dateFormat session.datetime, "LLL d yyyy" %}
+        </time>
+      </a>&nbsp;
     {% endfor %}
-    </ul>
+    </p>
   </figcaption>
 </figure>
