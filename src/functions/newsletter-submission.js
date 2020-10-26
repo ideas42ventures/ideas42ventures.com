@@ -3,7 +3,7 @@ const { BUTTONDOWN_API_KEY } = process.env;
 
 exports.handler = async ({ headers, body }) => {
   const botField = params.get("bot-field").length;
-  if (botField > 1) {
+  if (botField >= 1) {
     return respondWith(400, "Invalid request");
   }
 
