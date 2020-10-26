@@ -1,6 +1,7 @@
 ---
 title: Ventures for Shared Prosperity
 noCohortCta: true
+noApplyCta: true
 ---
 
 {% from "components/cohort-nav.njk" import cohort_nav %}
@@ -21,7 +22,7 @@ noCohortCta: true
       people in America
     </p>
     <div class="cohort__nav-container">
-      {{ cohort_nav(isHome=true) }}
+      {{ cohort_nav() }}
     </div>
   </div>
   <img class="masthead__graphic masthead__graphic--left" src="/images/masthead-graphic-triangles.svg" alt="" width="550" />
@@ -36,32 +37,21 @@ noCohortCta: true
       18-month business co-building program. The first 
       cohort will start in January, 2021, and we are going to focus on building businesses that 
       reduce the <a href="/ventures-for-shared-prosperity/focus-area/">excess 
-      costs of poverty</a> in America. Do you have the heart and soul 
-      of an entrepreneur? A passion for solving huge social challenges? 
-      <a href="/apply">
-        Apply today to join our first cohort of entrepreneurs.
-      </a>
+      costs of poverty</a> in America. 
     </p>
     <p class="font-size-2">
-      Not sure you are ready to apply? We recorded two Q&A sessions where we shared more about what we provide our 
-      entrepreneurs, how we think about building scalable, impactful 
-      businesses, and why we think tackling the problem of the excess costs 
-      of poverty is an important one. The first session is available 
-      <a href="https://www.youtube.com/watch?v=IM2OeX28mhU&feature=youtu.be&ab_channel=ideas42">here</a>, 
-      and the second session is
-      available <a href="https://www.youtube.com/watch?v=o4kqUtqu3kY&feature=youtu.be&ab_channel=ideas42">here</a>. 
-      Have more questions? Feel free to <a href="mailto:info@ideas42ventures.com">send us an email</a> directly.
-      </p>   
-      <p>
       At the ideas42 Venture Studio we believe 
       we can help improve the lives of individuals living in poverty by partnering 
       with talented entrepreneurs to build and scale software powered, behavioral 
       science informed businesses that address some of the diverse, complex and 
       structural causes of poverty in America.
     </p>
+    <p class="font-size-2">
+      Have questions? Feel free to <a href="mailto:info@ideas42ventures.com">send us an email</a> directly.
+    </p>
   </div>
 
-  <div class="card cohort__landing-qa grid--max-2">
+  <div class="card cohort__landing-qa grid--max-2" id="qa-sessions">
     <header class="qa__intro">
       <div class="qa__intro-graphic">
         <img 
@@ -85,30 +75,28 @@ noCohortCta: true
           width="110" 
           height="110">
       </div>
-      <h2 class="font-size-4">Join a Q&A with the team </h2>
+      <h2 class="font-size-4">Team Q&A Sessions</h2>
       <p>
-        Learn more about the ideas42 Venture Studio and our business building 
-        program at one of the following open ended conference calls.
+        We recorded two Q&A sessions where we shared more about what we provide, 
+        how we think about building businesses, and why we think tackling the 
+        problem of the excess costs of poverty is important.
       </p>
     </header>
+    
     <ul class="cohort__qa-sessions">
       {% for session in qaSessions %}
         <li>
-          <a class="btn btn--outlined {% if session.past %}btn--disabled{% endif %}" href="{{ session.url }}" target="_blank" rel="noopener">
+          <a class="btn btn--outlined" 
+            href="{% if session.past %}{{ session.videoUrl }}{% else %}{{ session.url }}{% endif %}" 
+            target="_blank" rel="noopener">
+            Session {{ loop.index }}:
             <time datetime="{{ session.datetime }}">
-              {% dateFormat session.datetime, "LLL d yyyy '<br/>' t ZZZZ" %}
+              {% dateFormat session.datetime, "LLL d yyyy" %}
             </time>
           </a>
         </li>
       {% endfor %}
     </ul>
-    <p class="qa__note">
-      Missed the sessions? Don't worry, we recorded them! The first session is available 
-      <a href="https://www.youtube.com/watch?v=IM2OeX28mhU&feature=youtu.be&ab_channel=ideas42">here</a>, 
-      and the second session is
-      available <a href="https://www.youtube.com/watch?v=o4kqUtqu3kY&feature=youtu.be&ab_channel=ideas42">here</a>. 
-      Have more questions? Feel free to <a href="mailto:info@ideas42ventures.com">send us an email</a> directly. 
-    </p>
   </div>
 </div>
 {% endblock %}

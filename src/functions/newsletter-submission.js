@@ -10,10 +10,10 @@ exports.handler = async ({ headers, body }) => {
   }
 
   const email = params.get("email");
-  const tag = params.get("tags");
-
-  const tags = [];
-  tags.push(tag);
+  const tags = params
+    .get("tags")
+    .split(",")
+    .map((t) => t.trim());
 
   if (headers["content-type"] === "application/x-www-form-urlencoded") {
     await handleRequest(email, tags);

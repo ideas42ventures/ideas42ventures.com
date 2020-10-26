@@ -1,4 +1,4 @@
-{% macro cohort_nav(isHome=false) %}
+{% macro cohort_nav() %}
 <nav class="cohort-nav g-max-4" aria-label="Information about Ventures for Shared Prosperity cohort">
   <ul>
     <li class="cohort-nav__item cohort-nav__home-btn">
@@ -20,8 +20,8 @@
       <a href="/ventures-for-shared-prosperity/apply">Apply to join</a>
     </li>
   </ul>
-  <time datetime="2020-10-25">
-    <span>Accepting applications until <strong>Oct 25, 2020</strong></span>
-  </time>
+  <div class="cohort-nav__status">
+    <span>Status: <strong>Reviewing applications</strong></span>
+  </div>
 </nav>
 {% endmacro %}

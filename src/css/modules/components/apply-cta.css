@@ -50,6 +50,7 @@
   border-width: 3px;
   margin: var(--margin-top) auto 0 auto;
   max-width: calc(var(--g-col-width) + calc(var(--g-gutter-width) * 2));
+  padding-top: var(--padding-v);
   width: 100%;
 }
 

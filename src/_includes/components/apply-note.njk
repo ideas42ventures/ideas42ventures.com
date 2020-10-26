@@ -1,31 +1,33 @@
 <div class="card grid--max-2">
   <header class="card__intro">
     <p>
-      <strong class="card__title">To apply follow these steps</strong> 
-      If you have any questions or problems, check out our <a href="/faq">FAQ</a>, 
-      or email us at <a href="mailto:help@ideas42ventures.com">help@ideas42ventures.com</a>.
+      <strong class="card__title">Applications closed</strong> 
+      Applications for this cohort closed on Oct 25. We’re reviewing
+      them now. If you submitted an application, thank you! You’ll hear from
+      us soon.
     </p>
   </header>
-  <div class="card__body">
-    <ol>
-      <li>
-        <b>Download our application questionnaire as a</b>
-        <div class="apply-note__actions">
-          <p class="actions__btns">
-            <a data-fathom-goal="NXWTMM9T" class="btn btn--outlined" href="https://ideas42.app.box.com/s/289cgbk0p5artmln9ybelf1rk9oq3awc" target="_blank" rel="noopener">Word Doc</a> 
-            or 
-            <a data-fathom-goal="4VGH0JKP" class="btn btn--outlined" href="https://bit.ly/33ylmwv" target="_blank" rel="noopener">Google Doc</a> 
-          </p>
-          <p class="actions__note">They’re the same, so use the format that works best for you</p>
-        </div>
-      </li>
-      <li>
-        <b>Complete the questionnaire and save it as a PDF</b>
-      </li>
-      <li>
-        <b>Attach the questionnaire to our online application system at:</b>
-        <a href="https://tinyurl.com/VSPentrepreneur" target="_blank" rel="noopener">tinyurl.com/VSPentrepreneur</a>
-      </li>
-    </ol>
+  <div class="card__body card__body--bordered">
+    <form class="newsletter-form" name="newsletter" action="/.netlify/functions/newsletter-submission" 
+      method="post">
+      <fieldset>
+        <legend class="legend--text font-size-1">
+          We anticipate beginning recruitment for our next cohort in <b>mid 2021</b>.
+          Sign up for our newsletter for updates.
+        </legend>
+
+        <label for="newsletter-email--apply">Email address</label>
+        <input id="newsletter-email--apply" class="input--full" type="email" name="email" 
+          placeholder="name@example.com" autocapitalize="off" autocorrect="off" required />
+        <input type="hidden" name="tags" value="Web Sign up,Apply page"/> 
+        <button type="submit" class="btn">Subscribe</button>
+
+        <p class="form__msg hidden"></p>
+      </fieldset>
+
+      <p class="hidden" hidden>
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+    </form>
   </div>
 </div>

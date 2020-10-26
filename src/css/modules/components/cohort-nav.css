@@ -26,7 +26,7 @@
 }
 
 .cohort-nav__item a,
-.cohort-nav time {
+.cohort-nav__status {
   display: inline-block;
   padding-bottom: 1.1rem;
   padding-top: 1.2rem;
@@ -79,13 +79,13 @@
   color: var(--color-accent-secondary);
 }
 
-.cohort-nav time {
+.cohort-nav__status {
   background-color: var(--color-accent-tertiary);
   border-radius: 0 0 var(--outer-radius) var(--outer-radius);
   flex: 1 1 100%;
   line-height: 1.2;
-  padding-left: 1rem;
-  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.6rem;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@
     flex: 1 1;
   }
 
-  .cohort-nav time {
+  .cohort-nav__status {
     align-items: center;
     border-radius: 0 var(--outer-radius) var(--outer-radius) 0;
     display: flex;

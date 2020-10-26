@@ -4,7 +4,7 @@
 }
 
 .banner__contents {
-  padding-top: var(--padding-v, 2rem);
+  padding-top: var(--padding-v, 0.5rem);
 }
 
 .banner__cta + .banner__contents {
@@ -24,10 +24,16 @@
 }
 
 .banner__nav-item {
+  align-items: center;
   color: var(--text-primary);
+  display: inline-flex;
   font-weight: 600;
   position: relative;
   text-decoration: none;
+}
+
+.banner__nav-item img {
+  margin-right: 0.25rem;
 }
 
 .banner__nav-item:hover {
