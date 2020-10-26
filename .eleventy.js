@@ -41,6 +41,7 @@ module.exports = function (conf) {
 
   conf.addPassthroughCopy("./src/manifest.webmanifest");
   conf.addWatchTarget("./src/**/*.css");
+  conf.addWatchTarget("./src/**/*.js");
 
   conf.setLibrary(
     "md",
