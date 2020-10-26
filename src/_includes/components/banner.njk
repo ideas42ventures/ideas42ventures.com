@@ -1,20 +1,14 @@
 <header class="banner g-padded">
-  {% if not noCohortCta %}
-  <a data-fathom-goal="INHY8CAZ" class="banner__cta" href="/ventures-for-shared-prosperity/">
-    <img src="/images/cohort-mark.svg" alt="" height="36" width="36"> 
-    <span>Learn about our first cohort <strong>Ventures for Shared Prosperity</strong></span>
-    <span class="btn__arrow">{% include "../../images/graphic-arrow-btn.svg" %}</span>
-  </a>
-  {% endif %}
-
   <div class="banner__contents">
     <a href="/" class="banner__logo" aria-label="Go to ideas42 Venture Studio home">
       {% include "../../images/ideas42-venture-studio-logomark.svg" %}
     </a>
     <nav class="banner__nav">
+      <a href="/ventures-for-shared-prosperity" class="banner__nav-item">
+        <img src="/images/cohort-mark.svg" alt="" height="20" width="20"> Ventures for Shared Prosperity
+      </a>
       <a href="/about" class="banner__nav-item">About us</a>
       <a href="/faq" class="banner__nav-item">FAQ</a>
-      <a href="/ventures-for-shared-prosperity/apply" class="btn btn--outlined banner__apply-btn">Apply</a>
     </nav>
   </div>
 </header>
