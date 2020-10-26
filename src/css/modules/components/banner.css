@@ -24,6 +24,7 @@
 }
 
 .banner__nav-item {
+  align-items: center;
   color: var(--text-primary);
   display: inline-flex;
   font-weight: 600;
