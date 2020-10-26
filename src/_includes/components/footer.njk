@@ -38,12 +38,12 @@
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
-          btn.classList.add("btn--disabled");
+          toggleBtn("off")
           fetch(url, {
             method: "post",
             body
           }).then(res => {
-          btn.classList.remove("btn--disabled");
+          toggleBtn()
            return res.json() 
           })
           .then(data => {
@@ -61,9 +61,21 @@
           success.innerHTML = text
           success.classList.remove("hidden");
         }
+
+
         function showError(text) {      
           success.innerHTML = text
           success.classList.remove("hidden");
+        }
+
+        function toggleBtn(state = "on") {
+          if (state === "off") {
+          btn.classList.add("btn--disabled");
+          btn.innerText = "Subscribing...."
+          return
+          }
+          btn.classList.remove("btn--disabled")
+          btn.innerText = "Subscribe"
         }
         
         try {
