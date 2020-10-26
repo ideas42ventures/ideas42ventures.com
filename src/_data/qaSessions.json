@@ -1,11 +1,14 @@
 [
   {
     "url": "https://tinyurl.com/VSPoption1",
+    "videoUrl": "https://youtu.be/IM2OeX28mhU",
     "datetime": "2020-10-10T14:00:00",
     "past": true
   },
   {
     "url": "https://tinyurl.com/VSPoption2",
-    "datetime": "2020-10-15T20:00:00"
+    "videoUrl": "https://youtu.be/o4kqUtqu3kY",
+    "datetime": "2020-10-15T20:00:00",
+    "past": true
   }
 ]
