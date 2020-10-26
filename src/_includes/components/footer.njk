@@ -15,7 +15,10 @@
           <label for="newsletter-email">Email address</label>
           <div class="field--connected-btn">
             <input id="newsletter-email" type="email" name="email" 
-              placeholder="name@example.com" autocapitalize="off" required />
+              placeholder="name@example.com" 
+              autocomplete="off"
+              autocapitalize="off" required />
+
         <input type="hidden" name="tags" value="Web Sign up"/> 
             <button type="submit" class="btn">Subscribe</button>
           </div>
@@ -31,16 +34,21 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
-          const success = form.querySelector(".form-success");
+        const success = form.querySelector(".form-success");
+        const btn = document.querySelector("footer .btn")
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
+          toggleBtn("off")
           fetch(url, {
             method: "post",
             body
-          }).then(res => res.json())
+          }).then(res => {
+          toggleBtn()
+           return res.json() 
+          })
           .then(data => {
             if (data.statusCode === 400) {
               throw new Error(data.message)
@@ -48,7 +56,13 @@
             showSuccess(data.message)
             return
           })
-          .catch(err => showError(err))
+          .catch(err => {
+            if (err instanceof SyntaxError) {
+              showError("Sorry, something went wrong on our end. Please try again")
+            } else {
+              showError(err)
+            }
+          })
         });
 
         function showSuccess(text) {
@@ -56,9 +70,21 @@
           success.innerHTML = text
           success.classList.remove("hidden");
         }
+
+
         function showError(text) {      
           success.innerHTML = text
           success.classList.remove("hidden");
+        }
+
+        function toggleBtn(state = "on") {
+          if (state === "off") {
+          btn.classList.add("btn--disabled");
+          btn.innerText = "Subscribing...."
+          return
+          }
+          btn.classList.remove("btn--disabled")
+          btn.innerText = "Subscribe"
         }
         
         try {

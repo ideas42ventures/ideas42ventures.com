@@ -3,8 +3,15 @@ const { BUTTONDOWN_API_KEY } = process.env;
 
 exports.handler = async ({ headers, body }) => {
   const params = new URLSearchParams(body);
+
+  const botField = params.get("bot-field").length;
+  if (botField >= 1) {
+    return respondWith(400, "Invalid request");
+  }
+
   const email = params.get("email");
   const tag = params.get("tags");
+
   const tags = [];
   tags.push(tag);
 
