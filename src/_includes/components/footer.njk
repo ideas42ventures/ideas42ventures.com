@@ -56,7 +56,13 @@
             showSuccess(data.message)
             return
           })
-          .catch(err => showError(err))
+          .catch(err => {
+            if (err instanceof SyntaxError) {
+              showError("Sorry, something went wrong on our end. Please try again")
+            } else {
+              showError(err)
+            }
+          })
         });
 
         function showSuccess(text) {
