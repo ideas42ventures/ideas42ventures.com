@@ -31,16 +31,21 @@
 
       <script>
         const form = document.getElementById("newsletter-form");
-          const success = form.querySelector(".form-success");
+        const success = form.querySelector(".form-success");
+        const btn = document.querySelector("footer .btn")
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
           const url = form.getAttribute("action");
           const body = new URLSearchParams(new FormData(form)).toString();
+          btn.classList.add("btn--disabled");
           fetch(url, {
             method: "post",
             body
-          }).then(res => res.json())
+          }).then(res => {
+          btn.classList.remove("btn--disabled");
+           return res.json() 
+          })
           .then(data => {
             if (data.statusCode === 400) {
               throw new Error(data.message)
