@@ -72,7 +72,7 @@ input {
   width: 100%;
 }
 
-.form-success {
+.form__msg {
   background-color: white;
   border-radius: 8px;
   color: var(--color-needed-one-more);
