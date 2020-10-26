@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  padding-bottom: calc(var(--g-row) * 4);
+  padding-bottom: calc(var(--g-row) * 8);
 }
 
 a {
