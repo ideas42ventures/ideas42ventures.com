@@ -72,7 +72,8 @@
 .qa__intro {
   background: transparent url("/images/cohort-qa-intro-tile.svg") repeat-x top
     left;
-  padding: 0 calc(var(--g-gutter-width) * 2);
+  padding: calc(var(--g-gutter-width) * 2);
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -80,25 +81,6 @@
   border-top: 1px solid rgba(var(--color-not-quite-white-rgb), 0.8);
   padding: calc(var(--g-row) * 2.5) calc(var(--g-gutter-width) * 2);
   margin-bottom: 0;
-}
-
-.qa__intro-graphic {
-  padding: calc(var(--g-row) * 3) 0 calc(var(--g-row) * 0.5) 0;
-}
-
-.qa__intro-graphic img {
-  border: 1px solid var(--color-not-quite-white);
-  border-radius: 60px;
-  position: relative;
-}
-
-.qa__intro-graphic img + img {
-  margin-left: -0.75rem;
-}
-
-.qa__intro-graphic img:nth-child(2) {
-  transform: translateY(var(--g-row));
-  z-index: 1;
 }
 
 .cohort__qa-sessions {
