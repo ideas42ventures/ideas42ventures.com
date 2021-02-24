@@ -8,6 +8,50 @@
       "linkedin": "https://www.linkedin.com/in/william-bogans-b5758a16b/"
     },
     {
+      "name": "Celena Green",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Jackie Hyland",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Marc Laitin",
+      "team": "Venture Studio",
+      "role": "Studio Lead",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+    },
+    {
+      "name": "Santana Perez",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "LaToria Pierce",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Kortney Ziegler",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    }
+  ],
+  "ideas42": [
+    {
       "name": "Mike Burshteyn",
       "team": "ideas42",
       "role": "Behavioral Designer",
@@ -36,11 +80,11 @@
       "linkedin": "https://www.linkedin.com/in/manasee-desai-7145333/"
     },
     {
-      "name": "Marc Laitin",
-      "team": "Venture Studio",
-      "role": "Studio Lead",
-      "img": "marc-laitin.jpg",
-      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+      "name": "Anthony Hernandez",
+      "team": "ideas42",
+      "role": "Role",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
     },
     {
       "name": "Harrison Neuert",
@@ -120,6 +164,29 @@
       "role": "Entrepreneurship, Communications",
       "img": "amaya-smith.jpg",
       "linkedin": "https://www.linkedin.com/in/amaya-smith-8054a28/"
+    }
+  ],
+  "board": [
+    {
+      "name": "Marc Laitin",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+    },
+    {
+      "name": "Tamika Cummings",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Katy Davis",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "team-member-placeholder.jpg",
+      "linkedin": ""
     }
   ]
 }
