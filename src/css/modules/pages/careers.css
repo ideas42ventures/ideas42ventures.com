@@ -1,0 +1,29 @@
+.careers__card {
+  margin-top: calc(var(--g-row) * 4);
+  padding: var(--g-gutter-width);
+}
+
+.careers__job-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.careers__location {
+  margin: 0 0 var(--g-row) 0;
+  font-size: var(--font-size-1);
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+}
+
+.careers__job {
+  margin: 0;
+}
+
+.careers__subheader {
+  color: var(--color-barney);
+  font-size: var(--font-size-2);
+  padding: calc(var(--g-row) * 4) 0 calc(var(--g-row) * 1);
+}
