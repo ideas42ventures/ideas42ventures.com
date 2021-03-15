@@ -3,10 +3,19 @@
 
 <head>
   {% include "head-meta.njk" %}
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWJESM3VE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BBWJESM3VE');
+  </script>
 
-  <script src="https://roadrunner.ideas42ventures.com/script.js" 
-    honor-dnt="true" 
-    site="JGGXGDMD" 
+  <script src="https://roadrunner.ideas42ventures.com/script.js"
+    honor-dnt="true"
+    site="JGGXGDMD"
     excluded-domains="localhost,ideas42ventures.netlify.app" defer></script>
   <link rel="preload" href="/css/fonts/epilogue.var.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -47,7 +56,7 @@
       {% if noApplyCta != true %}
         {% include "components/apply-cta.njk" %}
       {% endif %}
-      
+
       {% include "components/footer.njk" %}
     {% endblock %}
 
