@@ -12,15 +12,16 @@
 }
 
 .banner__nav {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: calc(var(--g-row) * 2) 0;
 }
 
 .banner__logo {
   display: block;
-  width: 8.75rem;
+  width: 14rem;
+  margin: calc(var(--g-row) * 4) 0;
 }
 
 .banner__nav-item {
@@ -133,12 +134,23 @@
 }
 
 @media (min-width: 31.25em) {
+
+}
+
+@media (min-width: 37.5em) {
+  .banner__nav {
+    flex-direction: row;
+    align-items: center;
+    padding-left: var(--g-gutter-width);
+    text-align: right;
+  }
+
   .banner__cta {
-    --padding-h: var(--g-gutter-width) * 2;
+    --padding-h: calc((var(--g-gutter-width) * 2.75) * 2);
     --border-radius: 40px;
     --padding-v: 0.5rem;
     --pos-top: calc(var(--g-row) * 2);
-    --pos-left: var(--g-gutter-width);
+    --pos-left: calc(var(--g-gutter-width) * 2.75);
     position: fixed;
     width: calc(100% - var(--padding-h));
   }
@@ -154,13 +166,6 @@
 
   .banner__nav a + a {
     margin-left: min(4vw, 3.75rem);
-  }
-}
-
-@media (min-width: 37.5em) {
-  .banner__cta {
-    --padding-h: calc((var(--g-gutter-width) * 2.75) * 2);
-    --pos-left: calc(var(--g-gutter-width) * 2.75);
   }
 }
 
