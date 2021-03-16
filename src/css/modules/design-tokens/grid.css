@@ -26,9 +26,9 @@ html {
   );
 }
 
-/* 
+/*
   NOTE: We're slowly trying going to CSS grid over setting max widths and
-  such. Will be a process to figure out what works best for us. 
+  such. Will be a process to figure out what works best for us.
  */
 .grid {
   --g-template-columns: 1fr;
@@ -146,6 +146,10 @@ html {
 
 .two-col-text + p {
   margin-top: 1.7em;
+}
+
+.two-col-text__contain {
+  break-inside: avoid;
 }
 
 @media (min-width: 37.5em) {
