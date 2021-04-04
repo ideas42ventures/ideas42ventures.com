@@ -40,6 +40,7 @@ module.exports = function (conf) {
   ]);
 
   conf.addPassthroughCopy("./src/manifest.webmanifest");
+  conf.addPassthroughCopy("./src/ZOOM_verify_hks4cbEcQjOTBBL81dsu2Q.html");
   conf.addWatchTarget("./src/**/*.css");
   conf.addWatchTarget("./src/**/*.js");
 
