@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+.careers__title {
+  font-weight: bold;
+  font-size: var(--font-size-2);
+}
+
 .careers__location {
   margin: 0 0 var(--g-row) 0;
   font-size: var(--font-size-1);
@@ -16,6 +21,10 @@
   text-transform: uppercase;
   font-weight: bold;
   float: right;
+}
+
+.careers__description {
+  margin-bottom: 0;
 }
 
 .careers__job {
@@ -33,4 +42,8 @@
   width: 100px;
   display: block;
   padding: calc(var(--g-row) * 4) 0 0;
+}
+
+.careers__empty {
+  padding-top: calc(var(--g-row) * 4);
 }

@@ -1,3 +1,23 @@
+function openMobileMenu() {
+  var menu = document.getElementById("banner__mobile");
+  menu.style.display = "block";
+
+  var content = document.getElementById("content");
+  content.style.display = "none";
+
+  menu.focus();
+}
+
+function closeMobileMenu() {
+  var menu = document.getElementById("banner__mobile");
+  menu.style.display = "none";
+
+  var content = document.getElementById("content");
+  content.style.display = "block";
+
+  content.focus();
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   function showFormSuccess(form, msgEl, text) {
     form.reset();

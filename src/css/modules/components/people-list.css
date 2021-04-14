@@ -1,7 +1,7 @@
 .people-list {
   display: grid;
   gap: var(--g-gutter-width);
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   list-style: none;
   margin: 2rem 0 8rem 0;
   padding: 0;

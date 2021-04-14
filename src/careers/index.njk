@@ -29,19 +29,23 @@ title: ideas42 Venture Studio Careers
 <div class="standard-restricted-width">
   <div class="g-centered font-size-3">
     {% headingAnchor "2", "Open Positions" %}
-    <div class="card careers__card">
-      <ul class="careers__job-list">
-        <li class="careers__job">
-          <a href="https://20130424193759_th8ernapwzwxc5cl.applytojob.com/apply/2OxRf2y842/Product-Designer?source=website" target="_blank" rel="noopener">Product Designer</a>
-          <p class="careers__location">Remote (USA)</p>
-          <p>
-            We are hiring a Product Designer with a passion for bringing
-            product ideas to life. You’ll work with multiple entrepreneurs and
-            their teams to help them build new products and bring them to market.
-          </p>
-        </li>
-      </u>
-    </div>
+    {% if openPositions|length %}
+      <div class="card careers__card">
+        <ul class="careers__job-list">
+          {% for position in openPositions %}
+            <li class="careers__job">
+              <a class="careers__title" href="{{ position.url }}" target="_blank" rel="noopener">{{ position.title }}</a>
+              <p class="careers__location">{{ position.location }}</p>
+              <p class="careers__description">{{ position.description }}</p>
+            </li>
+          {% endfor %}
+        </u>
+      </div>
+    {% else %}
+      <div class="careers__empty">
+        We don't currently have any positions open. If you're interested in working with us, send us an email at <a href="mailto:contact@ideas42ventures.com">contact@ideas42ventures.com</a>.
+      </div>
+    {% endif %}
   </div>
 </div>
 

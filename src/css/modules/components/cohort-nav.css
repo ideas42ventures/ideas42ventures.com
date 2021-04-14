@@ -39,6 +39,7 @@
   text-decoration: none;
   transition: box-shadow 0.1s ease;
   text-align: left;
+  font-weight: 600;
 }
 
 .cohort-nav a:hover {

@@ -12,15 +12,44 @@
 }
 
 .banner__nav {
-  align-items: flex-start;
   display: flex;
-  flex-direction: column;
-  margin: calc(var(--g-row) * 2) 0;
+  flex-direction: row;
+  align-items: center;
+  padding-left: var(--g-gutter-width);
+  text-align: right;
+  margin-left: auto;
+}
+
+.banner__cta {
+  --padding-h: calc((var(--g-gutter-width) * 2.75) * 2);
+  --border-radius: 40px;
+  --padding-v: 0.5rem;
+  --pos-top: calc(var(--g-row) * 2);
+  --pos-left: calc(var(--g-gutter-width) * 2.75);
+  position: fixed;
+  width: calc(100% - var(--padding-h));
+}
+
+.banner__contents {
+  display: flex;
+}
+
+.banner__nav a + a {
+  margin-left: min(4vw, 3.75rem);
+}
+
+.banner__cta {
+  --pos-top: calc(var(--g-row) * 3);
+  --pos-left: calc(50% - var(--width-max) / 2);
+}
+
+.banner__cta + .banner__contents {
+  --padding-v: 3rem;
 }
 
 .banner__logo {
   display: block;
-  width: 14rem;
+  width: 12rem;
   margin: calc(var(--g-row) * 4) 0;
 }
 
@@ -56,14 +85,33 @@
   width: var(--size);
 }
 
+[data-page="ventures-for-shared-prosperity"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="focus-area"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="what-we-provide"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="apply"] .banner__nav-item[href*="ventures-for-shared-prosperity"],
 [data-page="model"] .banner__nav-item[href*="model"],
-[data-page="about"] .banner__nav-item[href*="about"] {
+[data-page="about"] .banner__nav-item[href*="about"],
+[data-page="careers"] .banner__nav-item[href*="careers"],
+[data-page="faq"] .banner__nav-item[href*="faq"] {
   color: var(--color-accent-active);
 }
 
 .banner__nav-item:hover::before,
+[data-page="ventures-for-shared-prosperity"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"]::before,
+[data-page="focus-area"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"]::before,
+[data-page="what-we-provide"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"]::before,
+[data-page="apply"]
+  .banner__nav-item[href*="ventures-for-shared-prosperity"]::before,
 [data-page="model"] .banner__nav-item[href*="model"]::before,
-[data-page="about"] .banner__nav-item[href*="about"]::before {
+[data-page="about"] .banner__nav-item[href*="about"]::before,
+[data-page="careers"] .banner__nav-item[href*="careers"]::before,
+[data-page="faq"] .banner__nav-item[href*="faq"]::before {
   transform: scale3d(1, 1, 1);
 }
 
@@ -133,55 +181,77 @@
   --color: var(--color-accent-active);
 }
 
-@media (min-width: 31.25em) {
-
+.banner__menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  width: 3rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 37.5em) {
+.banner__menu-button > svg {
+  width: 100%;
+}
+
+.banner__mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-text-primary);
+  color: white;
+  padding-top: var(--padding-v, 0.5rem);
+  padding-left: var(--padding-h);
+  padding-right: var(--padding-h);
+  padding-bottom: 3rem;
+  overflow-y: auto;
+}
+
+.banner__mobile-header {
+  display: flex;
+}
+
+.banner__mobile .banner__menu-button {
+  color: white;
+}
+
+.banner__mobile-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__nav-item.banner__mobile-nav-item {
+  font-size: var(--font-size-3);
+  color: white;
+  margin: var(--g-row);
+}
+
+[data-page="ventures-for-shared-prosperity"]
+  .banner__nav-item.banner__mobile-nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="focus-area"]
+  .banner__nav-item.banner__mobile-nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="what-we-provide"]
+  .banner__nav-item.banner__mobile-nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="apply"]
+  .banner__nav-item.banner__mobile-nav-item[href*="ventures-for-shared-prosperity"],
+[data-page="model"] .banner__nav-item.banner__mobile-nav-item[href*="model"],
+[data-page="about"] .banner__nav-item.banner__mobile-nav-item[href*="about"],
+[data-page="careers"]
+  .banner__nav-item.banner__mobile-nav-item[href*="careers"],
+[data-page="faq"] .banner__nav-item.banner__mobile-nav-item[href*="faq"] {
+  color: white;
+}
+
+@media (max-width: 55rem) {
   .banner__nav {
-    flex-direction: row;
-    align-items: center;
-    padding-left: var(--g-gutter-width);
-    text-align: right;
+    display: none;
   }
 
-  .banner__cta {
-    --padding-h: calc((var(--g-gutter-width) * 2.75) * 2);
-    --border-radius: 40px;
-    --padding-v: 0.5rem;
-    --pos-top: calc(var(--g-row) * 2);
-    --pos-left: calc(var(--g-gutter-width) * 2.75);
-    position: fixed;
-    width: calc(100% - var(--padding-h));
-  }
-
-  .banner__contents {
-    display: flex;
-  }
-
-  .banner__nav {
-    margin-bottom: 0;
-    margin-left: auto;
-  }
-
-  .banner__nav a + a {
-    margin-left: min(4vw, 3.75rem);
-  }
-}
-
-@media (min-width: 52.8125em) {
-  .banner__cta {
-    --pos-top: calc(var(--g-row) * 3);
-    --pos-left: calc(50% - var(--width-max) / 2);
-  }
-
-  .banner__cta + .banner__contents {
-    --padding-v: 3rem;
-  }
-}
-
-@media (min-width: 96.25em) {
-  .banner__cta + .banner__contents {
-    --padding-v: 2rem;
+  .banner__menu-button {
+    display: block;
   }
 }
