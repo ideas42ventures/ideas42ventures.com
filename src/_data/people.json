@@ -8,6 +8,64 @@
       "linkedin": "https://www.linkedin.com/in/william-bogans-b5758a16b/"
     },
     {
+      "name": "Celena Green",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "celena-green.jpg",
+      "linkedin": "https://www.linkedin.com/in/celenagreen/"
+    },
+    {
+      "name": "Jackie Hyland",
+      "team": "Venture Studio",
+      "role": "Business Designer",
+      "img": "jackie-hyland.jpg",
+      "linkedin": "https://www.linkedin.com/in/jackiehyland/"
+    },
+    {
+      "name": "Marc Laitin",
+      "team": "Venture Studio",
+      "role": "Studio Lead",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+    },
+    {
+      "name": "Kristina Ng",
+      "team": "Venture Studio",
+      "role": "Product Designer",
+      "img": "kristina-ng.jpg",
+      "linkedin": "https://www.linkedin.com/in/ngkristina/"
+    },
+    {
+      "name": "Santana Perez",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "santana-perez.jpg",
+      "linkedin": "https://www.linkedin.com/in/santanaperez/"
+    },
+    {
+      "name": "LaToria Pierce",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "latoria-pierce.jpg",
+      "linkedin": "https://www.linkedin.com/in/latoriapierce/"
+    },
+    {
+      "name": "Sonali Zaveri",
+      "team": "Venture Studio",
+      "role": "Head of Design",
+      "img": "sonali-zaveri.jpg",
+      "linkedin": "https://www.linkedin.com/in/sdzaveri/"
+    },
+    {
+      "name": "Kortney Ziegler",
+      "team": "Venture Studio",
+      "role": "Entrepreneur",
+      "img": "kortney-ziegler.jpg",
+      "linkedin": "https://www.linkedin.com/in/dr-kortney-ziegler-65885845/"
+    }
+  ],
+  "ideas42": [
+    {
       "name": "Mike Burshteyn",
       "team": "ideas42",
       "role": "Behavioral Designer",
@@ -36,18 +94,11 @@
       "linkedin": "https://www.linkedin.com/in/manasee-desai-7145333/"
     },
     {
-      "name": "Tyler Gaw",
-      "team": "Venture Studio",
-      "role": "Lead Software Engineer",
-      "img": "tyler-gaw.jpg",
-      "linkedin": "https://www.linkedin.com/in/tyler-gaw-designer-engineer/"
-    },
-    {
-      "name": "Marc Laitin",
-      "team": "Venture Studio",
-      "role": "Studio Lead",
-      "img": "marc-laitin.jpg",
-      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+      "name": "Anthony Hernandez",
+      "team": "ideas42",
+      "role": "Communications",
+      "img": "anthony-hernandez.jpg",
+      "linkedin": ""
     },
     {
       "name": "Harrison Neuert",
@@ -127,6 +178,29 @@
       "role": "Entrepreneurship, Communications",
       "img": "amaya-smith.jpg",
       "linkedin": "https://www.linkedin.com/in/amaya-smith-8054a28/"
+    }
+  ],
+  "board": [
+    {
+      "name": "Marc Laitin",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
+    },
+    {
+      "name": "Tamika Cummings",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "tamika-cummings.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Katy Davis",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "katy-davis.jpg",
+      "linkedin": ""
     }
   ]
 }

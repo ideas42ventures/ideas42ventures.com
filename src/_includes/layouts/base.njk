@@ -3,7 +3,7 @@
 
 <head>
   {% include "head-meta.njk" %}
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWJESM3VE"></script>
   <script>
@@ -42,24 +42,25 @@
 </head>
 
   <body>
-    <div class="masthead">
-      {% block masthead %}
-        {% include "components/banner.njk" %}
+    {% include "components/banner-mobile.njk" %}
+    <div id="content">
+      {% include "components/banner.njk" %}
+
+      <main>
+        <div class="masthead">
+          {% block masthead %}{% endblock %}
+        </div>
+        {% block main %}{% endblock %}
+      </main>
+
+      {% block footer %}
+        {% if noApplyCta != true %}
+          {% include "components/apply-cta.njk" %}
+        {% endif %}
+
+        {% include "components/footer.njk" %}
       {% endblock %}
     </div>
-
-    <main>
-    {% block main %}{% endblock %}
-    </main>
-
-    {% block footer %}
-      {% if noApplyCta != true %}
-        {% include "components/apply-cta.njk" %}
-      {% endif %}
-
-      {% include "components/footer.njk" %}
-    {% endblock %}
-
     <script>
       {% include "../../js/site.js" %}
     </script>

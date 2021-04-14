@@ -127,7 +127,8 @@ b {
   font-weight: 600;
 }
 
-a:focus {
+a:focus,
+button:focus {
   outline: 3px solid currentColor;
 }
 
