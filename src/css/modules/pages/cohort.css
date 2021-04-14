@@ -1,9 +1,3 @@
-.cohort__mark {
-  display: block;
-  margin: 0 auto calc(var(--g-row) * 2) auto;
-  width: 4.25rem;
-}
-
 .cohort__hero {
   --top-max-rows: 5;
 }

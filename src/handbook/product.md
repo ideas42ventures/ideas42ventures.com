@@ -5,7 +5,7 @@ title: ideas42 Venture Studio Handbook - Product
 
 ## Product
 
-The goal of this document is to paint a vivid picture of how we build technology-powered products. If we have not accomplished that as a whole or in individual sections, please [info@ideas42ventures.com](mailto:info@ideas42ventures.com.) let us know.
+The goal of this document is to paint a vivid picture of how we build technology-powered products. If we have not accomplished that as a whole or in individual sections, please [contact@ideas42ventures.com](mailto:contact@ideas42ventures.com.) let us know.
 
 We use the principles and processes described in this document when making both long-term strategic decisions and day-to-day tactical decisions.
 

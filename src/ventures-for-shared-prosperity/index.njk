@@ -11,13 +11,12 @@ noApplyCta: true
   {{ super() }}
   <div class="hero cohort__hero hero--centered standard-restricted-width">
     <p class="hero__tag">
-      <img class="cohort__mark" src="/images/cohort-mark.svg" alt="" role="presentation" height="68" width="68"> 
       Cohort one: 2021-2022
     </p>
     <h1 class="hero__title">
       Ventures for Shared Prosperity
     </h1>
-    <p class="hero__body"> 
+    <p class="hero__body">
       Focused on improving the financial health and well-being of individuals and families with lower incomes.
     </p>
     <div class="cohort__nav-container">
@@ -31,18 +30,18 @@ noApplyCta: true
 <div class="standard-restricted-width grid">
   <div class="cohort__landing-intro grid--max-3">
     <p class="font-size-3">
-      As a part of the <a href="http://sharedprosperity.ideas42.org">Shared Prosperity Catalyst</a> 
-      we are recruiting talented individuals to join our 
-      18-month business co-building program. The first 
-      cohort will start in January, 2021, and we are going to focus on building businesses that 
-      reduce the <a href="/ventures-for-shared-prosperity/focus-area/">excess 
-      costs of poverty</a> in America. 
+      As a part of the <a href="http://sharedprosperity.ideas42.org">Shared Prosperity Catalyst</a>
+      we are recruiting talented individuals to join our
+      18-month business co-building program. The first
+      cohort will start in January, 2021, and we are going to focus on building businesses that
+      reduce the <a href="/ventures-for-shared-prosperity/focus-area/">excess
+      costs of poverty</a> in America.
     </p>
     <p class="font-size-2">
-      At the ideas42 Venture Studio we believe 
-      we can help improve the lives of individuals living in poverty by partnering 
-      with talented entrepreneurs to build and scale software powered, behavioral 
-      science informed businesses that address some of the diverse, complex and 
+      At the ideas42 Venture Studio we believe
+      we can help improve the lives of individuals living in poverty by partnering
+      with talented entrepreneurs to build and scale software powered, behavioral
+      science informed businesses that address some of the diverse, complex and
       structural causes of poverty in America.
     </p>
     <p class="font-size-2">
@@ -54,17 +53,17 @@ noApplyCta: true
     <header class="qa__intro">
       <h2 class="font-size-4">Team Q&A Sessions</h2>
       <p>
-        We recorded two Q&A sessions where we shared more about what we provide, 
-        how we think about building businesses, and why we think tackling the 
+        We recorded two Q&A sessions where we shared more about what we provide,
+        how we think about building businesses, and why we think tackling the
         problem of the excess costs of poverty is important.
       </p>
     </header>
-    
+
     <ul class="cohort__qa-sessions">
       {% for session in qaSessions %}
         <li>
-          <a class="btn btn--outlined" 
-            href="{% if session.past %}{{ session.videoUrl }}{% else %}{{ session.url }}{% endif %}" 
+          <a class="btn btn--outlined"
+            href="{% if session.past %}{{ session.videoUrl }}{% else %}{{ session.url }}{% endif %}"
             target="_blank" rel="noopener">
             Session {{ loop.index }}:
             <time datetime="{{ session.datetime }}">
@@ -77,9 +76,3 @@ noApplyCta: true
   </div>
 </div>
 {% endblock %}
-
-
-  
- 
-
-

@@ -10,12 +10,10 @@
 }
 
 .cohort-nav ul {
-  display: grid;
   flex: 1 1 100%;
-  grid-template-columns: 5.5rem 1fr;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 .cohort-nav__item {
@@ -30,6 +28,7 @@
   display: inline-block;
   padding-bottom: 1.1rem;
   padding-top: 1.2rem;
+  border: 0;
 }
 
 .cohort-nav__item a {
@@ -95,7 +94,7 @@
 @media (min-width: 35em) {
   .cohort-nav ul {
     display: flex;
-    padding: 0 2.5rem 0 0;
+    padding: 0 2.5rem;
     justify-content: space-between;
   }
 
