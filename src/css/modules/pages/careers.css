@@ -11,7 +11,7 @@
 
 .careers__title {
   font-weight: bold;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-4);
 }
 
 .careers__location {
@@ -39,9 +39,9 @@
 }
 
 .careers__icon {
-  width: 100px;
+  height: 9rem;
   display: block;
-  padding: calc(var(--g-row) * 4) 0 0;
+  padding: calc(var(--g-row) * 4) 0 calc(var(--g-row) * 2);
 }
 
 .careers__empty {
