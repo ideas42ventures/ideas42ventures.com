@@ -30,17 +30,17 @@ title: ideas42 Venture Studio Careers
   <div class="g-centered font-size-3">
     {% headingAnchor "2", "Open Positions" %}
     {% if openPositions|length %}
-      <div class="card careers__card">
         <ul class="careers__job-list">
           {% for position in openPositions %}
             <li class="careers__job">
-              <a class="careers__title" href="{{ position.url }}" target="_blank" rel="noopener">{{ position.title }}</a>
-              <p class="careers__location">{{ position.location }}</p>
-              <p class="careers__description">{{ position.description }}</p>
+              <a class="card careers__card" href="{{ position.url }}" target="_blank" rel="noopener">
+                <span class="careers__title" >{{ position.title }}</span>
+                <p class="careers__type">{{ position.type }}</p>
+                <p class="careers__location">{{ position.location }}</p>
+              </a>
             </li>
           {% endfor %}
-        </u>
-      </div>
+        </ul>
     {% else %}
       <div class="careers__empty">
         We don't currently have any positions open. If you're interested in working with us, send us an email at <a href="mailto:contact@ideas42ventures.com">contact@ideas42ventures.com</a>.
