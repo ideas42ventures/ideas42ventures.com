@@ -1,6 +1,13 @@
 .careers__card {
   margin-top: calc(var(--g-row) * 4);
   padding: var(--g-gutter-width);
+  display: block;
+}
+
+.careers__card:hover,
+.careers__card:focus {
+  background-color: white;
+  border-color: var(--color-accent-active);
 }
 
 .careers__job-list {
@@ -11,20 +18,22 @@
 
 .careers__title {
   font-weight: bold;
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-6);
+  border-bottom: 0;
 }
 
-.careers__location {
+.careers__type {
   margin: 0 0 var(--g-row) 0;
   font-size: var(--font-size-1);
   line-height: 2;
-  text-transform: uppercase;
-  font-weight: bold;
   float: right;
+  color: var(--color-eggplant);
 }
 
-.careers__description {
+.careers__location {
   margin-bottom: 0;
+  color: var(--color-eggplant);
+  margin-top: var(--g-row);
 }
 
 .careers__job {
