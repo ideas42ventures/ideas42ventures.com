@@ -74,6 +74,20 @@ body#celena {
   margin-top: 30px;
 }
 
+@media (max-width: 1000px) and (min-width: 700px) {
+  #celena .columns-4 {
+    grid-template-columns: 1fr 40px 1fr 0px;
+  }
+}
+
+@media (max-width: 699px) {
+  #celena .columns-4,
+  #celena .columns-3,
+  #celena .columns-2 {
+    grid-template-columns: 1fr 0px;
+  }
+}
+
 /* Buttons & Forms */
 
 #celena .btn {
@@ -112,6 +126,18 @@ body#celena {
 #celena .hero p {
   font-size: var(--font-size-medium);
   max-width: 50%;
+}
+
+@media (max-width: 1000px) {
+  #celena .hero p {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 699px) {
+  #celena .hero p {
+    max-width: 100%;
+  }
 }
 
 /* Sections */
@@ -178,12 +204,41 @@ body#celena {
   margin-bottom: 20px;
 }
 
+#celena .benefits {
+  margin-bottom: 0;
+}
+
+#celena .benefits li {
+  list-style-type: none;
+  display: flex;
+  margin: 20px 0;
+}
+
+#celena .benefits li:last-child {
+  margin-bottom: 0;
+}
+
+#celena .benefits li:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-image: url("/images/benefits-check.svg");
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
 #celena .tab-content > .tab-pane {
   display: none;
 }
 
 #celena .tab-content > .tab-pane.active {
   display: block;
+}
+
+@media (max-width: 699px) {
+  #celena .benefits {
+    margin-top: 0;
+  }
 }
 
 /* How it works */
@@ -197,6 +252,7 @@ body#celena {
 
 #celena .how-it-works h3 {
   font-size: var(--font-size-medium);
+  margin-top: 0;
 }
 
 /* Form */
