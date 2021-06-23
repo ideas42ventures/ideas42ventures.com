@@ -116,6 +116,43 @@ body#celena {
   background-color: var(--color-blue-base);
   color: white;
   padding: 100px 0;
+  position: relative;
+  z-index: 100;
+}
+
+#celena .hero:before {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-blue-base) 20%,
+    transparent
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -5;
+}
+
+#celena .hero:after {
+  background-image: url("/images/celena/hero-retirement.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-size: cover;
+  z-index: -10;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1100px) {
+  #celena .hero:after {
+    background-position: 0 -30px;
+  }
 }
 
 #celena .hero h1 {
@@ -137,6 +174,25 @@ body#celena {
 @media (max-width: 699px) {
   #celena .hero p {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  #celena .hero:after {
+    background-position: 75% -50px;
+  }
+
+  #celena .hero:before {
+    background-image: linear-gradient(transparent, var(--color-blue-base) 60%);
+  }
+
+  #celena .hero {
+    padding-top: 300px;
+    padding-bottom: 60px;
+  }
+
+  #celena .hero .break {
+    display: none;
   }
 }
 
@@ -162,6 +218,27 @@ body#celena {
 
 #celena .icons p {
   margin: 0;
+}
+
+#celena .icons .icon {
+  height: 70px;
+  width: 70px;
+  padding: 30px;
+  box-sizing: content-box;
+  border: 3px solid var(--color-blue-bright);
+  border-radius: 300px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+@media (max-width: 699px) {
+  #celena .icons > div:not(.gap) {
+    margin-bottom: 50px;
+  }
+
+  #celena .icons > div:not(.gap):last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Tabs */
@@ -222,7 +299,7 @@ body#celena {
   content: "";
   height: 25px;
   width: 25px;
-  background-image: url("/images/benefits-check.svg");
+  background-image: url("/images/celena/benefits-check.svg");
   margin-right: 10px;
   flex-shrink: 0;
 }
@@ -255,6 +332,23 @@ body#celena {
   margin-top: 0;
 }
 
+@media (max-width: 1000px) and (min-width: 700px) {
+  #celena .how-it-works:nth-of-type(1),
+  #celena .how-it-works:nth-of-type(2) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 699px) {
+  #celena .how-it-works {
+    margin-bottom: 40px;
+  }
+
+  #celena .how-it-works:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* Form */
 
 #celena label > span {
@@ -284,4 +378,14 @@ body#celena {
   text-align: center;
   color: var(--color-gray-quiet);
   margin-top: 30px;
+}
+
+@media (max-width: 699px) {
+  #celena input {
+    margin-bottom: 30px;
+  }
+
+  #celena .columns-2 + .columns-2 {
+    margin-top: 0;
+  }
 }

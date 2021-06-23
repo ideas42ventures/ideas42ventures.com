@@ -8,7 +8,7 @@ title: ideas42 Venture Studio Careers
 
 <div class="hero section">
   <div class="container">
-    <h1>Preserve your past,<br />secure your future.</h1>
+    <h1>Preserve your past, <span class="break"><br /> </span>secure your future.</h1>
     <p>Learn how we help small business owners transition on their own terms.</p>
     <a href="#" class="btn btn-primary btn-large">Get in Touch</a>
   </div>
@@ -18,19 +18,19 @@ title: ideas42 Venture Studio Careers
     <h2>Learn how you can...</h2>
     <div class="columns-3 icons">
       <div>
-        icon
+        <div class="icon"><img src="/images/celena/icon-success.svg" /></div>
         <h3>Leave the company on your terms</h3>
         <p>Transition from leadership slowly, or all at once.</p>
       </div>
       <div class="gap"></div>
       <div>
-        icon
+        <div class="icon"><img src="/images/celena/icon-team.svg" /></div>
         <h3>Retain partial ownership</h3>
         <p>Sell the company in whole or in part for immediate liquidity.</p>
       </div>
       <div class="gap"></div>
       <div>
-        icon
+        <div class="icon"><img src="/images/celena/icon-sale.svg" /></div>
         <h3>Close the sale - Guaranteed</h3>
         <p>You already have an interested buyer for your company.</p>
       </div>
@@ -135,6 +135,30 @@ title: ideas42 Venture Studio Careers
   </div>
 </div>
 <div class="section gray">
-  {% include "components/contact-form.njk" %}
+  <form class="container">
+    <h2>Contact us to learn more.</h2>
+    <div class="columns-2">
+      <div>
+        <label><span>Full name</span><input type="text" placeholder="Full name" /></label>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <label><span>Company name</span><input type="text" placeholder="Company name" /></label>
+      </div>
+    </div>
+    <div class="columns-2">
+      <div>
+        <label><span>Phone Number</span><input type="tel" placeholder="(###) ###-####" /></label>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <label><span>Email</span><input type="text" placeholder="email@domain.com" /></label>
+      </div>
+    </div>
+    <div class="form-footer">
+      <p>By submitting your email, you agree to receive marketing emails from us.</p>
+      <button class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 </div>
 {% endblock %}
