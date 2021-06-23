@@ -1,16 +1,16 @@
 ---
-title: ideas42 Venture Studio Careers
+title: Employee Ownership
 ---
 
 {% extends "layouts/celena.njk" %}
 
 {% block main %}
 
-<div class="hero section">
+<div class="hero section retirement">
   <div class="container">
     <h1>Preserve your past, <span class="break"><br /> </span>secure your future.</h1>
     <p>Learn how we help small business owners transition on their own terms.</p>
-    <a href="#" class="btn btn-primary btn-large">Get in Touch</a>
+    <a href="#contact-us" class="btn btn-primary btn-large">Get in Touch</a>
   </div>
 </div>
 <div class="section">
@@ -39,11 +39,11 @@ title: ideas42 Venture Studio Careers
 </div>
 <div class="section blue">
   <div class="container">
-    <h2>Explore the Benefits of Employee Ownership</h2>
+    <h2>Explore the Benefits of Employee Ownership<span class="for"> for the...</span></h2>
     <ul class="tabs">
-			<li class="active"><a href="#tab-owner">For the Owner</a></li>
-			<li class=""><a href="#tab-company">For the Company</a></li>
-			<li class=""><a href="#tab-employees">For the Employees</a></li>
+			<li class="active"><a href="#tab-owner"><span class="for">For the </span>Owner</a></li>
+			<li class=""><a href="#tab-company"><span class="for">For the </span>Company</a></li>
+			<li class=""><a href="#tab-employees"><span class="for">For the </span>Employees</a></li>
 		</ul>
     <div class="tab-content">
       <div id="tab-owner" class="tab-pane active">
@@ -134,31 +134,12 @@ title: ideas42 Venture Studio Careers
     </div>
   </div>
 </div>
-<div class="section gray">
-  <form class="container">
-    <h2>Contact us to learn more.</h2>
-    <div class="columns-2">
-      <div>
-        <label><span>Full name</span><input type="text" placeholder="Full name" /></label>
-      </div>
-      <div class="gap"></div>
-      <div>
-        <label><span>Company name</span><input type="text" placeholder="Company name" /></label>
-      </div>
-    </div>
-    <div class="columns-2">
-      <div>
-        <label><span>Phone Number</span><input type="tel" placeholder="(###) ###-####" /></label>
-      </div>
-      <div class="gap"></div>
-      <div>
-        <label><span>Email</span><input type="text" placeholder="email@domain.com" /></label>
-      </div>
-    </div>
-    <div class="form-footer">
-      <p>By submitting your email, you agree to receive marketing emails from us.</p>
-      <button class="btn btn-primary">Submit</button>
-    </div>
-  </form>
+<div class="section gray" id="contact-us">
+  {% include 'components/contact-form.njk' %}
 </div>
+<footer>
+  <div class="container">
+    <p>A business powered by</p><img src="/images/celena/i42ventures-logo.svg" alt="ideas42 Ventures Logo"/></p>
+  </div>
+</footer>
 {% endblock %}
