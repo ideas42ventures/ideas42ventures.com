@@ -1,7 +1,6 @@
 window.addEventListener("load", function () {
   // store tabs variable
   var myTabs = document.querySelectorAll("ul.tabs > li");
-  console.log(myTabs);
 
   function myTabClicks(tabClickEvent) {
     for (var i = 0; i < myTabs.length; i++) {
