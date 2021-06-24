@@ -1,0 +1,75 @@
+---
+title: Employee Ownership
+---
+
+{% extends "layouts/celena.njk" %}
+
+{% block main %}
+
+<div class="hero section retirement">
+  <div class="container">
+    <h1>Preserve your past, <span class="break"><br /></span>secure your future.</h1>
+    <p>Learn how we help small business owners transition on their own terms.</p>
+    <a href="#contact-us" class="btn btn-primary btn-large">Get in Touch</a>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <h2>Learn how you can...</h2>
+    <div class="columns-3 icons">
+      <div>
+        <div class="icon"><img src="/images/celena/icon-success.svg" /></div>
+        <h3>Leave the company on your terms</h3>
+        <p>Transition from leadership slowly, or all at once.</p>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <div class="icon"><img src="/images/celena/icon-team.svg" /></div>
+        <h3>Retain partial ownership</h3>
+        <p>Sell the company in whole or in part for immediate liquidity.</p>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <div class="icon"><img src="/images/celena/icon-sale.svg" /></div>
+        <h3>Close the sale - Guaranteed</h3>
+        <p>You already have an interested buyer for your company.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'components/benefits-menu.njk' %}
+<div class="section">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="columns-4">
+      <div class="how-it-works">
+        <h3><small>1</small>Find the Right Plan</h3>
+        <p>We'll match you and your company with the best employee ownership structure for you and your industry.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>2</small>Valuation and In-house Financing</h3>
+        <p>We'll conduct a valuation of your business. We have our own fund and can underwrite and close financing quickly.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>3</small>Transition to Employee Owners</h3>
+        <p>Our managers support your team in setting up your employee ownership structures.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>4</small>Management & Administration</h3>
+        <p>Our team and tools provide easy administration, maintenance and compliance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section gray" id="contact-us">
+  {% include 'components/contact-form.njk' %}
+</div>
+<footer>
+  <div class="container">
+    <p>A business powered by</p><img src="/images/celena/i42ventures-logo.svg" alt="ideas42 Ventures Logo"/></p>
+  </div>
+</footer>
+{% endblock %}

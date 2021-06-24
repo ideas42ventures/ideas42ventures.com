@@ -17,11 +17,11 @@
   opacity: 1;
 }
 
-/* 
-  This is a quick workaround for our fixed cohort banner, may not always be necessary 
+/*
+  This is a quick workaround for our fixed cohort banner, may not always be necessary
 */
 @media (min-width: 31.25em) {
-  :target::before {
+  :not(.tab-pane):not(.section):target::before {
     content: "";
     display: block;
     height: 6.25rem;

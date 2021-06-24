@@ -1,0 +1,75 @@
+---
+title: Employee Ownership
+---
+
+{% extends "layouts/celena.njk" %}
+
+{% block main %}
+
+<div class="hero section employee-ownership">
+  <div class="container">
+    <h1>Preserve your legacy, <span class="break"><br /></span>secure the future <span class="break"><br /></span>of your business.</h1>
+    <p>Unlock the power of employee ownership for your small business.</p>
+    <a href="#contact-us" class="btn btn-primary btn-large">Get in Touch</a>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <h2>Learn how you can...</h2>
+    <div class="columns-3 icons">
+      <div>
+        <div class="icon"><img src="/images/celena/icon-coordinate.svg" /></div>
+        <h3>Control the transition of your company</h3>
+        <p>You control how you transition from leadership, and can release your responsibilities slowly or all at once.</p>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <div class="icon"><img src="/images/celena/icon-liquidity.svg" /></div>
+        <h3>Gain flexibility and immediate liquidity</h3>
+        <p>You can sell the company in whole or in part, and gain short-term liquidity if needed.</p>
+      </div>
+      <div class="gap"></div>
+      <div>
+        <div class="icon"><img src="/images/celena/icon-sale.svg" /></div>
+        <h3>Close the sale - Guaranteed</h3>
+        <p>You already have an interested buyer -- your employees – and financing through our company.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'components/benefits-menu.njk' %}
+<div class="section">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="columns-4">
+      <div class="how-it-works">
+        <h3><small>1</small>Find the Right Plan</h3>
+        <p>We'll match you and your company with the best employee ownership structure for you and your industry.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>2</small>Valuation and In-house Financing</h3>
+        <p>We'll conduct a valuation of your business. We have our own fund and can underwrite and close financing quickly.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>3</small>Transition to Employee Owners</h3>
+        <p>Our managers support your team in setting up your employee ownership structures.</p>
+      </div>
+      <div class="gap"></div>
+      <div class="how-it-works">
+        <h3><small>4</small>Management & Administration</h3>
+        <p>Our team and tools provide easy administration, maintenance and compliance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section gray" id="contact-us">
+  {% include 'components/contact-form.njk' %}
+</div>
+<footer>
+  <div class="container">
+    <p>A business powered by</p><img src="/images/celena/i42ventures-logo.svg" alt="ideas42 Ventures Logo"/></p>
+  </div>
+</footer>
+{% endblock %}

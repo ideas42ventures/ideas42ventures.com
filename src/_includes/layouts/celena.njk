@@ -1,0 +1,46 @@
+<!-- This file is used to support landing pages for Celena's business. -->
+<!-- Remove this file and associated files when her own website is built. -->
+
+<!doctype html>
+<html lang="en" data-page="{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
+
+<head>
+  {% include "head-meta.njk" %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWJESM3VE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BBWJESM3VE');
+  </script>
+
+  <script src="https://roadrunner.ideas42ventures.com/script.js"
+    honor-dnt="true"
+    site="JGGXGDMD"
+    excluded-domains="localhost,ideas42ventures.netlify.app" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  {% if site.environment === "production" -%}
+    {% set inlineCSS -%}
+      {% include "../../css/site.njk" %}
+    {%- endset %}
+
+    <style>
+      {{ inlineCSS | cssmin | safe }}
+    </style>
+  {% else %}
+    <link rel="stylesheet" href="/css/site.css">
+  {%- endif %}
+</head>
+
+  <body id="celena">
+      <main>
+        {% block main %}{% endblock %}
+      </main>
+      <script>
+        {% include "../../js/celena.js" %}
+      </script>
+  </body>
+</html>
