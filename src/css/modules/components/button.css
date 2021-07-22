@@ -1,4 +1,6 @@
-.btn {
+.btn,
+.field--connected-btn > .btn,
+.newsletter-fields > input .btn {
   --padding-v: 0.7em;
   --padding-h: 1.5em;
   --color: var(--color-accent-active);
