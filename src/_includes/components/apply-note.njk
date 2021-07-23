@@ -1,32 +1,53 @@
 <div class="card grid--max-2">
   <header class="card__intro">
     <p>
-      <strong class="card__title">Applications closed</strong> 
+      <strong class="card__title">Applications closed</strong>
       Applications for this cohort closed on Oct 25 2020. We’ve completed the interview process and
       will be making offers soon. If you submitted an application, thank you!
     </p>
   </header>
   <div class="card__body card__body--bordered">
-    <form class="newsletter-form" name="newsletter" action="/.netlify/functions/newsletter-submission" 
-      method="post">
-      <fieldset>
-        <legend class="legend--text font-size-1">
-          We anticipate beginning recruitment for our next cohort in <b>mid 2021</b>.
-          Sign up for our newsletter for updates.
-        </legend>
-
-        <label for="newsletter-email--apply">Email address</label>
-        <input id="newsletter-email--apply" class="input--full" type="email" name="email" 
-          placeholder="name@example.com" autocapitalize="off" autocorrect="off" required />
-        <input type="hidden" name="tags" value="Web Sign up,Apply page"/> 
-        <button type="submit" class="btn">Subscribe</button>
-
-        <p class="form__msg hidden"></p>
-      </fieldset>
-
-      <p class="hidden" hidden>
-        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-      </p>
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form
+      action="https://ideas42ventures.us1.list-manage.com/subscribe/post?u=f28b0f7c2bec71e9dc4a14f7f&amp;id=69350d4819"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      class="validate newsletter-form"
+      target="_blank"
+      novalidate
+    >
+      <div id="mc_embed_signup_scroll">
+        <fieldset class="newsletter-fields">
+          <legend class="legend--text font-size-1">
+            We anticipate beginning recruitment for our next cohort in <b>mid 2021</b>.
+            Sign up for our newsletter for updates.
+          </legend>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address </label>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email input input--full"
+              id="mce-EMAIL"
+              placeholder="name@example.com"
+              autocapitalize="off"
+              autocorrect="off"
+              required
+            >
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f28b0f7c2bec71e9dc4a14f7f_69350d4819" tabindex="-1" value=""></div>
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn--full">
+        </fieldset>
+      </div>
     </form>
+    </div>
+    <!--End mc_embed_signup-->
   </div>
 </div>

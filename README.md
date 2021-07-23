@@ -18,11 +18,8 @@ We still want to track how our site is being used, so instead, we use the privac
 
 ### Email subscription form
 
-We use [Buttondown](https://buttondown.email/) to handle the form submission.
+We use [Mailchimp](https://mailchimp.com/) to handle the form submission.
 
-- Form submissions are stored in the subscriber tab in the Buttondown dashboard.
-- The `env` variable for the Buttondown is set in the Netlify environment UI.
-- We handle browsers that have JS disabled with redirects to static pages.
 
 ## Contributing
 
