@@ -1,6 +1,13 @@
 {
   "team": [
     {
+      "name": "Lael Birch",
+      "team": "Venture Studio",
+      "role": "Senior Software Engineer",
+      "img": "lael-birch.jpg",
+      "linkedin": "https://www.linkedin.com/in/laelbirch/"
+    },
+    {
       "name": "William Bogans",
       "team": "Venture Studio",
       "role": "Software Engineer",
@@ -161,13 +168,6 @@
   ],
   "board": [
     {
-      "name": "Marc Laitin",
-      "team": "ideas Ventures Board",
-      "role": "Board Member",
-      "img": "marc-laitin.jpg",
-      "linkedin": "https://www.linkedin.com/in/marclaitin/"
-    },
-    {
       "name": "Tamika Cummings",
       "team": "ideas Ventures Board",
       "role": "Board Member",
@@ -180,6 +180,13 @@
       "role": "Board Member",
       "img": "katy-davis.jpg",
       "linkedin": ""
+    },
+    {
+      "name": "Marc Laitin",
+      "team": "ideas Ventures Board",
+      "role": "Board Member",
+      "img": "marc-laitin.jpg",
+      "linkedin": "https://www.linkedin.com/in/marclaitin/"
     }
   ]
 }
